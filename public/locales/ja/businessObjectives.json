@@ -1,0 +1,12 @@
+{
+  "options": {
+    "cost_reduction": "コスト削減",
+    "faster_time_to_market": "市場投入の迅速化",
+    "scalability": "スケーラビリティ",
+    "reliability": "信頼性",
+    "security": "セキュリティ向上",
+    "developer_productivity": "開発者の生産性",
+    "innovation": "イノベーション",
+    "technical_debt": "技術的負債の削減"
+  }
+}

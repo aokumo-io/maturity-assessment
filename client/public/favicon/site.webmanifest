@@ -1,0 +1,58 @@
+{
+  "name": "Cloud Native Maturity Assessment",
+  "short_name": "CN Assessment",
+  "description": "Evaluate your organization's cloud native adoption maturity",
+  "icons": [
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "16x16",
+      "type": "image/svg"
+    },
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg"
+    },
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "180x180",
+      "type": "image/svg"
+    },
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#294364",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "/images/og-image.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Cloud Native Assessment Dashboard"
+    },
+    {
+      "src": "/images/og-image.png", 
+      "sizes": "360x640",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Cloud Native Assessment Mobile View"
+    }
+  ]
+} 

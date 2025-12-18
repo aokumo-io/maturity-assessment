@@ -1,0 +1,384 @@
+{
+  "app": {
+    "title": "クラウドネイティブ成熟度評価",
+    "subtitle": "組織のクラウドネイティブ導入レベルを評価",
+    "copyright": "© 2025 Aokumo株式会社 All rights reserved."
+  },
+  "meta": {
+    "defaultTitle": "クラウドネイティブ成熟度評価 | Aokumo",
+    "defaultDescription": "組織のクラウドネイティブ導入レベルを評価し、デジタル変革のためのパーソナライズされた推奨事項を取得できる包括的な評価ツールです。",
+    "defaultKeywords": "クラウドネイティブ, 成熟度評価, デジタル変革, クラウド導入, DevOps, マイクロサービス, Kubernetes, コンテナ, AWS, Azure, GCP",
+    "pages": {
+      "home": {
+        "title": "クラウドネイティブ成熟度評価 | Aokumo",
+        "description": "包括的な成熟度評価でクラウドネイティブ変革の旅を始めましょう。パーソナライズされた推奨事項とロードマップを取得できます。"
+      },
+      "organizationInfo": {
+        "title": "組織情報 | クラウドネイティブ評価",
+        "description": "組織の詳細を入力して、クラウドネイティブ成熟度評価をパーソナライズしてください。"
+      },
+      "assessment": {
+        "title": "評価質問 | クラウドネイティブ成熟度評価",
+        "description": "15のカテゴリにわたる包括的な質問に答えて、クラウドネイティブ成熟度レベルを評価してください。"
+      },
+      "results": {
+        "title": "評価結果 | クラウドネイティブ成熟度評価",
+        "description": "パーソナライズされたクラウドネイティブ成熟度評価結果、推奨事項、実装ロードマップを確認してください。"
+      },
+      "mindmap": {
+        "title": "評価マインドマップ | クラウドネイティブ成熟度評価",
+        "description": "クラウドネイティブ評価プロセス、モジュール、分析フレームワークのインタラクティブな可視化。"
+      }
+    }
+  },
+  "nav": {
+    "home": "ホーム",
+    "assessment": "評価",
+    "results": "結果",
+    "settings": "設定",
+    "resultsDashboard": "ダッシュボード",
+    "maturityAnalysis": "成熟度分析",
+    "trailMap": "Trail Map",
+    "implementationPlan": "実装計画",
+    "assessmentMindmap": "評価マインドマップ",
+    "assessmentHistory": "評価履歴",
+    "goToWelcome": "ウェルカムページへ"
+  },
+  "navigation": {
+    "backToResults": "結果に戻る"
+  },
+  "language": {
+    "en": "英語",
+    "ja": "日本語"
+  },
+  "actions": {
+    "start": "評価を開始",
+    "continue": "続行",
+    "back": "戻る",
+    "next": "次へ",
+    "submit": "送信",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "reset": "リセット",
+    "export": "エクスポート",
+    "share": "共有",
+    "skip": "スキップ",
+    "sending": "送信中...",
+    "navigate": "ナビゲート",
+    "explore": "探索",
+    "interact": "操作",
+    "controls": "コントロール"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功",
+    "warning": "警告",
+    "info": "情報",
+    "noData": "データがありません",
+    "required": "必須"
+  },
+  "analysis": {
+    "tabs": {
+      "overview": "概要",
+      "industry": "業界比較",
+      "trend": "傾向",
+      "cost": "コスト分析"
+    },
+    "title": "クラウド成熟度評価ダッシュボード",
+    "loading": "評価分析を読み込んでいます...",
+    "noData": "評価データは利用できません",
+    "noAnalysisAvailable": "分析データがありません",
+    "pleaseCompleteAssessment": "成熟度分析を表示するには評価を完了してください。",
+    "categoryBreakdown": {
+      "title": "カテゴリ内訳",
+      "description": "この詳細な分析は、各評価領域内のサブカテゴリであなたの組織がどのようなスコアを獲得しているかを示しています。カテゴリをクリックして、質問レベルの分析と具体的な推奨事項を確認してください。",
+      "viewDetailedBreakdown": "詳細な内訳を表示"
+    },
+    "maturityScoreEvolution": "成熟度スコアの推移",
+    "completeAnotherAssessment": "傾向データを表示するには別の評価を完了してください",
+    "progressAgainstGoals": "目標に対する進捗",
+    "shortTermGoals": "短期目標（6ヶ月）",
+    "longTermGoals": "長期目標（12ヶ月）",
+    "securityImprovements": "セキュリティ改善",
+    "storageAutomation": "ストレージ自動化",
+    "serviceMeshAdoption": "サービスメッシュ導入",
+    "overallMaturity": "全体的な成熟度"
+  },
+  "loading": "読み込み中...",
+  "error": "エラーが発生しました",
+  "success": "成功",
+  "warning": "警告",
+  "info": "情報",
+  "noData": "データがありません",
+  "required": "必須",
+  "aiKnowledge": {
+    "title": "AI知識アシスタント",
+    "subtitle": "AI駆動の説明と教育コンテンツ",
+    "loading": "知識コンテンツを読み込んでいます...",
+    "notAvailable": "このトピックに関する特定の知識コンテンツは利用できません。",
+    "resourcesAvailable": "事前構成された知識コンテンツを用意しています。",
+    "noApiKeysRequired": "APIキーは必要ありません！",
+    "resourcesHeader": "利用可能な知識リソース",
+    "continue": "続ける",
+    "contentSource": "知識コンテンツは当社の厳選された知識ベースから取得されています",
+    "close": "閉じる",
+    "examples": "例",
+    "resources": "リソース",
+    "explanation": "AI説明"
+  },
+  "knowledgeResources": {
+    "modal": {
+      "title": "クラウドネイティブ学習リソース",
+      "description": "クラウドネイティブの概念と技術の理解を深めるための教育資料"
+    },
+    "skillLevels": {
+      "beginner": "初級",
+      "intermediate": "中級",
+      "advanced": "上級"
+    },
+    "timeUnit": "分",
+    "buttons": {
+      "watchVideo": "動画を見る",
+      "viewResource": "リソースを見る",
+      "continueAssessment": "評価を続ける"
+    },
+    "labels": {
+      "source": "ソース"
+    },
+    "categories": {
+      "foundations_culture": {
+        "title": "クラウドネイティブ基盤",
+        "resources": {
+          "cloudNative101": {
+            "title": "クラウドネイティブ入門",
+            "description": "クラウドネイティブの原則、プラクティス、用語の紹介"
+          },
+          "effectiveTeams": {
+            "title": "クラウドネイティブのための効果的なチーム構築",
+            "description": "クラウドネイティブ環境で成功するためのエンジニアリングチームの構造化方法"
+          },
+          "transformationPlaybook": {
+            "title": "クラウドネイティブ変革プレイブック",
+            "description": "組織のクラウドネイティブ変革のための戦略ガイド"
+          },
+          "devopsCulture": {
+            "title": "DevOps文化入門",
+            "description": "クラウドネイティブの成功に必要な文化的変革の理解"
+          }
+        }
+      },
+      "container_infrastructure": {
+        "title": "コンテナインフラストラクチャ",
+        "description": "コンテナ技術、オーケストレーションプラットフォーム、コンテナ化されたワークロードの管理のベストプラクティスについて学習します。",
+        "resources": {
+          "orchestrationBasics": {
+            "title": "コンテナオーケストレーション基礎",
+            "description": "コンテナオーケストレーションプラットフォームの中核概念とコンポーネント"
+          },
+          "containerPatterns": {
+            "title": "コンテナパターン",
+            "description": "コンテナ化されたアプリケーションデプロイメントの一般的なパターン"
+          },
+          "infrastructureDeepDive": {
+            "title": "コンテナインフラストラクチャ詳細解説",
+            "description": "コンテナインフラストラクチャコンポーネントの詳細ガイド"
+          },
+          "containerEssentials": {
+            "title": "コンテナ基礎",
+            "description": "コンテナインフラストラクチャ基礎を学ぶ動画コース"
+          }
+        }
+      },
+      "application_architecture": {
+        "title": "アプリケーションアーキテクチャ",
+        "resources": {
+          "twelveFactor": {
+            "title": "12-Factorアプリ",
+            "description": "スケーラブルでポータブルなWebアプリケーションの設計原則"
+          },
+          "microservices": {
+            "title": "マイクロサービスアーキテクチャ",
+            "description": "マイクロサービスベースのアプリケーションの設計と展開"
+          },
+          "serviceOriented": {
+            "title": "サービス指向アーキテクチャ",
+            "description": "サービス指向アーキテクチャの設計と展開"
+          }
+        }
+      },
+      "cicd_practices": {
+        "title": "CI/CDプラクティス",
+        "resources": {
+          "bestPractices": {
+            "title": "CI/CDベストプラクティス",
+            "description": "CI/CDパイプライン実装のベストプラクティス"
+          },
+          "devopsCulture": {
+            "title": "DevOps文化",
+            "description": "協力と継続的改善の文化構築"
+          },
+          "continuousDelivery": {
+            "title": "継続的デリバリー",
+            "description": "継続的デリバリープラクティスの実装"
+          }
+        }
+      },
+      "dora_metrics": {
+        "title": "DORAメトリクス",
+        "resources": {
+          "fundamentals": {
+            "title": "DORAメトリクス",
+            "description": "ソフトウェアデリバリーパフォーマンスの測定"
+          },
+          "transformation": {
+            "title": "DevOps変革",
+            "description": "DevOpsを通じた組織変革"
+          },
+          "phoenixProject": {
+            "title": "フェニックスプロジェクト",
+            "description": "IT、DevOps、ビジネスの成功に関する小説"
+          }
+        }
+      },
+      "observability": {
+        "title": "オブザーバビリティ",
+        "resources": {
+          "engineering": {
+            "title": "オブザーバビリティエンジニアリング",
+            "description": "ソフトウェアシステムへのオブザーバビリティの組み込み"
+          },
+          "distributedSystems": {
+            "title": "分散システム",
+            "description": "分散システムとその課題の理解"
+          },
+          "scalability": {
+            "title": "スケーラビリティの芸術",
+            "description": "Webベースシステムのスケーリング"
+          }
+        }
+      },
+      "security_compliance": {
+        "title": "セキュリティ＆コンプライアンス",
+        "resources": {
+          "bestPractices": {
+            "title": "セキュリティベストプラクティス",
+            "description": "クラウドネイティブアプリケーションの保護ベストプラクティス"
+          },
+          "complianceAutomation": {
+            "title": "コンプライアンス自動化",
+            "description": "コンプライアンスチェックと監査の自動化"
+          },
+          "securityOperations": {
+            "title": "セキュリティオペレーション",
+            "description": "クラウドネイティブ環境でのセキュリティオペレーション実装"
+          }
+        }
+      },
+      "app_migration_modernization": {
+        "title": "アプリ移行＆モダナイゼーション",
+        "resources": {
+          "fundamentals": {
+            "title": "クラウド移行基礎",
+            "description": "アプリケーションのクラウド移行の主要原則"
+          },
+          "patterns": {
+            "title": "アプリケーションモダナイゼーションパターン",
+            "description": "レガシーアプリケーションのモダナイゼーション共通パターン"
+          }
+        }
+      },
+      "business_value_strategy": {
+        "title": "ビジネス価値＆クラウドネイティブ戦略",
+        "resources": {
+          "roiBasics": {
+            "title": "クラウドROI基礎",
+            "description": "クラウド経済学とビジネス価値の理解"
+          },
+          "strategyPlaybook": {
+            "title": "クラウド戦略プレイブック",
+            "description": "包括的なクラウド戦略の策定"
+          }
+        }
+      },
+      "finops_cost_management": {
+        "title": "FinOps＆コスト管理",
+        "resources": {
+          "fundamentals": {
+            "title": "FinOps基礎",
+            "description": "クラウド財務オペレーションの導入"
+          },
+          "optimization": {
+            "title": "コスト最適化戦略",
+            "description": "クラウドコスト管理の高度な技術"
+          }
+        }
+      },
+      "infrastructure_platform": {
+        "title": "インフラストラクチャ＆プラットフォーム",
+        "resources": {
+          "infrastructureAsCode": {
+            "title": "Infrastructure as Code",
+            "description": "コードと自動化によるインフラストラクチャ管理"
+          },
+          "platformEngineering": {
+            "title": "プラットフォームエンジニアリング原則",
+            "description": "セルフサービスを可能にする開発者プラットフォーム構築"
+          }
+        }
+      },
+      "data_management": {
+        "title": "データ管理",
+        "resources": {
+          "storageOptions": {
+            "title": "クラウドデータストレージオプション",
+            "description": "クラウドネイティブデータストレージアプローチの概要"
+          },
+          "architecturePatterns": {
+            "title": "データアーキテクチャパターン",
+            "description": "クラウド環境でのデータ管理パターン"
+          }
+        }
+      },
+      "operations_resilience": {
+        "title": "オペレーション＆レジリエンス",
+        "resources": {
+          "sre": {
+            "title": "サイトリライアビリティエンジニアリング",
+            "description": "SREの原則とプラクティスの導入"
+          },
+          "chaosEngineering": {
+            "title": "カオスエンジニアリング",
+            "description": "制御された実験による回復力のあるシステム構築"
+          }
+        }
+      },
+      "multicloud_hybrid_governance": {
+        "title": "マルチクラウド＆ハイブリッドガバナンス",
+        "resources": {
+          "strategy": {
+            "title": "マルチクラウド戦略",
+            "description": "効果的なマルチクラウドアーキテクチャの策定"
+          },
+          "governance": {
+            "title": "クラウドガバナンスフレームワーク",
+            "description": "複雑なクラウド環境でのガバナンス確立"
+          }
+        }
+      },
+      "ai_ml_integration": {
+        "title": "AI＆ML統合",
+        "resources": {
+          "mlops": {
+            "title": "MLOps基礎",
+            "description": "機械学習オペレーションの導入"
+          },
+          "platformEngineering": {
+            "title": "AIプラットフォームエンジニアリング",
+            "description": "AI/MLワークロード用プラットフォーム構築"
+          }
+        }
+      }
+    }
+  }
+}

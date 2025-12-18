@@ -1,0 +1,788 @@
+{
+  "dashboard": {
+    "title": "Results Dashboard",
+    "subtitle": "Cloud native maturity assessment overview",
+    "exportPDF": "Export PDF",
+    "share": "Share",
+    "feedback": "Feedback",
+    "reviewAnswers": "Review Answers",
+    "assessmentScore": "Assessment Score",
+    "sections": {
+      "overview": "Overview",
+      "maturity": "Maturity Assessment",
+      "costAnalysis": "Cost Analysis",
+      "recommendations": "Recommendations"
+    }
+  },
+  "metrics": {
+    "totalScore": "Total Maturity Score",
+    "riskRating": "Risk Rating",
+    "costSavings": "Cost Savings",
+    "timeToNextLevel": "Time to Next Level",
+    "industryPosition": "Industry Position"
+  },
+  "sections": {
+    "executiveSummary": "Executive Summary",
+    "topRecommendations": "Top Recommendations",
+    "categoryScores": "Category Scores",
+    "radarChart": "Maturity Radar",
+    "strengths": "Strengths",
+    "weaknesses": "Weaknesses",
+    "focusAreas": "Focus Areas",
+    "industryComparison": "Industry Comparison",
+    "maturityTimeline": "Maturity Timeline",
+    "overview": "Overview",
+    "maturity": "Maturity Assessment",
+    "costAnalysis": "Cost Analysis",
+    "criticalIssues": "Critical Issues"
+  },
+  "riskLevels": {
+    "HIGH": "High Risk",
+    "MEDIUM": "Medium Risk",
+    "LOW": "Low Risk",
+    "NONE": "No Risk Data"
+  },
+  "executiveSummary": {
+    "generateButton": "Generate Summary",
+    "generating": "Generating personalized executive summary...",
+    "copyToClipboard": "Copy to clipboard",
+    "regenerate": "Regenerate",
+    "tailoredFor": "Tailored for {{role}}",
+    "overallMaturity": "Overall Maturity",
+    "keyFindings": "Key Findings",
+    "detailedAnalysis": "Detailed Analysis",
+    "strengths": "Strengths",
+    "areasForImprovement": "Areas for Improvement",
+    "recommendations": "Strategic Recommendations",
+    "businessImpact": "Business Impact",
+    "implementationGuidance": "Implementation Guidance",
+    "aiValidation": "AI Validation Insights",
+    "additionalInsights": "Additional Insights",
+    "costAnalysisValidation": "Cost Analysis Validation",
+    "ruleBasedAgreement": "Rule-based Agreement",
+    "aiConfidence": "AI Confidence",
+    "noSummary": "No executive summary available. Generate one to get insights tailored for your role.",
+    "generate": "Generate Summary",
+    "viewAll": "View all summary",
+    "showLess": "Show less",
+    "copy": "Copy to clipboard",
+    "estimatedTime": "Usually takes 10-15 seconds",
+    "regenerating": "Regenerating summary...",
+    "regenerationNote": "This will generate a fresh AI analysis. {{remaining}} regenerations remaining.",
+    "regenerationComplete": "Summary regenerated",
+    "regenerationSuccess": "Your executive summary has been updated with fresh AI insights.",
+    "regenerationsLeft": "regenerations left",
+    "regenerateTooltip": "Generate a fresh AI analysis ({{remaining}} left)",
+    "regenerateLimitTooltip": "Maximum regenerations reached for this session",
+    "rateLimitTitle": "Generation limit reached",
+    "rateLimitMessage": "You have reached the maximum number of regenerations (3) for this session. Please start a new assessment to generate more summaries.",
+    "loadingSteps": {
+      "step1": "Analyzing assessment results...",
+      "step2": "Calculating cost savings...",
+      "step3": "Generating AI insights...",
+      "step4": "Finalizing recommendations..."
+    },
+    "loadingProgress": {
+      "stepIndicator": "Step {{current}} of {{total}}",
+      "timeElapsed": "{{seconds}}s elapsed",
+      "timeRemaining": "~{{seconds}}s remaining",
+      "poweredByAI": "Usually takes 10-15 seconds • Powered by AI"
+    }
+  },
+  "loading": "Loading your implementation plan...",
+  "noAssessment": "No assessment results available",
+  "noResultsTitle": "No Assessment Results",
+  "noResultsMessage": "You haven't completed an assessment yet.",
+  "startAssessment": "Start an Assessment",
+  "gap": "Gap",
+  "completed": "Completed",
+  "unknownRisk": "Unknown",
+  "needAssessmentData": "Assessment data needed",
+  "riskRequiresData": "Risk assessment requires data",
+  "criticalIssuesFound": "{{count}} critical issues identified",
+  "basedOnAssessment": "Based on {{type}} assessment",
+  "needToCompleteAssessment": "Need to complete assessment",
+  "toReachLevel": "to reach {{level}}",
+  "maturityLevels": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "expert": "Expert"
+  },
+  "navigation": {
+    "maturityAnalysis": "Detailed Maturity Analysis",
+    "trailMap": "Cloud Native Trail Map",
+    "implementationPlan": "Implementation Roadmap",
+    "backToResults": "Back to Results"
+  },
+  "processing": {
+    "title": "Processing Assessment",
+    "subtitle": "Please wait while we analyze your responses",
+    "analyzing": "Analyzing Your Responses",
+    "pleaseWait": "Please wait while we process your assessment and prepare your personalized results.",
+    "progress": "Progress",
+    "takeMoments": "This should only take a few moments.",
+    "steps": {
+      "collectingData": "Collecting assessment data",
+      "calculatingScores": "Calculating category scores",
+      "analyzingLevels": "Analyzing maturity levels",
+      "comparingBenchmarks": "Comparing with industry benchmarks",
+      "generatingRecommendations": "Generating recommendations",
+      "preparingRoadmap": "Preparing implementation roadmap",
+      "finalizing": "Finalizing assessment results"
+    }
+  },
+  "costAnalysis": {
+    "title": "Cost Analysis",
+    "description": "This analysis quantifies potential annual savings from improving your cloud native maturity.",
+    "totalSavings": "Total Potential Annual Savings",
+    "savingsDescription": "Based on closing maturity gaps across all categories",
+    "impactAreas": "Impact Areas",
+    "quickWins": "Quick Wins",
+    "noDataTitle": "Cannot Calculate Cost Impact",
+    "noDataDescription": "We need assessment data to calculate potential cost savings. Please complete the assessment with specific answers.",
+    "potentialSavings": "Potential Savings",
+    "potentialImpact": "Potential Impact",
+    "currentScore": "Current Score",
+    "complexity": "Implementation Complexity",
+    "complexityLow": "Low",
+    "complexityMedium": "Medium",
+    "complexityHigh": "High",
+    "roi": "Return on Investment",
+    "primaryImpactArea": "Primary Impact Area",
+    "quickWinsDescription": "Highest ROI improvement opportunities with immediate business impact",
+    "disclaimer": "This analysis provides estimates based on industry data and your assessment. Actual results may vary.",
+    "costAreas": {
+      "IC": "Infrastructure Costs",
+      "OE": "Operational Efficiency",
+      "DP": "Development Productivity",
+      "IM": "Incident Management",
+      "TM": "Time-to-Market",
+      "development": "Development Productivity",
+      "infrastructure": "Infrastructure Costs",
+      "operations": "Operational Efficiency",
+      "timeToMarket": "Time-to-Market"
+    },
+    "costAreaDescriptions": {
+      "IC": "Cloud and infrastructure expenses including compute, storage, network, and software licenses.",
+      "OE": "Costs related to operations teams, manual processes, and operational overhead.",
+      "DP": "Developer productivity costs including development time, tools, and inefficiencies.",
+      "IM": "Incident-related costs including downtime, response time, recovery, and reputation damage.",
+      "TM": "Opportunity costs from delayed products and features reaching the market."
+    },
+    "savingsBreakdown": "Savings Breakdown",
+    "topSavingsAreas": "Top Savings Areas",
+    "ofTotalBaseline": "of total baseline"
+  },
+  "implementationRoadmap": {
+    "title": "Implementation Roadmap",
+    "subtitle": "A phased approach to improve your cloud native maturity",
+    "phase1": "Phase 1: Short-term",
+    "phase2": "Phase 2: Medium-term",
+    "phase3": "Phase 3: Long-term",
+    "timeframe": {
+      "short": "0-3 months",
+      "medium": "3-6 months",
+      "long": "6+ months"
+    },
+    "viewPhaseDetails": "View Phase Details",
+    "otherRecommendations": "other recommendations (un-scored)",
+    "noRecommendations": "No recommendations for this phase",
+    "impact": "Impact",
+    "effort": "Effort",
+    "roi": "ROI",
+    "quickWin": "Quick win!",
+    "implementationApproach": "Implementation approach",
+    "approachDescription": "This roadmap is arranged in a logical sequence to build cloud native capabilities incrementally. Start with Phase 1 recommendations to establish a foundation, then progress to more advanced initiatives in later phases.",
+    "categoriesNote": "Note: Categories highlighted in blue were not covered in your assessment."
+  },
+  "phases": {
+    "details": "Phase Details",
+    "recommendations": "Phase Recommendations",
+    "implementation": "Implementation Steps",
+    "title": "Implementation Phases",
+    "short_term": {
+      "title": "Phase 1: Short-term",
+      "description": "Quick wins and immediate improvements that establish the foundation.",
+      "detailedDescription": "These recommendations focus on quick wins and immediate improvements that will establish the foundation for your cloud native journey."
+    },
+    "medium_term": {
+      "title": "Phase 2: Medium-term",
+      "description": "Building on short-term improvements and expanding cloud native adoption.",
+      "detailedDescription": "These recommendations build on the short-term improvements and focus on expanding cloud native adoption across the organization."
+    },
+    "long_term": {
+      "title": "Phase 3: Long-term",
+      "description": "Transformational changes to elevate to advanced cloud native maturity.",
+      "detailedDescription": "These recommendations represent transformational changes that will elevate your organization to advanced cloud native maturity."
+    },
+    "no_phase_selected": {
+      "title": "No Phase Selected",
+      "description": "Please select a phase from the roadmap to view detailed recommendations."
+    },
+    "no_recommendations": "No recommendations for this phase.",
+    "needs_more_input": "Needs more input to prioritise",
+    "note": "Note: Categories highlighted in blue were not covered in your assessment."
+  },
+  "recommendations": {
+    "details": "Recommendation Details",
+    "implementation": "Implementation Details",
+    "prerequisites": "Prerequisites",
+    "successCriteria": "Success Criteria",
+    "additionalConsiderations": "Additional Considerations",
+    "resources": "Resources",
+    "loadingDetails": "Loading implementation details...",
+    "errorLoading": "Failed to load implementation details",
+    "no_recommendation_selected": {
+      "title": "No Recommendation Selected",
+      "description": "Please select a recommendation to view detailed information."
+    },
+    "fallbackSteps": {
+      "research": "Research and evaluate appropriate tools and approaches",
+      "plan": "Create detailed implementation plan with stakeholders",
+      "implement": "Implement solution in a controlled environment",
+      "test": "Test and validate functionality and performance",
+      "rollout": "Roll out to broader organization with appropriate training",
+      "document": "Document processes and create operational procedures"
+    },
+    "fallbackCriteria": {
+      "timeline": "Implementation is completed within the specified timeline",
+      "adoption": "The solution is adopted by relevant teams and stakeholders",
+      "metrics": "Key metrics show improvement in the target area",
+      "documentation": "Documentation and operational procedures are in place",
+      "scores": "Relevant assessment scores improve by at least 15 points"
+    }
+  },
+  "topRecommendations": {
+    "title": "Top Priority Recommendations",
+    "description": "These recommendations provide the most immediate value in your cloud native journey"
+  },
+  "noRecommendations": "No recommendations available",
+  "noImplementationPlan": "No Implementation Plan Available",
+  "completeAssessment": "Please complete an assessment to view your implementation roadmap.",
+  "categoryScores": {
+    "title": "Category Scores",
+    "noData": "No assessment data"
+  },
+  "costSavings": {
+    "title": "Annual Potential Cost Savings",
+    "noEstimate": "We cannot estimate cost savings without assessment data.",
+    "completeAssessment": "Please complete the assessment with specific answers to get cost savings estimates.",
+    "infrastructureOptimization": "Infrastructure Optimization",
+    "operationalEfficiency": "Operational Efficiency",
+    "reducedDowntime": "Reduced Downtime",
+    "totalAnnualSavings": "Total Annual Savings"
+  },
+  "focusAreas": {
+    "title": "Focus Areas",
+    "noData": "No assessment data",
+    "description": "Key categories to prioritize for effective improvement",
+    "timeEstimate": "Time estimate:",
+    "impact": "Business impact:",
+    "difficultyLevel": "Difficulty level:"
+  },
+  "strengths": {
+    "title": "Top 3 Strengths",
+    "noData": "Insufficient data to determine strengths"
+  },
+  "weaknesses": {
+    "title": "Weaknesses",
+    "noData": "No assessment data",
+    "description": "Areas that need improvement"
+  },
+  "improvementOpportunities": {
+    "title": "Top Improvement Opportunities",
+    "noData": "No assessment data available",
+    "description": "Key areas with the highest potential for improvement",
+    "category": "Category",
+    "yourScore": "Your Score",
+    "leader": "Leader",
+    "gap": "Gap",
+    "referenceModel": "Reference Model"
+  },
+  "timeEstimates": {
+    "quick": "Quick (1-3 months)",
+    "medium": "Medium (3-6 months)",
+    "long": "Long (6-12 months)"
+  },
+  "difficultyLevels": {
+    "easy": "Easy",
+    "moderate": "Moderate",
+    "hard": "Hard"
+  },
+  "impactLevels": {
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "effortLevels": {
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "timeUnits": {
+    "weeks": "weeks",
+    "months": "months",
+    "lessThanMonth": "Less than a month"
+  },
+  "criticalIssues": {
+    "title": "Critical Issues",
+    "issuesFound": "{{count}} critical issues identified",
+    "noIssues": "No critical issues detected",
+    "description": "These issues represent the most significant gaps in cloud native maturity that should be prioritized.",
+    "riskLevel": "Risk Level:",
+    "more": "more critical issues"
+  },
+  "industryComparison": {
+    "title": "Industry Comparison",
+    "noData": "No comparison data",
+    "yourScore": "Your Score",
+    "industryAverage": "Industry Median"
+  },
+  "comparisonTab": {
+    "title": "Industry Comparison",
+    "subtitle": "See how your organization compares to industry leaders and benchmarks",
+    "mainChart": "Industry Comparison",
+    "gapAnalysis": "Maturity Gap Analysis",
+    "leaderReference": "Leader Reference Models",
+    "japanGlobalComparison": "Leader Comparison",
+    "viewAllCategories": "View all categories",
+    "dataSources": "Data sources: Google Cloud State of DevOps, The Hackett Group, CNCF, Gartner, Red Hat, McKinsey",
+    "maturityLabel": "Maturity",
+    "columns": {
+      "category": "Category",
+      "yourScore": "Your Score",
+      "industryMedian": "Industry Median",
+      "japanLeader": "Japan Leader",
+      "globalLeader": "Global Leader",
+      "implementation": "Implementation Example"
+    },
+    "tooltip": {
+      "yourScore": "Your Score",
+      "industryMedian": "Industry Median",
+      "industryLeader": "Industry Leader",
+      "gapToLeader": "Gap to Leader",
+      "japanLeader": "Japan Leader",
+      "globalLeader": "Global Leader",
+      "points": "points",
+      "pointsAboveLeader": "pts above leader",
+      "gapPercentage": "%"
+    },
+    "legend": {
+      "yourOrg": "Your Organization",
+      "industryAvg": "Industry Average",
+      "industryLeaders": "Industry Leaders",
+      "gapToLeader": "Gap to Leader",
+      "exceedsLeader": "Exceeds Leader"
+    },
+    "gapAnalysisDescription": "The chart shows categories with the largest absolute point gaps between your organization and industry leaders, representing your biggest improvement opportunities."
+  },
+  "maturityTimeline": {
+    "title": "Maturity Timeline",
+    "noData": "No timeline data",
+    "current": "Current",
+    "months3": "3 Months",
+    "months6": "6 Months",
+    "months12": "12 Months",
+    "projectedScore": "Projected Score: {{score}}"
+  },
+  "trailMap": {
+    "title": "Cloud Native Trail Map",
+    "subtitle": "Your cloud native journey visualization",
+    "loading": "Loading your trail map...",
+    "noData": "No assessment data available",
+    "noTrailMap": "No Trail Map Available",
+    "completeAssessment": "Please complete an assessment to view your cloud native trail map.",
+    "overview": "Trail Map Overview",
+    "details": "Path Details",
+    "aiInsights": "AI-Generated Journey Insights",
+    "insightsDescription": "Based on your organization's assessment results and context, we recommend focusing on these areas in the following order:",
+    "waitingInsights": "Personalized journey insights will appear here after your assessment is processed.",
+    "journeyTitle": "Your Cloud Native Journey",
+    "journeyDescription": "This trail map visualizes your organization's progress along the cloud native journey, highlighting completed milestones and next steps in each category.",
+    "legendTitle": "Trail Map Legend",
+    "legendCompleted": "Completed Milestones",
+    "legendInProgress": "In Progress",
+    "legendNextSteps": "Next Steps",
+    "legendFuture": "Future Milestones",
+    "legendFocusArea": "Recommended Focus Area",
+    "legendPriority": "AI-Prioritized Focus Area",
+    "legendImmediate": "≤3 month timeframe",
+    "legendNearTerm": "3-6 month timeframe",
+    "legendQuickWin": "Low effort, high impact",
+    "pathSuffix": "Path",
+    "milestones": "Key Milestones",
+    "beginnerMilestones": "Beginner Milestones",
+    "intermediateMilestones": "Intermediate Milestones",
+    "advancedMilestones": "Advanced Milestones",
+    "generatingRecommendations": "Generating AI recommendations...",
+    "implementationTip": "Tip",
+    "complete": "Complete",
+    "completed": "Completed",
+    "focusArea": "Focus Area",
+    "priority": "Priority {{priority}}",
+    "quickWin": "Quick Win",
+    "immediate": "Immediate",
+    "nearTerm": "Near-term",
+    "noPathSelected": "No Path Selected",
+    "selectCategoryPrompt": "Please select a category from the trail map to view detailed information.",
+    "goToTrailMap": "Go to Trail Map",
+    "quickWinTip": "{{min}}-{{max}} {{unit}}",
+    "timeEstimateTip": "Estimated timeline: {{min}}-{{max}} {{unit}}",
+    "impactEffort": {
+      "High": "High",
+      "Medium": "Medium",
+      "Low": "Low",
+      "impact": "Impact",
+      "effort": "Effort"
+    },
+    "milestoneCategories": {
+      "foundations_culture": {
+        "title": "Foundation & Culture",
+        "beginner": {
+          "milestone1": {
+            "label": "Cross-functional teams",
+            "description": "Breaking down silos between teams"
+          },
+          "milestone2": {
+            "label": "DevOps practices",
+            "description": "Shared responsibility for applications"
+          },
+          "milestone3": {
+            "label": "Learning organization",
+            "description": "Continuous knowledge sharing culture"
+          }
+        }
+      },
+      "application_architecture": {
+        "title": "Application Architecture",
+        "beginner": {
+          "milestone1": {
+            "label": "Microservices foundation",
+            "description": "Beginning decomposition of monoliths"
+          },
+          "milestone2": {
+            "label": "Twelve-Factor compliance",
+            "description": "Following cloud-native best practices"
+          },
+          "milestone3": {
+            "label": "Event-driven architecture",
+            "description": "Fully decoupled and scalable systems"
+          }
+        }
+      },
+      "container_infrastructure": {
+        "title": "Container Infrastructure",
+        "beginner": {
+          "milestone1": {
+            "label": "Basic containerization",
+            "description": "Using containers for applications"
+          },
+          "milestone2": {
+            "label": "Container standards",
+            "description": "Standardized build and security processes"
+          },
+          "milestone3": {
+            "label": "Optimized containers",
+            "description": "Minimized and secure container images"
+          }
+        }
+      },
+      "cicd_practices": {
+        "title": "CI/CD Practices",
+        "beginner": {
+          "milestone1": {
+            "label": "Basic pipeline",
+            "description": "Automated builds and deployments"
+          },
+          "milestone2": {
+            "label": "Comprehensive testing",
+            "description": "Automated test suites for validation"
+          },
+          "milestone3": {
+            "label": "Advanced deployment",
+            "description": "Zero-downtime and progressive deployments"
+          }
+        }
+      },
+      "dora_metrics": {
+        "title": "DORA Metrics",
+        "beginner": {
+          "milestone1": {
+            "label": "Deployment frequency",
+            "description": "Tracking how often you deploy"
+          },
+          "milestone2": {
+            "label": "Lead time & recovery",
+            "description": "Measuring speed and stability"
+          },
+          "milestone3": {
+            "label": "Data-driven improvements",
+            "description": "Using metrics to drive decisions"
+          }
+        }
+      },
+      "observability": {
+        "title": "Observability",
+        "beginner": {
+          "milestone1": {
+            "label": "Basic monitoring",
+            "description": "Infrastructure and application metrics"
+          },
+          "milestone2": {
+            "label": "Logs & traces",
+            "description": "Centralized logging and distributed tracing"
+          },
+          "milestone3": {
+            "label": "SLOs & alerting",
+            "description": "Objectives-based monitoring and proactive alerts"
+          }
+        }
+      },
+      "security_compliance": {
+        "title": "Security & Compliance",
+        "beginner": {
+          "milestone1": {
+            "label": "Basic scanning",
+            "description": "Vulnerability detection in pipeline"
+          },
+          "milestone2": {
+            "label": "Shift-left security",
+            "description": "Security integrated throughout SDLC"
+          },
+          "milestone3": {
+            "label": "Zero-trust model",
+            "description": "Comprehensive security posture"
+          }
+        }
+      },
+      "infrastructure_platform": {
+        "title": "Infrastructure & Platform",
+        "beginner": {
+          "milestone1": {
+            "label": "Infrastructure as Code",
+            "description": "Automated resource provisioning"
+          },
+          "milestone2": {
+            "label": "Platform services",
+            "description": "Self-service developer platform"
+          },
+          "milestone3": {
+            "label": "Multi-cloud strategy",
+            "description": "Cloud-agnostic capabilities"
+          }
+        }
+      },
+      "data_management": {
+        "title": "Data Management",
+        "beginner": {
+          "milestone1": {
+            "label": "Persistent storage",
+            "description": "Basic data management for containers"
+          },
+          "milestone2": {
+            "label": "Automated operations",
+            "description": "Backups, scaling, and resilience"
+          },
+          "milestone3": {
+            "label": "Advanced data services",
+            "description": "Cloud-native data architecture"
+          }
+        }
+      },
+      "business_value_strategy": {
+        "title": "Business Value & Strategy",
+        "beginner": {
+          "milestone1": {
+            "label": "Cloud strategy alignment",
+            "description": "Aligning cloud initiatives with business goals"
+          },
+          "milestone2": {
+            "label": "Value measurement",
+            "description": "Tracking and measuring business outcomes"
+          },
+          "milestone3": {
+            "label": "Strategic innovation",
+            "description": "Leveraging cloud for new business capabilities"
+          }
+        }
+      },
+      "operations_resilience": {
+        "title": "Operations & Resilience",
+        "beginner": {
+          "milestone1": {
+            "label": "Basic resilience",
+            "description": "Implementing basic resilience patterns"
+          },
+          "milestone2": {
+            "label": "Recovery testing",
+            "description": "Regular disaster recovery testing"
+          },
+          "milestone3": {
+            "label": "Chaos engineering",
+            "description": "Proactive resilience through chaos testing"
+          }
+        }
+      },
+      "finops_cost_management": {
+        "title": "FinOps & Cost Management",
+        "beginner": {
+          "milestone1": {
+            "label": "Cost visibility",
+            "description": "Establishing cloud cost monitoring"
+          },
+          "milestone2": {
+            "label": "Resource optimization",
+            "description": "Implementing cost-saving practices"
+          },
+          "milestone3": {
+            "label": "FinOps culture",
+            "description": "Organization-wide cost accountability"
+          }
+        }
+      },
+      "app_migration_modernization": {
+        "title": "App Migration & Modernization",
+        "beginner": {
+          "milestone1": {
+            "label": "Assessment & planning",
+            "description": "Evaluating applications for cloud readiness"
+          },
+          "milestone2": {
+            "label": "Incremental modernization",
+            "description": "Applying strangler pattern for modernization"
+          },
+          "milestone3": {
+            "label": "Cloud-native transformation",
+            "description": "Complete transformation to cloud-native architecture"
+          }
+        }
+      },
+      "multicloud_hybrid_governance": {
+        "title": "Multi-cloud & Hybrid Governance",
+        "beginner": {
+          "milestone1": {
+            "label": "Multi-cloud strategy",
+            "description": "Defining approach to multiple cloud providers"
+          },
+          "milestone2": {
+            "label": "Unified management",
+            "description": "Implementing consistent governance across clouds"
+          },
+          "milestone3": {
+            "label": "Abstraction layer",
+            "description": "Provider-agnostic platforms and portability"
+          }
+        }
+      },
+      "ai_ml_integration": {
+        "title": "AI/ML Integration",
+        "beginner": {
+          "milestone1": {
+            "label": "ML capabilities",
+            "description": "Basic integration of AI/ML services"
+          },
+          "milestone2": {
+            "label": "MLOps practices",
+            "description": "Implementing ML lifecycle management"
+          },
+          "milestone3": {
+            "label": "AI-native architecture",
+            "description": "Fully integrated AI/ML in cloud-native systems"
+          }
+        }
+      }
+    }
+  },
+  "categories": {
+    "foundations_culture": "Foundations & Culture",
+    "business_value_strategy": "Business Value and Cloud Native Strategy",
+    "application_architecture": "Application Architecture",
+    "app_migration_modernization": "App Migration & Modernization",
+    "container_infrastructure": "Container Infrastructure",
+    "cicd_practices": "CI/CD Practices",
+    "dora_metrics": "DORA Metrics",
+    "security_compliance": "Security & Compliance",
+    "infrastructure_platform": "Infrastructure & Platform",
+    "data_management": "Data Management",
+    "observability": "Observability",
+    "finops_cost_management": "FinOps & Cost Management",
+    "operations_resilience": "Operations & Resilience",
+    "multicloud_hybrid_governance": "Multi-cloud & Hybrid Governance",
+    "ai_ml_integration": "AI/ML Integration",
+    "overall": "Overall"
+  },
+  "benchmarkDescriptions": {
+    "foundations_culture": {
+      "description": "DevOps culture & micro-teams running >800 micro-services",
+      "keyInsight": "2024 State-of-DevOps: high-performers score 0.8 on culture index; median sits just under 0.6"
+    },
+    "business_value_strategy": {
+      "description": "Cloud value road-mapping for edge-AI services",
+      "keyInsight": "Hackett Group: only 42% have value-roadmap; top quartile show 25% faster release cadence"
+    },
+    "application_architecture": {
+      "description": "Large-scale mobile super-app on micro-services & gRPC",
+      "keyInsight": "~50% of orgs still monolithic; leaders hit 75–80% micro-/service-mesh adoption"
+    },
+    "app_migration_modernization": {
+      "description": "Lift-and-shift → Kubernetes & serverless across 700+ services",
+      "keyInsight": "< 45% of workloads modernised by 2024; cloud leaders cross 70%"
+    },
+    "container_infrastructure": {
+      "description": "Runs 10,000+ K8s nodes incl. stateful edge clusters",
+      "keyInsight": "60% production K8s today; top cohort fully containerised"
+    },
+    "cicd_practices": {
+      "description": "GitOps CD tool OSS-ed; internal unified pipeline",
+      "keyInsight": "57% automate > half of pipeline; elite automate ≈ 80%"
+    },
+    "dora_metrics": {
+      "description": "Publishes lead-time / MTTR in engineering blog ('Golden Path')",
+      "keyInsight": "Elite performers (26%) hit 85-plus composite, median is 'medium' (≈60)"
+    },
+    "security_compliance": {
+      "description": "Zero-Trust deployment with Zscaler across global workforce",
+      "keyInsight": "AI-driven/shift-left orgs slash risk; majority still reactive (≈50)"
+    },
+    "infrastructure_platform": {
+      "description": "Internal developer platform on GKE + Spanner",
+      "keyInsight": "IaC adoption ~55%; platform-engineering leaders report > 75% IaC coverage"
+    },
+    "data_management": {
+      "description": "Spanner + Data-mesh for payments",
+      "keyInsight": "Median data-classification maturity at ~0.54"
+    },
+    "observability": {
+      "description": "Centralised Grafana + OpenTelemetry",
+      "keyInsight": "76% have central observability; only 25% rate practices 'advanced' (> 0.75)"
+    },
+    "finops_cost_management": {
+      "description": "K8s cost-insights via open-source Kubecost fork",
+      "keyInsight": "58% automate anomaly detection; high-performers score ~0.8 in FinOps maturity index"
+    },
+    "operations_resilience": {
+      "description": "GameDay chaos drills; MTTR < 5 min avg",
+      "keyInsight": "Incident automation still sub-60%; leaders with chaos-engineering score ~0.78"
+    },
+    "multicloud_hybrid_governance": {
+      "description": "Managed hybrid governance for Toyota-Woven Planet",
+      "keyInsight": "Only 48% have unified policy controls; mature orgs hit mid-70s"
+    },
+    "ai_ml_integration": {
+      "description": "In-cluster inferencing for edge retail cameras",
+      "keyInsight": "55% pilot AI in ≤3 functions; 'AI high-performers' (12%) score > 0.75 on adoption + ROI"
+    }
+  },
+  "overview": {
+    "title": "Overview",
+    "score": "Overall Score",
+    "level": "Maturity Level",
+    "yourScore": "Your Score",
+    "industryMedian": "Industry Median",
+    "leaderScore": "Leader Score",
+    "aheadOf": "ahead of organizations"
+  },
+  "generating": "Generating...",
+  "pdfExportError": "An error occurred while exporting the PDF. Please try again."
+}

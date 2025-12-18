@@ -1,0 +1,67 @@
+{
+  "_comment": "このファイルはAWS ECSのタスク定義を記述しています。AWS_ACCOUNT_IDを実際のAWSアカウントIDに置き換えてください。",
+  "family": "ak-assessment-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::<AWS_ACCOUNT_ID>:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "_comment": "コンテナの定義 - アプリケーションの実行環境を設定します",
+      "name": "ak-assessment-container",
+      "image": "<AWS_ACCOUNT_ID>.dkr.ecr.ap-northeast-1.amazonaws.com/ak-prd-assessment-tools:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "_comment": "コンテナポート5001をホストポート5001にマッピングします",
+          "containerPort": 5001,
+          "hostPort": 5001,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "_comment": "NODE_ENV環境変数を設定します",
+          "name": "NODE_ENV",
+          "value": "production"
+        }
+      ],
+      "secrets": [
+        {
+          "_comment": "データベース接続情報をParameter Storeから取得します",
+          "name": "DATABASE_URL",
+          "valueFrom": "arn:aws:ssm:ap-northeast-1:<AWS_ACCOUNT_ID>:parameter/ak-assessment/database-url"
+        },
+        {
+          "_comment": "OpenAI APIキーをParameter Storeから取得します",
+          "name": "OPENAI_API_KEY",
+          "valueFrom": "arn:aws:ssm:ap-northeast-1:<AWS_ACCOUNT_ID>:parameter/ak-assessment/openai-api-key"
+        },
+        {
+          "_comment": "Anthropic APIキーをParameter Storeから取得します",
+          "name": "ANTHROPIC_API_KEY",
+          "valueFrom": "arn:aws:ssm:ap-northeast-1:<AWS_ACCOUNT_ID>:parameter/ak-assessment/anthropic-api-key"
+        }
+      ],
+      "logConfiguration": {
+        "_comment": "CloudWatchへのログ設定",
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/ak-assessment-task",
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "healthCheck": {
+        "_comment": "コンテナのヘルスチェック設定 - 30秒ごとにヘルスチェックエンドポイントにリクエストを送信します",
+        "command": ["CMD-SHELL", "wget --quiet --tries=1 --spider http://localhost:5001/api/health || exit 1"],
+        "interval": 30,
+        "timeout": 5,
+        "retries": 3,
+        "startPeriod": 30
+      }
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048",
+  "_comment": "この設定はFargate起動タイプで1024 CPU単位（1 vCPU）と2048MBのメモリを割り当てます"
+} 

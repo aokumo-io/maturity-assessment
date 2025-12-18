@@ -1,0 +1,13 @@
+{
+  "_comment": "This file defines an auto-scaling policy for the AWS ECS service",
+  "TargetValue": 70.0,
+  "_comment_TargetValue": "Scales out when CPU utilization exceeds 70%, and scales in when it falls below 70%",
+  "PredefinedMetricSpecification": {
+    "_comment": "Specifies the metric type to use",
+    "PredefinedMetricType": "ECSServiceAverageCPUUtilization"
+  },
+  "ScaleOutCooldown": 60,
+  "_comment_ScaleOutCooldown": "Waiting period (in seconds) after a scale-out action before another scale-out action can take place",
+  "ScaleInCooldown": 60,
+  "_comment_ScaleInCooldown": "Waiting period (in seconds) after a scale-in action before another scale-in action can take place"
+} 

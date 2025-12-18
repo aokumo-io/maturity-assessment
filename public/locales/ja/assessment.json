@@ -1,0 +1,172 @@
+{
+  "title": "クラウドネイティブ成熟度評価",
+  "assessment": "評価",
+  "subtitle": "あなたの環境や実践について以下の質問にお答えください",
+  "types": {
+    "quick": "クイック評価",
+    "standard": "標準評価",
+    "comprehensive": "詳細アセスメント",
+    "default": "アセスメントの種類"
+  },
+  "welcome": {
+    "whatYoullDiscover": "アセスメントで明らかになること",
+    "benefits": [
+      "現在のクラウドネイティブ成熟度レベルの把握",
+      "主要分野における強みと改善の余地の特定",
+      "組織に最適化されたカスタマイズ推奨の提供",
+      "業界標準との比較およびベンチマーク分析",
+      "パーソナライズされた実装ロードマップ"
+    ],
+    "timeTaken": {
+      "quick": "完了まで15〜20分。コアカテゴリー5つをカバー。",
+      "standard": "完了まで25〜30分。主要カテゴリー10つをカバー。",
+      "comprehensive": "完了まで35〜45分。全15カテゴリーを詳細にカバー。"
+    }
+  },
+  "steps": {
+    "welcome": "ようこそ",
+    "instructions": "手順",
+    "organization": "組織情報",
+    "assessment": "評価質問",
+    "processing": "結果処理中",
+    "results": "結果を表示"
+  },
+  "categories": {
+    "foundations_culture": "基盤と文化",
+    "application_architecture": "アプリケーションアーキテクチャ",
+    "container_infrastructure": "コンテナインフラストラクチャ",
+    "cicd_practices": "CI/CD プラクティス",
+    "observability": "可観測性",
+    "security_compliance": "セキュリティとコンプライアンス",
+    "data_management": "データ管理",
+    "dora_metrics": "DORA メトリクス",
+    "infrastructure_platform": "インフラストラクチャとプラットフォーム",
+    "business_value_strategy": "ビジネス価値とクラウドネイティブ戦略",
+    "operations_resilience": "運用とレジリエンス",
+    "finops_cost_management": "FinOpsとコスト管理",
+    "app_migration_modernization": "アプリケーション移行とモダナイゼーション",
+    "multicloud_hybrid_governance": "マルチクラウドとハイブリッドガバナンス",
+    "ai_ml_integration": "AI/MLとクラウドネイティブの統合"
+  },
+  "categoryDescriptions": {
+    "foundations_culture": "組織のチーム構造、エンジニアリング文化、クラウドネイティブへのリーダーシップアプローチを評価します。",
+    "application_architecture": "12ファクターアプリの原則、アーキテクチャパターン、データベース実践の遵守状況を評価します。",
+    "container_infrastructure": "コンテナ導入、レジストリ管理、コンテナオーケストレーション、プラットフォームの機能を評価します。",
+    "cicd_practices": "継続的インテグレーション、デリバリー、デプロイメント自動化、GitOpsの採用を評価します。",
+    "observability": "モニタリング、ロギング、トレーシング、SLO/SLIの実装能力を評価します。",
+    "security_compliance": "セキュリティ実践、コンプライアンス管理、ネットワークセキュリティアプローチを評価します。",
+    "data_management": "ストレージソリューション、データサービス、災害復旧アプローチを評価します。",
+    "dora_metrics": "デプロイ頻度、リードタイム、復旧時間、障害率などの主要パフォーマンス指標を評価します。",
+    "infrastructure_platform": "Infrastructure as Code、プラットフォームエンジニアリング実践、クラウド戦略を評価します。",
+    "business_value_strategy": "クラウドネイティブの取り組みとビジネス目標の整合性、ROI測定、戦略的計画を評価します。",
+    "operations_resilience": "事業継続計画、復旧戦略、災害対応、持続可能な運用を評価します。",
+    "finops_cost_management": "クラウドコスト最適化、財務ガバナンス、コスト意識のあるエンジニアリング実践を評価します。",
+    "app_migration_modernization": "レガシーアプリケーションのクラウドネイティブアーキテクチャへの移行と最新化戦略を評価します。",
+    "multicloud_hybrid_governance": "複数のクラウドプロバイダーとハイブリッドクラウド環境を管理するための戦略を評価します。",
+    "ai_ml_integration": "AI/MLサービスの採用、クラウドネイティブプラットフォームとの統合、MLOps実践を評価します。"
+  },
+  "responses": {
+    "dontKnow": "わかりません",
+    "knowMorePrompt": "このトピックについてもっと知りたいですか？",
+    "submitWarning": "先に進む前にすべての質問に回答してください",
+    "resourcesAvailable": "リソースあり",
+    "dontKnowExplanation": "この概念に馴染みがない、または情報がない場合はこれを選択してください。",
+    "viewResources": "リソースを見る"
+  },
+  "knowledgeResources": {
+    "title": "知識リソース",
+    "officialDocumentation": "公式ドキュメント",
+    "tutorialVideo": "チュートリアル動画",
+    "learnMoreTopic": "このトピックについて詳しく学ぶ",
+    "showMoreResources": "学習リソースをもっと見る",
+    "showLess": "表示を減らす",
+    "linkError": "このリソースを開けません",
+    "linkErrorHelp": "ポップアップブロッカーの設定を確認するか、リンクを手動で試してください"
+  },
+  "maturityLevels": {
+    "beginner": "初級",
+    "intermediate": "中級",
+    "advanced": "上級",
+    "expert": "エキスパート",
+    "knowledge_gap": "知識ギャップ"
+  },
+  "progress": {
+    "title": "進捗状況",
+    "description": "評価の完了状況を追跡",
+    "completed": "完了",
+    "questionCount": "{{answered}} / {{total}} 質問",
+    "questions": "質問",
+    "questionNumber": "質問 {{number}}",
+    "helpText": "次のセクションに進むにはすべての質問に答えてください",
+    "stepCount": "ステップ {{current}} / {{total}}",
+    "organizationSection": "組織情報",
+    "current": "全体進捗: {{percent}}%",
+    "currentCategory": "現在のカテゴリー:",
+    "categoryCount": "{{current}} / {{total}} カテゴリー"
+  },
+  "knowledge": {
+    "frequentDontKnow": "「わかりません」を頻繁に選択していることに気づきました",
+    "explanation": "これはクラウドネイティブの概念に馴染みがないか、この特定のセクションを完了するのに適切な人でない可能性があります。",
+    "suggestion": "どうしますか：",
+    "continue": "評価を続ける",
+    "viewResources": "教育リソースを見る"
+  },
+  "errors": {
+    "failedToSave": "回答の保存に失敗しました: {{message}}",
+    "noQuestions": {
+      "title": "質問が見つかりません",
+      "message": "このカテゴリーに質問がありません。別のカテゴリーを試すか、サポートにお問い合わせください。"
+    },
+    "incompleteResponses": "先に進む前にすべての質問に回答してください",
+    "incompleteData": "不完全な評価データ: {{message}}",
+    "validationFailed": "評価データを検証できませんでした",
+    "processingFailed": "評価の処理中に問題が発生しました。結果に進みます。"
+  },
+  "invalidCategory": {
+    "title": "無効な評価カテゴリー",
+    "subtitle": "要求された評価カテゴリーは存在しません。",
+    "message": "要求された評価カテゴリーは存在しません。戻って再試行してください。"
+  },
+  "navigation": {
+    "previous": "前へ",
+    "next": "次へ",
+    "completeAssessment": "送信",
+    "saving": "保存中...",
+    "navigating": "次の関連カテゴリーに移動しています...",
+    "viewAllRecommendations": "すべての推奨事項を見る"
+  },
+  "instructions": {
+    "allQuestionsRequired": "すべての質問に回答する必要があります。答えがわからない場合は「わかりません」オプションを選択してください。",
+    "pleaseAnswerAll": "次へボタンを有効にするには、すべての質問に回答してください。"
+  },
+  "executiveSummary": {
+    "showLess": "表示を減らす",
+    "viewAll": "すべて表示",
+    "copyToClipboard": "クリップボードにコピー"
+  },
+  "criticalIssues": {
+    "showLess": "表示を減らす",
+    "viewAll": "すべて表示"
+  },
+  "overview": {
+    "maturityPosition": "あなたの成熟度の位置",
+    "comparisonNote": "この比較は業界ベンチマークに基づいています。"
+  },
+  "viewAllIssues": "すべての課題を表示",
+  "viewDetailedComparison": "詳細な比較を見る",
+  "review": {
+    "title": "回答の確認",
+    "subtitle": "すべての評価回答とスコアを確認",
+    "loading": "評価回答を読み込み中...",
+    "error": "回答の読み込みエラー",
+    "errorTitle": "回答を読み込めません",
+    "errorMessage": "評価回答の読み込み中にエラーが発生しました。再試行してください。",
+    "assessmentType": "評価タイプ",
+    "answeredQuestions": "回答済み質問",
+    "totalQuestions": "総質問数",
+    "completionRate": "完了率",
+    "yourAnswer": "あなたの回答",
+    "score": "スコア",
+    "notAnswered": "未回答"
+  }
+}

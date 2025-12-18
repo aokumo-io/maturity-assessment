@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://assessment.aokumo.io/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/welcome</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/welcome?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/welcome?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/welcome" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/instructions</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/instructions?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/instructions?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/instructions" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/organization-info</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/organization-info?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/organization-info?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/organization-info" />
+  </url>
+
+  <!-- Assessment Category Pages -->
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/foundations_culture</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/foundations_culture?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/foundations_culture?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/foundations_culture" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/business_value_strategy</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/business_value_strategy?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/business_value_strategy?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/business_value_strategy" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/application_architecture</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/application_architecture?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/application_architecture?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/application_architecture" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/app_migration_modernization</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/app_migration_modernization?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/app_migration_modernization?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/app_migration_modernization" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/container_infrastructure</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/container_infrastructure?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/container_infrastructure?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/container_infrastructure" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/cicd_practices</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/cicd_practices?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/cicd_practices?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/cicd_practices" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/dora_metrics</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/dora_metrics?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/dora_metrics?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/dora_metrics" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/security_compliance</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/security_compliance?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/security_compliance?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/security_compliance" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/infrastructure_platform</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/infrastructure_platform?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/infrastructure_platform?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/infrastructure_platform" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/data_management</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/data_management?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/data_management?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/data_management" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/observability</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/observability?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/observability?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/observability" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/finops_cost_management</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/finops_cost_management?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/finops_cost_management?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/finops_cost_management" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/operations_resilience</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/operations_resilience?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/operations_resilience?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/operations_resilience" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/multicloud_hybrid_governance</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/multicloud_hybrid_governance?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/multicloud_hybrid_governance?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/multicloud_hybrid_governance" />
+  </url>
+  
+  <url>
+    <loc>https://assessment.aokumo.io/assessment/ai_ml_integration</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment/ai_ml_integration?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment/ai_ml_integration?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment/ai_ml_integration" />
+  </url>
+
+  <!-- Assessment Mindmap - standalone -->
+  <url>
+    <loc>https://assessment.aokumo.io/assessment-mindmap</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/assessment-mindmap?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/assessment-mindmap?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/assessment-mindmap" />
+  </url>
+
+  <!-- Review Responses - standalone -->
+  <url>
+    <loc>https://assessment.aokumo.io/review-responses</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://assessment.aokumo.io/review-responses?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://assessment.aokumo.io/review-responses?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://assessment.aokumo.io/review-responses" />
+  </url>
+
+  <!-- Note: Dynamic routes with UUIDs are not included in sitemap -->
+  <!-- These include:
+       - /results/:id (Results Dashboard)
+       - /results/:id/maturity-analysis (Maturity Analysis)
+       - /results/:id/trail-map (Trail Map) 
+       - /results/:id/implementation-plan (Implementation Plan)
+       - /results/:id/assessment-mindmap (Assessment Mindmap with results)
+       - /results/:id/review-responses (Review Responses with results)
+       - /processing/:id (Processing page)
+       
+       These are session-specific pages that are generated dynamically
+       and should not be indexed by search engines.
+  -->
+  
+</urlset> 

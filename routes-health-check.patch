@@ -1,0 +1,16 @@
+/**
+ * API Routing Configuration
+ * Defines the server endpoints and handlers.
+ * Includes a health check endpoint required for operation in ECS.
+ */
+
+// Health check endpoint for AWS ECS
+app.get('/api/health', (_req, res) => {
+  res.status(200).json({
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+    environment: app.get('env') || 'production'
+  });
+});
+
+// Existing route definitions continue below... 

@@ -1,0 +1,1162 @@
+{
+  "foundations_culture": {
+    "title": "基盤と文化",
+    "description": "組織のチーム構成、エンジニアリング文化、クラウドネイティブに対するリーダーシップアプローチを評価します。",
+    "subcategories": {
+      "team_structure": {
+        "title": "チーム構成",
+        "description": "クラウドネイティブ開発と運用のためのチーム組織",
+        "details": {
+          "cross_functional": {
+            "title": "クロスファンクショナルチーム",
+            "description": "完全な機能に取り組む多様なスキルを持つチーム"
+          },
+          "devops_culture": {
+            "title": "DevOps文化",
+            "description": "開発と運用の間のサイロを打破する"
+          },
+          "platform_teams": {
+            "title": "プラットフォームチーム",
+            "description": "共有プラットフォームを構築・維持するチーム"
+          },
+          "sre_model": {
+            "title": "SREモデル",
+            "description": "サイト信頼性エンジニアリングの実践"
+          }
+        }
+      },
+      "engineering_culture": {
+        "title": "エンジニアリング文化",
+        "description": "クラウドネイティブエンジニアリングの文化的実践とマインドセット",
+        "details": {
+          "continuous_learning": {
+            "title": "継続的学習",
+            "description": "実験と失敗からの学習の文化"
+          },
+          "automation_first": {
+            "title": "自動化ファースト",
+            "description": "手動プロセスよりも自動化を優先する"
+          },
+          "collaboration": {
+            "title": "コラボレーション",
+            "description": "チーム間のコラボレーションと知識共有"
+          },
+          "innovation": {
+            "title": "イノベーション",
+            "description": "イノベーションと創造的問題解決の奨励"
+          }
+        }
+      },
+      "leadership": {
+        "title": "リーダーシップ",
+        "description": "クラウドネイティブ変革に対するリーダーシップのサポートとコミット",
+        "details": {
+          "executive_support": {
+            "title": "経営陣のサポート",
+            "description": "クラウドネイティブ変革に対するリーダーシップのコミット"
+          },
+          "change_management": {
+            "title": "変更管理",
+            "description": "組織変更の効果的な管理"
+          },
+          "investment_strategy": {
+            "title": "投資戦略",
+            "description": "人材と技術への戦略的投資"
+          },
+          "vision_alignment": {
+            "title": "ビジョンの整合",
+            "description": "チームをクラウドネイティブビジョンと整合させる"
+          }
+        }
+      }
+    }
+  },
+  "business_value_strategy": {
+    "title": "ビジネス価値とクラウドネイティブ戦略",
+    "description": "クラウドネイティブの取り組みとビジネス目標の整合性、ROI測定、戦略的計画を評価します。",
+    "subcategories": {
+      "business_alignment": {
+        "title": "ビジネス整合",
+        "description": "クラウドネイティブの取り組みをビジネス目標と整合させる",
+        "details": {
+          "business_goals": {
+            "title": "ビジネス目標",
+            "description": "クラウドネイティブの取り組みをビジネス目標と整合させる"
+          },
+          "stakeholder_buy_in": {
+            "title": "ステークホルダーの賛同",
+            "description": "主要なビジネスステークホルダーからのサポートを得る"
+          },
+          "value_streams": {
+            "title": "バリューストリーム",
+            "description": "ビジネスバリューストリームのマッピングと最適化"
+          },
+          "success_metrics": {
+            "title": "成功指標",
+            "description": "測定可能な成功基準の定義"
+          }
+        }
+      },
+      "roi_measurement": {
+        "title": "ROI測定",
+        "description": "クラウドネイティブの取り組みに対する投資収益率の測定",
+        "details": {
+          "cost_savings": {
+            "title": "コスト削減",
+            "description": "インフラストラクチャと運用コストの削減を測定"
+          },
+          "productivity_gains": {
+            "title": "生産性向上",
+            "description": "開発者と運用の生産性向上を定量化"
+          },
+          "time_to_market": {
+            "title": "市場投入時間",
+            "description": "より速い配信とデプロイサイクルの測定"
+          },
+          "business_impact": {
+            "title": "ビジネスインパクト",
+            "description": "ビジネス成果と収益への影響を追跡"
+          }
+        }
+      },
+      "strategic_planning": {
+        "title": "戦略計画",
+        "description": "クラウドネイティブ採用の長期計画",
+        "details": {
+          "roadmap_planning": {
+            "title": "ロードマップ計画",
+            "description": "戦略的クラウドネイティブ採用ロードマップの作成"
+          },
+          "risk_assessment": {
+            "title": "リスク評価",
+            "description": "変革リスクの特定と軽減"
+          },
+          "resource_allocation": {
+            "title": "リソース配分",
+            "description": "リソースニーズと予算配分の計画"
+          },
+          "milestone_tracking": {
+            "title": "マイルストーン追跡",
+            "description": "主要な変革マイルストーンの設定と追跡"
+          }
+        }
+      }
+    }
+  },
+  "application_architecture": {
+    "title": "アプリケーションアーキテクチャ",
+    "description": "Twelve-Factor Appの原則、アーキテクチャパターン、データベース実践への適合度を評価します。",
+    "subcategories": {
+      "twelve_factor": {
+        "title": "Twelve-Factor App",
+        "description": "クラウドネイティブアプリケーション構築のためのtwelve-factor方法論への適合",
+        "details": {
+          "codebase": {
+            "title": "1. コードベース",
+            "description": "リビジョン管理で追跡される1つのコードベース、多数のデプロイ"
+          },
+          "dependencies": {
+            "title": "2. 依存関係",
+            "description": "依存関係を明示的に宣言し分離する"
+          },
+          "config": {
+            "title": "3. 設定",
+            "description": "設定を環境に保存する"
+          },
+          "backing_services": {
+            "title": "4. バッキングサービス",
+            "description": "バッキングサービスを接続されたリソースとして扱う"
+          },
+          "build_release_run": {
+            "title": "5. ビルド、リリース、実行",
+            "description": "ビルドと実行ステージを厳密に分離する"
+          },
+          "processes": {
+            "title": "6. プロセス",
+            "description": "アプリを1つ以上のステートレスプロセスとして実行する"
+          },
+          "port_binding": {
+            "title": "7. ポートバインディング",
+            "description": "ポートバインディングを介してサービスをエクスポートする"
+          },
+          "concurrency": {
+            "title": "8. 並行性",
+            "description": "プロセスモデルを介してスケールアウトする"
+          },
+          "disposability": {
+            "title": "9. 廃棄可能性",
+            "description": "高速起動と優雅なシャットダウンで堅牢性を最大化する"
+          },
+          "dev_prod_parity": {
+            "title": "10. 開発/本番同等性",
+            "description": "開発、ステージング、本番をできるだけ類似に保つ"
+          },
+          "logs": {
+            "title": "11. ログ",
+            "description": "ログをイベントストリームとして扱う"
+          },
+          "admin_processes": {
+            "title": "12. 管理プロセス",
+            "description": "管理/運用タスクを一回限りのプロセスとして実行する"
+          }
+        }
+      },
+      "microservices": {
+        "title": "マイクロサービスパターン",
+        "description": "マイクロサービスアーキテクチャパターンの実装",
+        "details": {
+          "service_decomposition": {
+            "title": "サービス分解",
+            "description": "モノリスをより小さく焦点を絞ったサービスに分解する"
+          },
+          "api_gateway": {
+            "title": "APIゲートウェイ",
+            "description": "クライアントリクエストの単一エントリポイント"
+          },
+          "service_discovery": {
+            "title": "サービス発見",
+            "description": "サービスの自動検出と登録"
+          },
+          "circuit_breaker": {
+            "title": "サーキットブレーカー",
+            "description": "分散システムでのカスケード障害を防ぐ"
+          },
+          "event_driven": {
+            "title": "イベント駆動アーキテクチャ",
+            "description": "イベントを通じた非同期通信"
+          }
+        }
+      },
+      "database_practices": {
+        "title": "データベース実践",
+        "description": "クラウドネイティブアプリケーションのための現代的なデータベースパターン",
+        "details": {
+          "database_per_service": {
+            "title": "サービス毎のデータベース",
+            "description": "各マイクロサービスが独自のデータを所有する"
+          },
+          "cqrs": {
+            "title": "CQRS",
+            "description": "コマンドクエリ責任分離パターン"
+          },
+          "event_sourcing": {
+            "title": "イベントソーシング",
+            "description": "状態変更をイベントとして保存する"
+          },
+          "polyglot_persistence": {
+            "title": "ポリグロット永続化",
+            "description": "異なるニーズに異なるデータベースを使用する"
+          }
+        }
+      }
+    }
+  },
+  "app_migration_modernization": {
+    "title": "アプリの移行とモダナイゼーション",
+    "description": "レガシーアプリケーションをクラウドネイティブアーキテクチャに移行・最新化する戦略を評価します。",
+    "subcategories": {
+      "migration_strategy": {
+        "title": "移行戦略",
+        "description": "アプリケーションをクラウドネイティブプラットフォームに移行するアプローチ",
+        "details": {
+          "strangler_fig": {
+            "title": "ストラングラーフィグパターン",
+            "description": "レガシーシステムを段階的に置き換える"
+          },
+          "lift_and_shift": {
+            "title": "リフト&シフト",
+            "description": "最小限の変更でアプリケーションをクラウドに移動"
+          },
+          "refactor": {
+            "title": "リファクタリング",
+            "description": "クラウドネイティブパターンのためのコード再構築"
+          },
+          "rebuild": {
+            "title": "リビルド",
+            "description": "クラウドネイティブ技術を使用した完全な書き直し"
+          }
+        }
+      },
+      "legacy_modernization": {
+        "title": "レガシーモダナイゼーション",
+        "description": "クラウドネイティブ環境のための既存アプリケーションの最新化",
+        "details": {
+          "monolith_decomposition": {
+            "title": "モノリス分解",
+            "description": "モノリシックアプリケーションの分解"
+          },
+          "api_first": {
+            "title": "APIファースト設計",
+            "description": "実装前のAPI設計"
+          },
+          "data_migration": {
+            "title": "データ移行",
+            "description": "レガシーデータの移行戦略"
+          },
+          "gradual_rollout": {
+            "title": "段階的ロールアウト",
+            "description": "段階的移行アプローチ"
+          }
+        }
+      },
+      "refactoring_patterns": {
+        "title": "リファクタリングパターン",
+        "description": "アプリケーションをクラウドネイティブアーキテクチャにリファクタリングするパターン",
+        "details": {
+          "extract_service": {
+            "title": "サービス抽出",
+            "description": "機能を別のサービスに抽出する"
+          },
+          "database_refactoring": {
+            "title": "データベースリファクタリング",
+            "description": "データアクセスパターンの最新化"
+          },
+          "ui_modernization": {
+            "title": "UI最新化",
+            "description": "クラウドネイティブ用のユーザーインターフェース更新"
+          },
+          "integration_patterns": {
+            "title": "統合パターン",
+            "description": "現代的な統合アプローチ"
+          }
+        }
+      }
+    }
+  },
+  "container_infrastructure": {
+    "title": "コンテナインフラストラクチャ",
+    "description": "コンテナの採用、レジストリ管理、コンテナオーケストレーション、プラットフォーム機能を評価します。",
+    "subcategories": {
+      "container_adoption": {
+        "title": "コンテナ採用",
+        "description": "アプリケーションとサービス全体でのコンテナ化レベル",
+        "details": {
+          "docker_basics": {
+            "title": "Docker基礎",
+            "description": "Dockerでのアプリケーションコンテナ化"
+          },
+          "image_optimization": {
+            "title": "イメージ最適化",
+            "description": "効率的で安全なコンテナイメージの構築"
+          },
+          "multi_stage_builds": {
+            "title": "マルチステージビルド",
+            "description": "ビルドプロセスとイメージサイズの最適化"
+          },
+          "security_scanning": {
+            "title": "セキュリティスキャン",
+            "description": "脆弱性のためのイメージスキャン"
+          }
+        }
+      },
+      "registry_management": {
+        "title": "レジストリ管理",
+        "description": "コンテナレジストリとアーティファクトの管理",
+        "details": {
+          "image_registry": {
+            "title": "イメージレジストリ",
+            "description": "コンテナイメージの集中ストレージ"
+          },
+          "image_tagging": {
+            "title": "イメージタグ付け",
+            "description": "コンテナイメージのバージョン管理と整理"
+          },
+          "registry_security": {
+            "title": "レジストリセキュリティ",
+            "description": "コンテナレジストリへのアクセス保護"
+          },
+          "artifact_management": {
+            "title": "アーティファクト管理",
+            "description": "ビルドアーティファクトと依存関係の管理"
+          }
+        }
+      },
+      "orchestration": {
+        "title": "オーケストレーション",
+        "description": "コンテナオーケストレーションと管理機能",
+        "details": {
+          "kubernetes_basics": {
+            "title": "Kubernetes基礎",
+            "description": "コンテナオーケストレーションの基礎"
+          },
+          "pod_management": {
+            "title": "Pod管理",
+            "description": "アプリケーションPodとコンテナの管理"
+          },
+          "service_mesh": {
+            "title": "サービスメッシュ",
+            "description": "サービス間通信の管理"
+          },
+          "auto_scaling": {
+            "title": "自動スケーリング",
+            "description": "需要に基づく自動スケーリング"
+          }
+        }
+      }
+    }
+  },
+  "cicd_practices": {
+    "title": "CI/CD プラクティス",
+    "description": "継続的インテグレーション、デリバリー、デプロイメント自動化、GitOpsの導入度を評価します。",
+    "subcategories": {
+      "continuous_integration": {
+        "title": "継続的インテグレーション",
+        "description": "自動化されたビルドとテストの実践",
+        "details": {
+          "automated_builds": {
+            "title": "自動ビルド",
+            "description": "自動コードコンパイルとパッケージング"
+          },
+          "automated_testing": {
+            "title": "自動テスト",
+            "description": "ユニット、統合、エンドツーエンドテスト"
+          },
+          "code_quality": {
+            "title": "コード品質",
+            "description": "静的解析とコード品質ゲート"
+          },
+          "fast_feedback": {
+            "title": "高速フィードバック",
+            "description": "開発者への迅速なフィードバックループ"
+          }
+        }
+      },
+      "continuous_deployment": {
+        "title": "継続的デプロイメント",
+        "description": "自動化されたデプロイメントとリリースの実践",
+        "details": {
+          "deployment_automation": {
+            "title": "デプロイメント自動化",
+            "description": "すべての環境への自動デプロイメント"
+          },
+          "blue_green": {
+            "title": "ブルーグリーンデプロイメント",
+            "description": "ゼロダウンタイムデプロイメント戦略"
+          },
+          "canary_releases": {
+            "title": "カナリアリリース",
+            "description": "ユーザーのサブセットへの段階的ロールアウト"
+          },
+          "rollback_strategy": {
+            "title": "ロールバック戦略",
+            "description": "障害時の迅速なロールバックメカニズム"
+          }
+        }
+      },
+      "gitops": {
+        "title": "GitOps",
+        "description": "Gitベースの運用とデプロイメントの実践",
+        "details": {
+          "git_as_source": {
+            "title": "Gitを真実の源として",
+            "description": "すべての設定をGitに保存"
+          },
+          "declarative_config": {
+            "title": "宣言的設定",
+            "description": "インフラストラクチャとアプリをコードとして"
+          },
+          "automated_sync": {
+            "title": "自動同期",
+            "description": "Git状態との自動同期"
+          },
+          "pull_based": {
+            "title": "プルベースデプロイメント",
+            "description": "エージェントがGitから変更をプル"
+          }
+        }
+      }
+    }
+  },
+  "dora_metrics": {
+    "title": "DORA メトリクス",
+    "description": "デプロイ頻度、リードタイム、復旧時間、失敗率などの主要なパフォーマンス指標を評価します。",
+    "subcategories": {
+      "deployment_frequency": {
+        "title": "デプロイ頻度",
+        "description": "本番環境へのデプロイがどの程度の頻度で発生するか",
+        "details": {
+          "elite_daily": {
+            "title": "エリート：1日複数回",
+            "description": "エリートパフォーマーは1日に複数回デプロイ"
+          },
+          "high_weekly": {
+            "title": "高：週次から月次",
+            "description": "高パフォーマーは週1回から月1回デプロイ"
+          },
+          "medium_monthly": {
+            "title": "中：月次から6ヶ月",
+            "description": "中パフォーマーは月1回から6ヶ月に1回デプロイ"
+          },
+          "low_yearly": {
+            "title": "低：6ヶ月から年次",
+            "description": "低パフォーマーは6ヶ月に1回から年1回デプロイ"
+          }
+        }
+      },
+      "lead_time": {
+        "title": "変更のリードタイム",
+        "description": "コードコミットから本番デプロイまでの時間",
+        "details": {
+          "elite_hour": {
+            "title": "エリート：1時間未満",
+            "description": "エリートパフォーマー：1時間未満"
+          },
+          "high_day": {
+            "title": "高：1日未満",
+            "description": "高パフォーマー：1日未満"
+          },
+          "medium_week": {
+            "title": "中：1日から1週間",
+            "description": "中パフォーマー：1日から1週間"
+          },
+          "low_month": {
+            "title": "低：1週間から1ヶ月",
+            "description": "低パフォーマー：1週間から1ヶ月"
+          }
+        }
+      },
+      "mttr": {
+        "title": "平均復旧時間",
+        "description": "本番障害からの復旧時間",
+        "details": {
+          "elite_hour_mttr": {
+            "title": "エリート：1時間未満",
+            "description": "エリートパフォーマーは1時間未満で復旧"
+          },
+          "high_day_mttr": {
+            "title": "高：1日未満",
+            "description": "高パフォーマーは1日未満で復旧"
+          },
+          "medium_week_mttr": {
+            "title": "中：1週間未満",
+            "description": "中パフォーマーは1週間未満で復旧"
+          },
+          "low_month_mttr": {
+            "title": "低：1週間超",
+            "description": "低パフォーマーは復旧に1週間以上かかる"
+          }
+        }
+      },
+      "change_failure_rate": {
+        "title": "変更失敗率",
+        "description": "本番障害を引き起こすデプロイメントの割合",
+        "details": {
+          "elite_0_15": {
+            "title": "エリート：0-15%",
+            "description": "エリートパフォーマーは0-15%の変更失敗率"
+          },
+          "high_16_30": {
+            "title": "高：16-30%",
+            "description": "高パフォーマーは16-30%の変更失敗率"
+          },
+          "medium_31_45": {
+            "title": "中：31-45%",
+            "description": "中パフォーマーは31-45%の変更失敗率"
+          },
+          "low_46_60": {
+            "title": "低：46-60%",
+            "description": "低パフォーマーは46-60%の変更失敗率"
+          }
+        }
+      }
+    }
+  },
+  "security_compliance": {
+    "title": "セキュリティとコンプライアンス",
+    "description": "セキュリティプラクティス、コンプライアンス管理、ネットワークセキュリティアプローチを評価します。",
+    "subcategories": {
+      "security_practices": {
+        "title": "セキュリティプラクティス",
+        "description": "セキュリティベストプラクティスの実装",
+        "details": {
+          "shift_left": {
+            "title": "シフトレフトセキュリティ",
+            "description": "開発の早期段階でのセキュリティ統合"
+          },
+          "zero_trust": {
+            "title": "ゼロトラストアーキテクチャ",
+            "description": "決して信頼せず、常に検証するアプローチ"
+          },
+          "secrets_management": {
+            "title": "シークレット管理",
+            "description": "認証情報とキーの安全な取り扱い"
+          },
+          "vulnerability_scanning": {
+            "title": "脆弱性スキャン",
+            "description": "自動化されたセキュリティ脆弱性検出"
+          }
+        }
+      },
+      "compliance_management": {
+        "title": "コンプライアンス管理",
+        "description": "規制とコンプライアンス要件の管理",
+        "details": {
+          "policy_as_code": {
+            "title": "ポリシーアズコード",
+            "description": "コードとして定義されたコンプライアンスポリシー"
+          },
+          "audit_trails": {
+            "title": "監査証跡",
+            "description": "コンプライアンスのための包括的ログ"
+          },
+          "regulatory_frameworks": {
+            "title": "規制フレームワーク",
+            "description": "SOC2、GDPR、HIPAAコンプライアンス"
+          },
+          "continuous_compliance": {
+            "title": "継続的コンプライアンス",
+            "description": "自動化されたコンプライアンス監視"
+          }
+        }
+      },
+      "network_security": {
+        "title": "ネットワークセキュリティ",
+        "description": "ネットワークレベルのセキュリティ制御と実践",
+        "details": {
+          "network_policies": {
+            "title": "ネットワークポリシー",
+            "description": "Kubernetesネットワークセキュリティポリシー"
+          },
+          "service_mesh_security": {
+            "title": "サービスメッシュセキュリティ",
+            "description": "mTLSとサービス間セキュリティ"
+          },
+          "ingress_security": {
+            "title": "イングレスセキュリティ",
+            "description": "外部トラフィックエントリポイントの保護"
+          },
+          "network_segmentation": {
+            "title": "ネットワークセグメンテーション",
+            "description": "セキュリティゾーンによるネットワークトラフィックの分離"
+          }
+        }
+      }
+    }
+  },
+  "infrastructure_platform": {
+    "title": "インフラストラクチャとプラットフォーム",
+    "description": "コードとしてのインフラストラクチャ、プラットフォームエンジニアリングプラクティス、クラウド戦略を評価します。",
+    "subcategories": {
+      "infrastructure_as_code": {
+        "title": "コードとしてのインフラストラクチャ",
+        "description": "コードと自動化によるインフラストラクチャ管理",
+        "details": {
+          "terraform": {
+            "title": "Terraform",
+            "description": "Terraformによるインフラストラクチャプロビジョニング"
+          },
+          "cloudformation": {
+            "title": "CloudFormation",
+            "description": "AWSコードとしてのインフラストラクチャ"
+          },
+          "pulumi": {
+            "title": "Pulumi",
+            "description": "プログラミング言語による現代的なコードとしてのインフラストラクチャ"
+          },
+          "version_control": {
+            "title": "バージョン管理",
+            "description": "バージョン管理でのインフラストラクチャコード"
+          }
+        }
+      },
+      "platform_engineering": {
+        "title": "プラットフォームエンジニアリング",
+        "description": "内部開発者プラットフォームとツールの構築",
+        "details": {
+          "developer_experience": {
+            "title": "開発者体験",
+            "description": "開発者の生産性と体験の向上"
+          },
+          "self_service": {
+            "title": "セルフサービスプラットフォーム",
+            "description": "チームが独立してリソースをプロビジョニングできるようにする"
+          },
+          "golden_paths": {
+            "title": "ゴールデンパス",
+            "description": "標準化された、よくサポートされた開発パス"
+          },
+          "platform_apis": {
+            "title": "プラットフォームAPI",
+            "description": "プラットフォーム機能とサービスのAPI"
+          }
+        }
+      },
+      "cloud_strategy": {
+        "title": "クラウド戦略",
+        "description": "クラウド採用と管理への戦略的アプローチ",
+        "details": {
+          "multi_cloud": {
+            "title": "マルチクラウド戦略",
+            "description": "複数のクラウドプロバイダーの戦略的使用"
+          },
+          "hybrid_cloud": {
+            "title": "ハイブリッドクラウド",
+            "description": "オンプレミスとクラウドリソースの組み合わせ"
+          },
+          "cloud_native_services": {
+            "title": "クラウドネイティブサービス",
+            "description": "管理されたクラウドサービスの活用"
+          },
+          "vendor_lock_in": {
+            "title": "ベンダーロックイン軽減",
+            "description": "ベンダー依存を避ける戦略"
+          }
+        }
+      }
+    }
+  },
+  "data_management": {
+    "title": "データ管理",
+    "description": "ストレージソリューション、データサービス、災害復旧アプローチを評価します。",
+    "subcategories": {
+      "storage_solutions": {
+        "title": "ストレージソリューション",
+        "description": "データストレージ戦略と技術",
+        "details": {
+          "persistent_volumes": {
+            "title": "永続ボリューム",
+            "description": "Kubernetes永続ストレージ管理"
+          },
+          "object_storage": {
+            "title": "オブジェクトストレージ",
+            "description": "S3互換オブジェクトストレージソリューション"
+          },
+          "database_services": {
+            "title": "データベースサービス",
+            "description": "管理されたデータベースサービスとオペレーター"
+          },
+          "backup_strategies": {
+            "title": "バックアップ戦略",
+            "description": "データバックアップと復旧計画"
+          }
+        }
+      },
+      "data_services": {
+        "title": "データサービス",
+        "description": "データ処理と分析サービス",
+        "details": {
+          "data_pipelines": {
+            "title": "データパイプライン",
+            "description": "ETL/ELTデータ処理パイプライン"
+          },
+          "streaming_data": {
+            "title": "ストリーミングデータ",
+            "description": "Kafka、Pulsarによるリアルタイムデータ処理"
+          },
+          "data_lakes": {
+            "title": "データレイク",
+            "description": "大規模データストレージと分析"
+          },
+          "data_governance": {
+            "title": "データガバナンス",
+            "description": "データ品質、系譜、コンプライアンス"
+          }
+        }
+      },
+      "disaster_recovery": {
+        "title": "災害復旧",
+        "description": "データ保護と復旧戦略",
+        "details": {
+          "backup_automation": {
+            "title": "バックアップ自動化",
+            "description": "自動化されたバックアッププロセスとスケジューリング"
+          },
+          "cross_region": {
+            "title": "クロスリージョンレプリケーション",
+            "description": "地理的リージョン間でのデータレプリケーション"
+          },
+          "rpo_rto": {
+            "title": "RPO/RTO計画",
+            "description": "復旧ポイントと時間目標の計画"
+          },
+          "disaster_testing": {
+            "title": "災害テスト",
+            "description": "災害復旧手順の定期的テスト"
+          }
+        }
+      }
+    }
+  },
+  "observability": {
+    "title": "オブザーバビリティ",
+    "description": "モニタリング、ロギング、トレーシング、SLO/SLI実装機能を評価します。",
+    "subcategories": {
+      "monitoring": {
+        "title": "監視",
+        "description": "システムとアプリケーションのモニタリング機能",
+        "details": {
+          "metrics_collection": {
+            "title": "メトリクス収集",
+            "description": "システムとアプリケーションメトリクスの収集"
+          },
+          "alerting": {
+            "title": "アラート",
+            "description": "インテリジェントなアラートと通知の設定"
+          },
+          "dashboards": {
+            "title": "ダッシュボード",
+            "description": "効果的なモニタリングダッシュボードの作成"
+          },
+          "prometheus": {
+            "title": "Prometheus",
+            "description": "時系列モニタリングとアラート"
+          }
+        }
+      },
+      "logging": {
+        "title": "ログ管理",
+        "description": "ログ収集、集約、分析",
+        "details": {
+          "centralized_logging": {
+            "title": "ログ集中",
+            "description": "すべてのサービスからのログ集約"
+          },
+          "log_aggregation": {
+            "title": "ログ集約",
+            "description": "ログ処理のためのELK/EFKスタック"
+          },
+          "structured_logging": {
+            "title": "構造化ログ",
+            "description": "JSONと構造化ログフォーマット"
+          },
+          "log_retention": {
+            "title": "ログ保持",
+            "description": "ログストレージとライフサイクルポリシー"
+          }
+        }
+      },
+      "tracing": {
+        "title": "分散トレーシング",
+        "description": "分散システム全体でのリクエストトレーシング",
+        "details": {
+          "distributed_tracing": {
+            "title": "分散トレーシング",
+            "description": "マイクロサービス全体でのリクエストトレーシング"
+          },
+          "jaeger": {
+            "title": "Jaeger",
+            "description": "オープンソース分散トレーシングプラットフォーム"
+          },
+          "opentelemetry": {
+            "title": "OpenTelemetry",
+            "description": "オブザーバビリティフレームワークと標準"
+          },
+          "trace_analysis": {
+            "title": "トレース分析",
+            "description": "パフォーマンスボトルネックの分析"
+          }
+        }
+      },
+      "slo_sli": {
+        "title": "SLO/SLI",
+        "description": "サービスレベル目標と指標",
+        "details": {
+          "service_level_objectives": {
+            "title": "サービスレベル目標",
+            "description": "信頼性ターゲットの定義"
+          },
+          "service_level_indicators": {
+            "title": "サービスレベル指標",
+            "description": "SLOを測定するメトリクス"
+          },
+          "error_budgets": {
+            "title": "エラーバジェット",
+            "description": "信頼性と機能速度のバランス"
+          },
+          "sla_management": {
+            "title": "SLA管理",
+            "description": "サービスレベル合意の管理"
+          }
+        }
+      }
+    }
+  },
+  "finops_cost_management": {
+    "title": "FinOpsとコスト管理",
+    "description": "クラウドコスト最適化、財務ガバナンス、コスト意識のあるエンジニアリングプラクティスを評価します。",
+    "subcategories": {
+      "cost_optimization": {
+        "title": "コスト最適化",
+        "description": "クラウドコスト最適化の戦略",
+        "details": {
+          "resource_rightsizing": {
+            "title": "リソース適正化",
+            "description": "リソース配分とサイジングの最適化"
+          },
+          "spot_instances": {
+            "title": "スポットインスタンス",
+            "description": "コスト削減のためのスポット/プリエンプティブルインスタンスの使用"
+          },
+          "reserved_capacity": {
+            "title": "予約容量",
+            "description": "コスト削減のための長期コミット"
+          },
+          "auto_scaling": {
+            "title": "自動スケーリング",
+            "description": "需要に基づくリソースのスケーリング"
+          }
+        }
+      },
+      "financial_governance": {
+        "title": "財務ガバナンス",
+        "description": "クラウド支出のガバナンスと説明責任",
+        "details": {
+          "cost_allocation": {
+            "title": "コスト配分",
+            "description": "チームとプロジェクトへのコスト帰属"
+          },
+          "budgets_alerts": {
+            "title": "予算とアラート",
+            "description": "支出制限と通知の設定"
+          },
+          "chargeback": {
+            "title": "チャージバックモデル",
+            "description": "内部請求とコスト説明責任"
+          },
+          "cost_reporting": {
+            "title": "コストレポート",
+            "description": "定期的なコスト分析とレポート"
+          }
+        }
+      },
+      "cost_aware_engineering": {
+        "title": "コスト意識エンジニアリング",
+        "description": "エンジニアリングプラクティスへのコスト意識の組み込み",
+        "details": {
+          "cost_metrics": {
+            "title": "コストメトリクス",
+            "description": "エンジニアリングメトリクスにコストを含める"
+          },
+          "efficient_architectures": {
+            "title": "効率的アーキテクチャ",
+            "description": "コスト効率のための設計"
+          },
+          "cost_monitoring": {
+            "title": "コストモニタリング",
+            "description": "リアルタイムコスト追跡とアラート"
+          },
+          "optimization_culture": {
+            "title": "最適化文化",
+            "description": "コスト意識のあるエンジニアリング文化の構築"
+          }
+        }
+      }
+    }
+  },
+  "operations_resilience": {
+    "title": "運用とレジリエンス",
+    "description": "事業継続計画、復旧戦略、災害対応、持続可能な運用を評価します。",
+    "subcategories": {
+      "business_continuity": {
+        "title": "事業継続",
+        "description": "事業継続と災害シナリオの計画",
+        "details": {
+          "continuity_planning": {
+            "title": "継続計画",
+            "description": "事業継続シナリオの計画"
+          },
+          "risk_assessment": {
+            "title": "リスク評価",
+            "description": "運用リスクの特定と評価"
+          },
+          "incident_response": {
+            "title": "インシデント対応",
+            "description": "構造化されたインシデント対応手順"
+          },
+          "communication_plans": {
+            "title": "コミュニケーション計画",
+            "description": "危機コミュニケーション戦略"
+          }
+        }
+      },
+      "recovery_strategies": {
+        "title": "復旧戦略",
+        "description": "障害と災害からの復旧戦略",
+        "details": {
+          "backup_recovery": {
+            "title": "バックアップと復旧",
+            "description": "データバックアップと復旧手順"
+          },
+          "failover_mechanisms": {
+            "title": "フェイルオーバーメカニズム",
+            "description": "バックアップシステムへの自動フェイルオーバー"
+          },
+          "chaos_engineering": {
+            "title": "カオスエンジニアリング",
+            "description": "制御された障害によるシステム回復力のテスト"
+          },
+          "redundancy_planning": {
+            "title": "冗長性計画",
+            "description": "重要システムへの冗長性の構築"
+          }
+        }
+      },
+      "sustainable_operations": {
+        "title": "持続可能な運用",
+        "description": "環境的に持続可能な運用実践",
+        "details": {
+          "green_computing": {
+            "title": "グリーンコンピューティング",
+            "description": "環境的に持続可能なコンピューティング実践"
+          },
+          "energy_efficiency": {
+            "title": "エネルギー効率",
+            "description": "エネルギー消費の最適化"
+          },
+          "carbon_footprint": {
+            "title": "カーボンフットプリント",
+            "description": "炭素排出量の測定と削減"
+          },
+          "sustainable_architecture": {
+            "title": "持続可能アーキテクチャ",
+            "description": "環境持続可能性のための設計"
+          }
+        }
+      }
+    }
+  },
+  "multicloud_hybrid_governance": {
+    "title": "マルチクラウドとハイブリッドガバナンス",
+    "description": "複数のクラウドプロバイダーとハイブリッドクラウド環境を管理するための戦略を評価します。",
+    "subcategories": {
+      "multicloud_strategy": {
+        "title": "マルチクラウド戦略",
+        "description": "複数のクラウドプロバイダーを使用する戦略的アプローチ",
+        "details": {
+          "vendor_diversification": {
+            "title": "ベンダー多様化",
+            "description": "単一クラウドプロバイダーへの依存を減らす"
+          },
+          "best_of_breed": {
+            "title": "ベストオブブリード",
+            "description": "各クラウドプロバイダーの最高のサービスを使用"
+          },
+          "geographic_distribution": {
+            "title": "地理的分散",
+            "description": "リージョン間でのワークロード分散"
+          },
+          "cost_optimization": {
+            "title": "コスト最適化",
+            "description": "複数クラウド間でのコスト最適化"
+          }
+        }
+      },
+      "hybrid_management": {
+        "title": "ハイブリッド管理",
+        "description": "ハイブリッドクラウドとオンプレミス環境の管理",
+        "details": {
+          "hybrid_connectivity": {
+            "title": "ハイブリッド接続",
+            "description": "オンプレミスとクラウドリソースの接続"
+          },
+          "data_synchronization": {
+            "title": "データ同期",
+            "description": "環境間でのデータ一貫性の維持"
+          },
+          "workload_portability": {
+            "title": "ワークロードポータビリティ",
+            "description": "環境間でのワークロード移動"
+          },
+          "unified_management": {
+            "title": "統合管理",
+            "description": "ハイブリッドリソースの単一管理画面"
+          }
+        }
+      },
+      "governance_policies": {
+        "title": "ガバナンスポリシー",
+        "description": "マルチクラウド環境のポリシーと制御",
+        "details": {
+          "policy_enforcement": {
+            "title": "ポリシー実行",
+            "description": "クラウド間での一貫したポリシー実行"
+          },
+          "compliance_management": {
+            "title": "コンプライアンス管理",
+            "description": "複数環境でのコンプライアンス管理"
+          },
+          "security_governance": {
+            "title": "セキュリティガバナンス",
+            "description": "統合されたセキュリティポリシーと制御"
+          },
+          "cost_governance": {
+            "title": "コストガバナンス",
+            "description": "複数クラウド間でのコスト管理"
+          }
+        }
+      }
+    }
+  },
+  "ai_ml_integration": {
+    "title": "AI/MLとクラウドネイティブの統合",
+    "description": "AI/MLサービスの採用、クラウドネイティブプラットフォームとの統合、MLOpsのプラクティスを評価します。",
+    "subcategories": {
+      "ai_ml_services": {
+        "title": "AI/MLサービス",
+        "description": "AI/MLサービスの採用と統合",
+        "details": {
+          "managed_ml": {
+            "title": "管理されたMLサービス",
+            "description": "クラウド管理機械学習サービスの使用"
+          },
+          "ml_apis": {
+            "title": "ML API",
+            "description": "事前構築されたML APIとサービスの統合"
+          },
+          "custom_models": {
+            "title": "カスタムモデル",
+            "description": "カスタムMLモデルの開発とデプロイ"
+          },
+          "model_serving": {
+            "title": "モデルサービング",
+            "description": "大規模でのMLモデルサービング"
+          }
+        }
+      },
+      "mlops_practices": {
+        "title": "MLOpsプラクティス",
+        "description": "機械学習運用とライフサイクル管理",
+        "details": {
+          "ml_pipelines": {
+            "title": "MLパイプライン",
+            "description": "自動化されたML訓練とデプロイパイプライン"
+          },
+          "model_versioning": {
+            "title": "モデルバージョニング",
+            "description": "MLモデルとデータのバージョン管理"
+          },
+          "experiment_tracking": {
+            "title": "実験追跡",
+            "description": "ML実験と結果の追跡"
+          },
+          "model_monitoring": {
+            "title": "モデルモニタリング",
+            "description": "本番環境でのモデルパフォーマンス監視"
+          }
+        }
+      },
+      "data_pipelines": {
+        "title": "データパイプライン",
+        "description": "MLワークロードのためのデータ処理パイプライン",
+        "details": {
+          "feature_engineering": {
+            "title": "特徴エンジニアリング",
+            "description": "自動化された特徴抽出とエンジニアリング"
+          },
+          "data_preprocessing": {
+            "title": "データ前処理",
+            "description": "ML用のデータクリーニングと準備"
+          },
+          "real_time_inference": {
+            "title": "リアルタイム推論",
+            "description": "リアルタイムMLモデル推論"
+          },
+          "batch_processing": {
+            "title": "バッチ処理",
+            "description": "大規模バッチML処理"
+          }
+        }
+      }
+    }
+  }
+}

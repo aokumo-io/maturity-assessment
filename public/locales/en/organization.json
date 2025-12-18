@@ -1,0 +1,103 @@
+{
+  "page": {
+    "title": "Organization Information",
+    "subtitle": "Please provide details about your organization"
+  },
+  "sections": {
+    "organizationInfo": "Organization Information",
+    "organizationInfo.description": "Please provide your organization information. This will be used to customize your assessment results and recommendations.",
+    "technologyEnvironment": "Technology Environment",
+    "businessObjectives": "Business Objectives"
+  },
+  "progress": {
+    "stepCount": "Step {{current}} of {{total}}"
+  },
+  "fields": {
+    "industry": {
+      "label": "Industry",
+      "placeholder": "Select industry"
+    },
+    "companySize": {
+      "label": "Company Size",
+      "placeholder": "Select company size",
+      "options": {
+        "1-10": "1-10 employees",
+        "11-50": "11-50 employees",
+        "51-100": "51-100 employees",
+        "101-250": "101-250 employees",
+        "251-500": "251-500 employees",
+        "501-2000": "501-2000 employees",
+        "2001-5000": "2001-5000 employees",
+        "5001+": "5001+ employees"
+      }
+    },
+    "region": {
+      "label": "Primary Region",
+      "placeholder": "Select region",
+      "options": {
+        "japan": "Japan",
+        "asia_pacific": "Asia-Pacific",
+        "north_america": "North America",
+        "europe": "Europe",
+        "south_america": "South America",
+        "africa": "Africa",
+        "middle_east": "Middle East",
+        "global": "Global (Multiple regions)"
+      }
+    },
+    "userRole": {
+      "label": "Your Role",
+      "placeholder": "Select your role",
+      "options": {
+        "executive": "Executive (CTO, CIO, VP)",
+        "manager": "Manager (Team Lead, Project Manager)",
+        "architect": "Architect (Solution Architect, Technical Lead)",
+        "developer": "Developer (Software Engineer, DevOps)",
+        "operations": "Operations (SRE, System Admin)",
+        "security": "Security (Security Engineer, Compliance)",
+        "business": "Business (Product Owner, Business Analyst)"
+      }
+    },
+    "cloudProviders": {
+      "label": "Cloud Providers Used",
+      "tooltip": "Select all cloud providers that your organization currently uses for application deployment.",
+      "description": "Select all cloud providers that your organization uses"
+    },
+    "deploymentModel": {
+      "label": "Deployment Model",
+      "placeholder": "Select deployment model",
+      "detectedModel": "Detected model: {{model}}",
+      "basedOnProviders": "— based on selected providers",
+      "tooltip": {
+        "public_cloud": "Public Cloud: Using cloud services like AWS, Azure, or GCP",
+        "private_cloud": "Private Cloud: Dedicated single-tenant cloud environment",
+        "hybrid_cloud": "Hybrid Cloud: Mix of public cloud and on-premises infrastructure",
+        "multi_cloud": "Multi-Cloud: Using multiple public cloud providers",
+        "traditional_on_premise": "Traditional On-Premise: All infrastructure is on-premises"
+      },
+      "options": {
+        "public_cloud": "Public Cloud",
+        "private_cloud": "Private Cloud",
+        "hybrid_cloud": "Hybrid Cloud",
+        "multi_cloud": "Multi-Cloud",
+        "traditional_on_premise": "Traditional On-Premise",
+        "other": "Other / Custom"
+      }
+    },
+    "businessObjectives": {
+      "label": "Key Business Objectives",
+      "description": "Select up to 3 that apply to your organization",
+      "maxSelected": "3 objectives selected"
+    },
+    "additionalObjectives": {
+      "label": "Additional objectives or context (optional)",
+      "placeholder": "Any other business goals or additional context",
+      "description": "Share any specific details about your objectives or business context"
+    }
+  },
+  "actions": {
+    "back": "Back",
+    "next": "Next",
+    "saving": "Saving..."
+  }
+}

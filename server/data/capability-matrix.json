@@ -1,0 +1,2602 @@
+[
+  {
+    "id": "fc_team-alignment",
+    "category": "foundations_culture",
+    "phase": "beginner",
+    "order": 1,
+    "label": {
+      "en": "Team-alignment workshop",
+      "ja": "チームアラインメントワークショップ"
+    },
+    "description": {
+      "en": "Kick-off to align teams on cloud-native goals and vocabulary.",
+      "ja": "クラウドネイティブの目標と用語を揃えるキックオフを実施"
+    },
+    "effort_points": 2,
+    "impact_area": "DP",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "fc_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "fc_internal-communities",
+    "category": "foundations_culture",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Spin-up internal CoPs", "ja": "社内コミュニティ発足" },
+    "description": {
+      "en": "Create DevOps / SRE Communities of Practice.",
+      "ja": "DevOps・SREの社内CoPを立ち上げる"
+    },
+    "effort_points": 3,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["fc_team-alignment"],
+    "questionDependencies": [
+      { "questionId": "fc_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "fc_exec-sponsorship",
+    "category": "foundations_culture",
+    "phase": "beginner",
+    "order": 3,
+    "label": {
+      "en": "Executive sponsor secured",
+      "ja": "エグゼクティブスポンサー確保"
+    },
+    "description": {
+      "en": "Nominate exec sponsor with OKRs tied to cloud-native.",
+      "ja": "クラウドネイティブに紐づくOKRを持つ経営層スポンサーを任命"
+    },
+    "effort_points": 1,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["fc_team-alignment"],
+    "questionDependencies": [
+      { "questionId": "fc_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "fc_blame-free-postmortems",
+    "category": "foundations_culture",
+    "phase": "intermediate",
+    "order": 1,
+    "label": {
+      "en": "Blame-free post-mortems",
+      "ja": "ブレームフリーの事後分析"
+    },
+    "description": {
+      "en": "Post-incident reviews focused on learning, not blame.",
+      "ja": "学習にフォーカスしたインシデント後レビューを導入"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": ["fc_internal-communities"],
+    "questionDependencies": [
+      { "questionId": "fc_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "fc_engineering-ladders",
+    "category": "foundations_culture",
+    "phase": "intermediate",
+    "order": 2,
+    "label": {
+      "en": "Engineering career ladders",
+      "ja": "エンジニアリングのキャリアラダー"
+    },
+    "description": {
+      "en": "Publish ladders recognising DevOps / Platform skills.",
+      "ja": "DevOps・プラットフォームスキルを評価するキャリアラダーを公開"
+    },
+    "effort_points": 5,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["fc_exec-sponsorship"],
+    "questionDependencies": [
+      { "questionId": "fc_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "fc_cross-team-metrics",
+    "category": "foundations_culture",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Shared KPIs (DORA)", "ja": "共有KPI（DORA）" },
+    "description": {
+      "en": "Make DORA metrics visible and part of team goals.",
+      "ja": "DORAメトリクスを可視化しチームゴールに組込む"
+    },
+    "effort_points": 3,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["fc_blame-free-postmortems"],
+    "questionDependencies": [
+      { "questionId": "fc_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "fc_product-centric-teams",
+    "category": "foundations_culture",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Product-centric teams", "ja": "プロダクト志向チーム" },
+    "description": {
+      "en": "Restructure into long-lived teams owning run + build.",
+      "ja": "開発と運用を担う長寿命チームへ再編成"
+    },
+    "effort_points": 8,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["fc_engineering-ladders"],
+    "questionDependencies": [
+      { "questionId": "fc_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "fc_platform-evangelists",
+    "category": "foundations_culture",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Platform evangelist program",
+      "ja": "プラットフォームエバンジェリスト制度"
+    },
+    "description": {
+      "en": "Champions drive adoption & share best-practice.",
+      "ja": "採用促進・ベストプラクティス共有を推進"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["fc_product-centric-teams"],
+    "questionDependencies": [
+      { "questionId": "fc_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "fc_org-wide-innovation-days",
+    "category": "foundations_culture",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Org-wide innovation days",
+      "ja": "全社イノベーションデー"
+    },
+    "description": {
+      "en": "Quarterly hack-days linked to exec demo sessions.",
+      "ja": "四半期ハッカソン＋経営層デモを開催"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["fc_platform-evangelists"],
+    "questionDependencies": [
+      { "questionId": "fc_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "bvs_value-hypotheses",
+    "category": "business_value_strategy",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Value hypotheses", "ja": "価値仮説の策定" },
+    "description": {
+      "en": "Write hypotheses on revenue, cost, risk impact.",
+      "ja": "収益・コスト・リスク影響の仮説を文章化"
+    },
+    "effort_points": 2,
+    "impact_area": "TM",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "bvs_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "bvs_kpi-baseline",
+    "category": "business_value_strategy",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Baseline KPIs", "ja": "KPIベースライン" },
+    "description": {
+      "en": "Capture lead-time, cost-of-delay, run-rate.",
+      "ja": "リードタイム・遅延コスト・ランレートを計測"
+    },
+    "effort_points": 3,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["bvs_value-hypotheses"],
+    "questionDependencies": [
+      { "questionId": "bvs_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "bvs_cloud-value-roadmap",
+    "category": "business_value_strategy",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Cloud value roadmap", "ja": "クラウド価値ロードマップ" },
+    "description": {
+      "en": "12-month roadmap linking tech to business KPIs.",
+      "ja": "技術マイルストーンをビジネスKPIに紐づけたロードマップ"
+    },
+    "effort_points": 2,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["bvs_kpi-baseline"],
+    "questionDependencies": [
+      { "questionId": "bvs_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "bvs_unit-economics-dashboard",
+    "category": "business_value_strategy",
+    "phase": "intermediate",
+    "order": 1,
+    "label": {
+      "en": "Unit-economics dashboard",
+      "ja": "ユニットエコノミクスダッシュボード"
+    },
+    "description": {
+      "en": "Live cost-per-transaction, margin per service.",
+      "ja": "トランザクション当たりコストをライブ可視化"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["bvs_cloud-value-roadmap"],
+    "questionDependencies": [
+      { "questionId": "bvs_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "bvs_finops-tie-in",
+    "category": "business_value_strategy",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "FinOps tie-in", "ja": "FinOps連携" },
+    "description": {
+      "en": "Use cost signals in backlog prioritisation.",
+      "ja": "コストシグナルを優先度付けに活用"
+    },
+    "effort_points": 3,
+    "impact_area": "IC",
+    "quick_win": true,
+    "dependencies": ["bvs_unit-economics-dashboard"],
+    "questionDependencies": [
+      { "questionId": "bvs_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "bvs_value-based-portfolio",
+    "category": "business_value_strategy",
+    "phase": "intermediate",
+    "order": 3,
+    "label": {
+      "en": "Value-based portfolio",
+      "ja": "価値ベースのポートフォリオ管理"
+    },
+    "description": {
+      "en": "Quarterly review kills / funds services by value.",
+      "ja": "価値スコアでサービス継続/終了を判断"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["bvs_finops-tie-in"],
+    "questionDependencies": [
+      { "questionId": "bvs_4", "minValue": 80 },
+      { "questionId": "bvs_5", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "bvs_real-options-funding",
+    "category": "business_value_strategy",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Real-options funding", "ja": "リアルオプション型資金" },
+    "description": {
+      "en": "Stage-gated option-based funding rounds.",
+      "ja": "段階的・オプションベースの資金調達"
+    },
+    "effort_points": 8,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["bvs_value-based-portfolio"],
+    "questionDependencies": [
+      { "questionId": "bvs_6", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "bvs_okrs-linked-to-dora",
+    "category": "business_value_strategy",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "OKRs linked to DORA & cost",
+      "ja": "DORAとコストに連動したOKR"
+    },
+    "description": {
+      "en": "Merge DORA & FinOps metrics into company OKRs.",
+      "ja": "DORA・FinOpsメトリクスを会社OKRに統合"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["bvs_real-options-funding"],
+    "questionDependencies": [
+      { "questionId": "bvs_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "bvs_dynamic-business-cases",
+    "category": "business_value_strategy",
+    "phase": "advanced",
+    "order": 3,
+    "label": { "en": "Dynamic business cases", "ja": "動的ビジネスケース" },
+    "description": {
+      "en": "Auto-refresh business case from live telemetry.",
+      "ja": "ライブデータでビジネスケースを自動更新"
+    },
+    "effort_points": 8,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["bvs_okrs-linked-to-dora"],
+    "questionDependencies": [
+      { "questionId": "bvs_8", "minValue": 80 },
+      { "questionId": "bvs_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "aa_externalise-config",
+    "category": "application_architecture",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Externalise configuration", "ja": "設定の外部化" },
+    "description": {
+      "en": "Move configs to environment variables or secrets.",
+      "ja": "設定を環境変数またはシークレットへ分離"
+    },
+    "effort_points": 2,
+    "impact_area": "DP",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "aa_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "aa_stateless-services",
+    "category": "application_architecture",
+    "phase": "beginner",
+    "order": 2,
+    "label": {
+      "en": "Stateless service refactor",
+      "ja": "ステートレス化リファクタ"
+    },
+    "description": {
+      "en": "Refactor to remove session stickiness & local state.",
+      "ja": "セッション依存やローカル状態を排除"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["aa_externalise-config"],
+    "questionDependencies": [
+      { "questionId": "aa_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "aa_health-probes",
+    "category": "application_architecture",
+    "phase": "beginner",
+    "order": 3,
+    "label": {
+      "en": "Health / readiness probes",
+      "ja": "ヘルス／レディネスプローブ"
+    },
+    "description": {
+      "en": "Expose HTTP health, liveness, readiness endpoints.",
+      "ja": "HTTPヘルス・ライブネス・レディネスを実装"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": ["aa_stateless-services"],
+    "questionDependencies": [
+      { "questionId": "aa_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "aa_service-mesh",
+    "category": "application_architecture",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Introduce service-mesh", "ja": "サービスメッシュ導入" },
+    "description": {
+      "en": "Side-car based mesh for traffic, authn, observability.",
+      "ja": "トラフィック・認証・可観測性を提供するサイドカー型メッシュ"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["aa_health-probes"],
+    "questionDependencies": [
+      { "questionId": "aa_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "aa_bulkheads-timeouts",
+    "category": "application_architecture",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Resilience patterns", "ja": "レジリエンスパターン実装" },
+    "description": {
+      "en": "Bulkheads, timeouts, retries, circuit-breakers.",
+      "ja": "バルクヘッド、タイムアウト、リトライ、サーキットブレーカー"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["aa_service-mesh"],
+    "questionDependencies": [
+      { "questionId": "aa_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "aa_domain-driven-modules",
+    "category": "application_architecture",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Domain-driven modules", "ja": "ドメイン駆動モジュール" },
+    "description": {
+      "en": "Carve codebase into domain-bounded modules.",
+      "ja": "コードベースをドメイン境界で分割"
+    },
+    "effort_points": 3,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["aa_bulkheads-timeouts"],
+    "questionDependencies": [
+      { "questionId": "aa_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "aa_microservices-cut",
+    "category": "application_architecture",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Microservices cut-over", "ja": "マイクロサービス切替" },
+    "description": {
+      "en": "Gradually decompose monolith into microservices.",
+      "ja": "モノリスを段階的にマイクロサービスへ分割"
+    },
+    "effort_points": 8,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["aa_domain-driven-modules"],
+    "questionDependencies": [
+      { "questionId": "aa_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "aa_service-contract-testing",
+    "category": "application_architecture",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Contract-testing in CI",
+      "ja": "CIでのコントラクトテスト"
+    },
+    "description": {
+      "en": "Pact / protobuf or OpenAPI contract tests in CI.",
+      "ja": "Pact・Protobuf・OpenAPIの契約テストをCIに組込む"
+    },
+    "effort_points": 5,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["aa_microservices-cut"],
+    "questionDependencies": [
+      { "questionId": "aa_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "aa_service-mesh-mtls",
+    "category": "application_architecture",
+    "phase": "advanced",
+    "order": 3,
+    "label": { "en": "mTLS & RBAC in mesh", "ja": "メッシュでのmTLSとRBAC" },
+    "description": {
+      "en": "Enforce mTLS & traffic policies via mesh.",
+      "ja": "メッシュでmTLSとトラフィックポリシーを強制"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["aa_service-contract-testing"],
+    "questionDependencies": [
+      { "questionId": "aa_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "mod_app-inventory",
+    "category": "app_migration_modernization",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Application inventory", "ja": "アプリケーション棚卸し" },
+    "description": {
+      "en": "Catalogue apps with tech stack, infra, business owner.",
+      "ja": "技術スタック・インフラ・ビジネスオーナーをカタログ化"
+    },
+    "effort_points": 2,
+    "impact_area": "IC",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "mod_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mod_6r-assessment",
+    "category": "app_migration_modernization",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "6R assessment", "ja": "6Rアセスメント" },
+    "description": {
+      "en": "Classify each app into Rehost, Replatform, etc.",
+      "ja": "各アプリをRehost・Replatformなどに分類"
+    },
+    "effort_points": 3,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["mod_app-inventory"],
+    "questionDependencies": [
+      { "questionId": "mod_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mod_migration-wave-plan",
+    "category": "app_migration_modernization",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Migration wave plan", "ja": "移行ウェーブ計画" },
+    "description": {
+      "en": "Batch apps into risk / complexity waves.",
+      "ja": "リスク・複雑度でアプリをグルーピング"
+    },
+    "effort_points": 2,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["mod_6r-assessment"],
+    "questionDependencies": [
+      { "questionId": "mod_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "mod_refactor-skeleton",
+    "category": "app_migration_modernization",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Refactor skeleton", "ja": "リファクタスケルトン" },
+    "description": {
+      "en": "Create service skeleton with CI/CD, probes, metrics.",
+      "ja": "CI/CD・プローブ・メトリクス付きサービススケルトンを作成"
+    },
+    "effort_points": 5,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["mod_migration-wave-plan"],
+    "questionDependencies": [
+      { "questionId": "mod_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mod_blue-green-cutover",
+    "category": "app_migration_modernization",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Blue-green cut-over", "ja": "ブルーグリーン切替" },
+    "description": {
+      "en": "Pilot blue-green for first modernised service.",
+      "ja": "初のモダナイズドサービスでブルーグリーンを実施"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": ["mod_refactor-skeleton"],
+    "questionDependencies": [
+      { "questionId": "mod_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mod_database-strangler",
+    "category": "app_migration_modernization",
+    "phase": "intermediate",
+    "order": 3,
+    "label": {
+      "en": "DB strangler facade",
+      "ja": "DBストラングラーファサード"
+    },
+    "description": {
+      "en": "Strangle shared DB via facade or CDC stream.",
+      "ja": "共有DBをファサード／CDCでストラングル"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["mod_blue-green-cutover"],
+    "questionDependencies": [
+      { "questionId": "mod_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "mod_event-driven-decomp",
+    "category": "app_migration_modernization",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Event-driven decomposition", "ja": "イベント駆動分割" },
+    "description": {
+      "en": "Use domain events to decouple legacy components.",
+      "ja": "ドメインイベントでレガシーコンポーネントを分離"
+    },
+    "effort_points": 8,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["mod_database-strangler"],
+    "questionDependencies": [
+      { "questionId": "mod_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "mod_sunsetting-legacy",
+    "category": "app_migration_modernization",
+    "phase": "advanced",
+    "order": 2,
+    "label": { "en": "Sunsetting legacy estate", "ja": "レガシー停止計画" },
+    "description": {
+      "en": "Formal retire plan, archival & SLA hand-off.",
+      "ja": "正式な廃止計画・アーカイブ・SLA引継ぎ"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["mod_event-driven-decomp"],
+    "questionDependencies": [
+      { "questionId": "mod_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "mod_continuous-modernise-loop",
+    "category": "app_migration_modernization",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Continuous modernise loop",
+      "ja": "継続的モダナイズループ"
+    },
+    "description": {
+      "en": "Automated discovery, scoring & scheduling of next apps.",
+      "ja": "次のアプリを自動検出しスコア付け・スケジューリング"
+    },
+    "effort_points": 5,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["mod_sunsetting-legacy"],
+    "questionDependencies": [
+      { "questionId": "mod_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "ci_base-images",
+    "category": "container_infrastructure",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Curated base images", "ja": "管理されたベースイメージ" },
+    "description": {
+      "en": "Use minimal, scanned base images from private repo.",
+      "ja": "最小構成でスキャン済みのベースイメージをプライベートリポで提供"
+    },
+    "effort_points": 1,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "ci_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ci_namespace-quotas",
+    "category": "container_infrastructure",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Namespace quotas", "ja": "ネームスペースクォータ" },
+    "description": {
+      "en": "CPU / memory quotas and limits per namespace.",
+      "ja": "CPU・メモリのクォータと制限を設定"
+    },
+    "effort_points": 2,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ci_base-images"],
+    "questionDependencies": [
+      { "questionId": "ci_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ci_cluster-upgrade-plan",
+    "category": "container_infrastructure",
+    "phase": "beginner",
+    "order": 3,
+    "label": {
+      "en": "Cluster upgrade playbook",
+      "ja": "クラスターアップグレード手順"
+    },
+    "description": {
+      "en": "Documented and tested cluster upgrade procedure.",
+      "ja": "テスト済みクラスターアップグレード手順を整備"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["ci_namespace-quotas"],
+    "questionDependencies": [
+      { "questionId": "ci_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "ci_helm-chart-repo",
+    "category": "container_infrastructure",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Helm chart repo", "ja": "Helmチャートリポジトリ" },
+    "description": {
+      "en": "Central repo of signed, versioned Helm charts.",
+      "ja": "署名・バージョン管理されたHelmチャートの中央リポジトリ"
+    },
+    "effort_points": 3,
+    "impact_area": "DP",
+    "quick_win": true,
+    "dependencies": ["ci_cluster-upgrade-plan"],
+    "questionDependencies": [
+      { "questionId": "ci_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ci_pod-security-standards",
+    "category": "container_infrastructure",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "PodSecurity standards", "ja": "PodSecurity基準" },
+    "description": {
+      "en": "Baseline+Restricted PodSecurityAdmission enforced.",
+      "ja": "Baseline+RestrictedのPodSecurityを適用"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["ci_namespace-quotas"],
+    "questionDependencies": [
+      { "questionId": "ci_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ci_cluster-autoscaler",
+    "category": "container_infrastructure",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Cluster autoscaler", "ja": "クラスターオートスケーラー" },
+    "description": {
+      "en": "Enable node-level autoscaling for cost efficiency.",
+      "ja": "コスト効率のためノードレベルオートスケーリングを有効化"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ci_helm-chart-repo"],
+    "questionDependencies": [
+      { "questionId": "ci_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "ci_cni-calico-ebpf",
+    "category": "container_infrastructure",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "eBPF CNI with Calico", "ja": "Calico eBPF CNI" },
+    "description": {
+      "en": "Move to eBPF dataplane for perf and policy.",
+      "ja": "パフォーマンスとポリシーのためeBPFデータプレーンへ移行"
+    },
+    "effort_points": 8,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["ci_pod-security-standards"],
+    "questionDependencies": [
+      { "questionId": "ci_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "ci_service-mesh-ingress",
+    "category": "container_infrastructure",
+    "phase": "advanced",
+    "order": 2,
+    "label": { "en": "Mesh + Gateway API", "ja": "メッシュ＋Gateway API" },
+    "description": {
+      "en": "Replace Ingress with mesh Gateway API for L7.",
+      "ja": "IngressをGateway APIで置換しL7制御を統合"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["ci_cni-calico-ebpf"],
+    "questionDependencies": [
+      { "questionId": "ci_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "ci_sustainable-nodes",
+    "category": "container_infrastructure",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Sustainable node pools",
+      "ja": "サステナブルノードプール"
+    },
+    "description": {
+      "en": "Use spot / ARM64 nodes with carbon reporting.",
+      "ja": "スポット・ARM64ノードと炭素排出の可視化"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ci_cluster-autoscaler"],
+    "questionDependencies": [
+      { "questionId": "ci_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "cicd_basic-pipeline",
+    "category": "cicd_practices",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Basic pipeline", "ja": "ベーシックパイプライン" },
+    "description": {
+      "en": "Automated build, unit-test, image push.",
+      "ja": "ビルド・ユニットテスト・イメージプッシュを自動化"
+    },
+    "effort_points": 2,
+    "impact_area": "DP",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "cicd_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "cicd_automated-testing",
+    "category": "cicd_practices",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Automated testing", "ja": "自動テスト" },
+    "description": {
+      "en": "Add integration + basic security tests to pipeline.",
+      "ja": "結合テストと基本セキュリティテストを追加"
+    },
+    "effort_points": 3,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["cicd_basic-pipeline"],
+    "questionDependencies": [
+      { "questionId": "cicd_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "cicd_artifact-signed",
+    "category": "cicd_practices",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Signed artifacts", "ja": "署名付きアーティファクト" },
+    "description": {
+      "en": "Sign images with cosign / SBOM uploaded.",
+      "ja": "cosignでイメージ署名＋SBOMをアップロード"
+    },
+    "effort_points": 1,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": ["cicd_basic-pipeline"],
+    "questionDependencies": [
+      { "questionId": "cicd_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "cicd_parallel-test-shards",
+    "category": "cicd_practices",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Parallel test shards", "ja": "テストの並列シャード" },
+    "description": {
+      "en": "Shard tests to cut pipeline time by 50 %.",
+      "ja": "テストをシャーディングしパイプライン時間を50%短縮"
+    },
+    "effort_points": 3,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["cicd_automated-testing"],
+    "questionDependencies": [
+      { "questionId": "cicd_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "cicd_dynamic-env-preview",
+    "category": "cicd_practices",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Dynamic preview envs", "ja": "動的プレビュー環境" },
+    "description": {
+      "en": "Ephemeral env per PR with auto-teardown.",
+      "ja": "PR毎にエフェメラル環境を作成し自動破棄"
+    },
+    "effort_points": 3,
+    "impact_area": "TM",
+    "quick_win": true,
+    "dependencies": ["cicd_parallel-test-shards"],
+    "questionDependencies": [
+      { "questionId": "cicd_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "cicd_progressive-delivery",
+    "category": "cicd_practices",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Progressive delivery", "ja": "プログレッシブデリバリー" },
+    "description": {
+      "en": "Automated blue-green or canary via Argo / Flagger.",
+      "ja": "Argo・Flaggerでブルーグリーン／カナリアを自動化"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["cicd_dynamic-env-preview"],
+    "questionDependencies": [
+      { "questionId": "cicd_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "cicd_policy-as-code-gates",
+    "category": "cicd_practices",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Policy-as-Code gates", "ja": "Policy as Codeゲート" },
+    "description": {
+      "en": "OPA / Kyverno checks block pipeline on policy breach.",
+      "ja": "OPA・Kyvernoでポリシー違反時にパイプラインをブロック"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["cicd_artifact-signed"],
+    "questionDependencies": [
+      { "questionId": "cicd_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "cicd_observability-in-pipeline",
+    "category": "cicd_practices",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Observability in pipeline",
+      "ja": "パイプライン内可観測性"
+    },
+    "description": {
+      "en": "Fail build on SLO regression using synthetic tests.",
+      "ja": "合成テストでSLO悪化時にビルド失敗"
+    },
+    "effort_points": 8,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["cicd_progressive-delivery"],
+    "questionDependencies": [
+      { "questionId": "cicd_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "cicd_self-service-templates",
+    "category": "cicd_practices",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Self-service templates",
+      "ja": "セルフサービステンプレート"
+    },
+    "description": {
+      "en": "Golden-path pipeline & infra templates as product.",
+      "ja": "ゴールデンパスのパイプラインとインフラテンプレートを提供"
+    },
+    "effort_points": 5,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["cicd_policy-as-code-gates"],
+    "questionDependencies": [
+      { "questionId": "cicd_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "dora_collect-frequency",
+    "category": "dora_metrics",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Collect deploy frequency", "ja": "デプロイ頻度を収集" },
+    "description": {
+      "en": "Start logging production deploy timestamps.",
+      "ja": "本番デプロイのタイムスタンプ記録を開始"
+    },
+    "effort_points": 1,
+    "impact_area": "DP",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "dora_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dora_collect-leadtime",
+    "category": "dora_metrics",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Collect lead-time", "ja": "リードタイムを収集" },
+    "description": {
+      "en": "Measure commit-to-prod time via VCS & CD stamps.",
+      "ja": "コミットから本番までの時間を測定"
+    },
+    "effort_points": 2,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["dora_collect-frequency"],
+    "questionDependencies": [
+      { "questionId": "dora_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dora_baseline-dashboard",
+    "category": "dora_metrics",
+    "phase": "beginner",
+    "order": 3,
+    "label": {
+      "en": "Baseline DORA dashboard",
+      "ja": "DORAダッシュボードベースライン"
+    },
+    "description": {
+      "en": "Grafana board for 4 key DORA metrics.",
+      "ja": "4つのDORAメトリクスをGrafanaで可視化"
+    },
+    "effort_points": 2,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["dora_collect-leadtime"],
+    "questionDependencies": [
+      { "questionId": "dora_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "dora_slo-metadata-labels",
+    "category": "dora_metrics",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "SLO metadata labels", "ja": "SLOメタデータラベル" },
+    "description": {
+      "en": "Tag services with SLO objective, criticality, owner.",
+      "ja": "サービスにSLO・重要度・オーナーをタグ付け"
+    },
+    "effort_points": 3,
+    "impact_area": "OE",
+    "quick_win": true,
+    "dependencies": ["dora_baseline-dashboard"],
+    "questionDependencies": [
+      { "questionId": "dora_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dora_auto-change-failrate",
+    "category": "dora_metrics",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Auto change-fail-rate", "ja": "変更失敗率の自動計算" },
+    "description": {
+      "en": "Parse incident tags to compute CFR automatically.",
+      "ja": "インシデントタグ解析でCFRを自動算出"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["dora_slo-metadata-labels"],
+    "questionDependencies": [
+      { "questionId": "dora_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dora_leadtime-tiers",
+    "category": "dora_metrics",
+    "phase": "intermediate",
+    "order": 3,
+    "label": {
+      "en": "Lead-time tier alerts",
+      "ja": "リードタイム階層アラート"
+    },
+    "description": {
+      "en": "Alert when lead-time exceeds target tier per team.",
+      "ja": "リードタイムが目標階層を超えたらアラート"
+    },
+    "effort_points": 5,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["dora_auto-change-failrate"],
+    "questionDependencies": [
+      { "questionId": "dora_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "dora_automated-insights",
+    "category": "dora_metrics",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Automated insights", "ja": "自動インサイト" },
+    "description": {
+      "en": "ML model flags regressions & suggests bottlenecks.",
+      "ja": "MLで退行を検知しボトルネックを提案"
+    },
+    "effort_points": 8,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["dora_leadtime-tiers"],
+    "questionDependencies": [
+      { "questionId": "dora_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "dora_objective-linked-bonuses",
+    "category": "dora_metrics",
+    "phase": "advanced",
+    "order": 2,
+    "label": { "en": "Link bonuses to DORA", "ja": "DORA連動ボーナス" },
+    "description": {
+      "en": "Performance bonus partly tied to DORA targets hit.",
+      "ja": "DORA目標達成に応じてボーナスを連動"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["dora_automated-insights"],
+    "questionDependencies": [
+      { "questionId": "dora_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "dora_value-stream-map",
+    "category": "dora_metrics",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Value-stream map auto-gen",
+      "ja": "バリューストリームマップ自動生成"
+    },
+    "description": {
+      "en": "Generate VSM and annotate wait vs work time.",
+      "ja": "バリューストリームマップを自動生成し待ち／作業時間を可視化"
+    },
+    "effort_points": 5,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["dora_automated-insights"],
+    "questionDependencies": [
+      { "questionId": "dora_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "sc_image-scans",
+    "category": "security_compliance",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Image scans in CI", "ja": "CIでのイメージスキャン" },
+    "description": {
+      "en": "Block build on critical CVEs.",
+      "ja": "重大共通脆弱性識別子CVEでビルドをブロック"
+    },
+    "effort_points": 1,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "sc_5", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "sc_network-policies",
+    "category": "security_compliance",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Basic network policies", "ja": "基本NWポリシー" },
+    "description": {
+      "en": "Deny-all egress namespace policy + allowlist.",
+      "ja": "deny-allのネームスペースポリシー＋許可リスト"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_image-scans"],
+    "questionDependencies": [
+      { "questionId": "sc_3", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "sc_secrets-management",
+    "category": "security_compliance",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Central secrets mgmt", "ja": "中央シークレット管理" },
+    "description": {
+      "en": "Use Vault / KMS, remove secrets from repos.",
+      "ja": "Vault・KMSでシークレットを集中管理しリポジトリから削除"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_image-scans"],
+    "questionDependencies": [
+      { "questionId": "sc_1", "minValue": 66 },
+      { "questionId": "sc_2", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "sc_policy-as-code",
+    "category": "security_compliance",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Policy as Code", "ja": "Policy as Code" },
+    "description": {
+      "en": "OPA / Rego policies enforced in CI/CD & cluster.",
+      "ja": "OPA・RegoポリシーをCI/CDとクラスターで強制"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_secrets-management"],
+    "questionDependencies": [
+      { "questionId": "sc_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "sc_zero-trust-service-mesh",
+    "category": "security_compliance",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Zero-trust mesh", "ja": "ゼロトラストメッシュ" },
+    "description": {
+      "en": "mTLS, JWT, authZ via service-mesh.",
+      "ja": "サービスメッシュでmTLS・JWT・authZを実装"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_policy-as-code"],
+    "questionDependencies": [
+      { "questionId": "sc_6", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "sc_cicd-sast-dast",
+    "category": "security_compliance",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "SAST / DAST gates", "ja": "SAST／DASTゲート" },
+    "description": {
+      "en": "Auto run SAST and DAST with budgeted break fixes.",
+      "ja": "SASTとDASTを自動実行し予算内で修正"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_policy-as-code"],
+    "questionDependencies": [
+      { "questionId": "sc_7", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "sc_runtime-threat-detection",
+    "category": "security_compliance",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Runtime threat detection", "ja": "ランタイム脅威検知" },
+    "description": {
+      "en": "Falco / eBPF rules alert on anomalous syscalls.",
+      "ja": "Falco・eBPFルールで異常システムコールを検知"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_zero-trust-service-mesh"],
+    "questionDependencies": [
+      { "questionId": "sc_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "sc_continuous-compliance",
+    "category": "security_compliance",
+    "phase": "advanced",
+    "order": 2,
+    "label": { "en": "Continuous compliance", "ja": "継続的コンプライアンス" },
+    "description": {
+      "en": "Daily CIS / PCI scans + evidence snapshots.",
+      "ja": "CIS・PCIスキャンを毎日実行し証跡を保存"
+    },
+    "effort_points": 8,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_runtime-threat-detection"],
+    "questionDependencies": [
+      { "questionId": "sc_9", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "sc_incident-automation",
+    "category": "security_compliance",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Security incident automation",
+      "ja": "セキュリティインシデント自動化"
+    },
+    "description": {
+      "en": "SOAR playbooks auto-isolate pod & create ticket.",
+      "ja": "SOARプレイブックでPod隔離とチケット自動生成"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["sc_continuous-compliance"],
+    "questionDependencies": [
+      { "questionId": "sc_10", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "ip_repo-iac",
+    "category": "infrastructure_platform",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "IaC git repo", "ja": "IaC Gitリポジトリ" },
+    "description": {
+      "en": "Store Terraform / Pulumi in VCS.",
+      "ja": "Terraform・PulumiコードをVCSで管理"
+    },
+    "effort_points": 2,
+    "impact_area": "IC",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "ip_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ip_remote-state",
+    "category": "infrastructure_platform",
+    "phase": "beginner",
+    "order": 2,
+    "label": {
+      "en": "Remote state backend",
+      "ja": "リモートステートバックエンド"
+    },
+    "description": {
+      "en": "Lockable remote state (S3 + Dynamo, etc.).",
+      "ja": "ロック可能なリモートステートを使用"
+    },
+    "effort_points": 2,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ip_repo-iac"],
+    "questionDependencies": [
+      { "questionId": "ip_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ip_module-registry",
+    "category": "infrastructure_platform",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Module registry", "ja": "モジュールレジストリ" },
+    "description": {
+      "en": "Publish reusable IaC modules with semantic versioning.",
+      "ja": "再利用可能なIaCモジュールをセマンティックバージョンで公開"
+    },
+    "effort_points": 3,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["ip_remote-state"],
+    "questionDependencies": [
+      { "questionId": "ip_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "ip_gitops-clusters",
+    "category": "infrastructure_platform",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "GitOps clusters", "ja": "GitOpsクラスター" },
+    "description": {
+      "en": "Bootstrap clusters via ArgoCD / Flux from IaC state.",
+      "ja": "IaCステートからArgoCD／Fluxでクラスターをブートストラップ"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ip_module-registry"],
+    "questionDependencies": [
+      { "questionId": "ip_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ip_internal-dev-platform",
+    "category": "infrastructure_platform",
+    "phase": "intermediate",
+    "order": 2,
+    "label": {
+      "en": "Internal developer platform",
+      "ja": "内部開発者プラットフォーム"
+    },
+    "description": {
+      "en": "Self-service portal for infra + app templates.",
+      "ja": "インフラ・アプリテンプレートのセルフサービスポータル"
+    },
+    "effort_points": 5,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["ip_gitops-clusters"],
+    "questionDependencies": [
+      { "questionId": "ip_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ip_policy-engine",
+    "category": "infrastructure_platform",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Policy engine (OPA)", "ja": "ポリシーエンジン（OPA）" },
+    "description": {
+      "en": "Evaluate IaC pull-requests against OPA rules.",
+      "ja": "IaCプルリクをOPAルールで評価"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["ip_module-registry"],
+    "questionDependencies": [
+      { "questionId": "ip_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "ip_multi-cloud-abstraction",
+    "category": "infrastructure_platform",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Multi-cloud abstraction", "ja": "マルチクラウド抽象化" },
+    "description": {
+      "en": "Crossplane / ACK to provision resources across clouds.",
+      "ja": "Crossplane・ACKで複数クラウドにリソースをプロビジョニング"
+    },
+    "effort_points": 8,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ip_internal-dev-platform"],
+    "questionDependencies": [
+      { "questionId": "ip_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "ip_sustainability-dashboard",
+    "category": "infrastructure_platform",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Sustainability dashboard",
+      "ja": "サステナビリティダッシュボード"
+    },
+    "description": {
+      "en": "Carbon footprint and energy cost per workload.",
+      "ja": "ワークロード毎の炭素排出量とエネルギーコストを可視化"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ip_multi-cloud-abstraction"],
+    "questionDependencies": [
+      { "questionId": "ip_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "ip_self-healing-autopilot",
+    "category": "infrastructure_platform",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Self-healing autopilot",
+      "ja": "セルフヒーリングオートパイロット"
+    },
+    "description": {
+      "en": "Controller auto-optimises infra based on SLO & cost.",
+      "ja": "SLOとコストに基づきインフラを自動最適化するコントローラー"
+    },
+    "effort_points": 8,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["ip_multi-cloud-abstraction"],
+    "questionDependencies": [
+      { "questionId": "ip_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "dm_backup-policy",
+    "category": "data_management",
+    "phase": "beginner",
+    "order": 1,
+    "label": {
+      "en": "Documented backup policy",
+      "ja": "バックアップポリシー文書化"
+    },
+    "description": {
+      "en": "Define RPO / RTO, periodic snapshots.",
+      "ja": "RPO／RTO定義と定期スナップショット"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "dm_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dm_data-classification",
+    "category": "data_management",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Data classification", "ja": "データ分類" },
+    "description": {
+      "en": "Tag datasets public / internal / PII.",
+      "ja": "データセットをPublic／Internal／PIIでタグ付け"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["dm_backup-policy"],
+    "questionDependencies": [
+      { "questionId": "dm_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dm_encrypted-at-rest",
+    "category": "data_management",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Encrypt at rest", "ja": "保存データ暗号化" },
+    "description": {
+      "en": "Enable KMS-backed encryption for all storage.",
+      "ja": "全ストレージでKMS暗号化を有効化"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["dm_data-classification"],
+    "questionDependencies": [
+      { "questionId": "dm_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "dm_operator-db",
+    "category": "data_management",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "DB operator automation", "ja": "DBオペレーター自動化" },
+    "description": {
+      "en": "Kubernetes operator manages DB lifecycle.",
+      "ja": "KubernetesオペレーターでDBライフサイクルを管理"
+    },
+    "effort_points": 5,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["dm_encrypted-at-rest"],
+    "questionDependencies": [
+      { "questionId": "dm_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dm_zero-downtime-migrations",
+    "category": "data_management",
+    "phase": "intermediate",
+    "order": 2,
+    "label": {
+      "en": "Zero-downtime migrations",
+      "ja": "ゼロダウンタイムマイグレーション"
+    },
+    "description": {
+      "en": "Use online schema change / ghost migrations.",
+      "ja": "オンラインスキーマ変更でゼロダウンタイムを実現"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["dm_operator-db"],
+    "questionDependencies": [
+      { "questionId": "dm_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "dm_cross-region-replication",
+    "category": "data_management",
+    "phase": "intermediate",
+    "order": 3,
+    "label": {
+      "en": "Cross-region replication",
+      "ja": "リージョン間レプリケーション"
+    },
+    "description": {
+      "en": "Async replication for DR to second region.",
+      "ja": "DR用にセカンダリリージョンへ非同期レプリケーション"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["dm_backup-policy"],
+    "questionDependencies": [
+      { "questionId": "dm_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "dm_data-governance-platform",
+    "category": "data_management",
+    "phase": "advanced",
+    "order": 1,
+    "label": {
+      "en": "Data governance platform",
+      "ja": "データガバナンスプラットフォーム"
+    },
+    "description": {
+      "en": "Catalog, lineage, quality scoring via open-metadata.",
+      "ja": "OpenMetadataでカタログ・ラインage・品質スコアを管理"
+    },
+    "effort_points": 8,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["dm_data-classification"],
+    "questionDependencies": [
+      { "questionId": "dm_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "dm_chaos-testing-state",
+    "category": "data_management",
+    "phase": "advanced",
+    "order": 2,
+    "label": { "en": "Chaos testing for state", "ja": "状態系カオステスト" },
+    "description": {
+      "en": "Fault-inject DB and verify app resilience.",
+      "ja": "DBに障害注入しアプリ耐障害性を検証"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["dm_cross-region-replication"],
+    "questionDependencies": [
+      { "questionId": "dm_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "dm_bi-temporal-storage",
+    "category": "data_management",
+    "phase": "advanced",
+    "order": 3,
+    "label": { "en": "Bi-temporal storage", "ja": "バイテンポラルストレージ" },
+    "description": {
+      "en": "Support valid-time & transaction-time queries.",
+      "ja": "有効時刻と取引時刻クエリをサポート"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["dm_data-governance-platform"],
+    "questionDependencies": [
+      { "questionId": "dm_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "obs_basic-metrics",
+    "category": "observability",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Basic metrics", "ja": "基本メトリクス" },
+    "description": {
+      "en": "CPU / mem / latency metrics scraped by Prometheus.",
+      "ja": "PrometheusでCPU・メモリ・レイテンシを収集"
+    },
+    "effort_points": 2,
+    "impact_area": "OE",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "obs_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "obs_central-logging",
+    "category": "observability",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Central logging", "ja": "中央ログ" },
+    "description": {
+      "en": "Ship container logs to Elasticsearch / Loki.",
+      "ja": "コンテナログをElasticsearch・Lokiへ送信"
+    },
+    "effort_points": 2,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["obs_basic-metrics"],
+    "questionDependencies": [
+      { "questionId": "obs_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "obs_alertmanager-routes",
+    "category": "observability",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Alertmanager routes", "ja": "アラートルーティング" },
+    "description": {
+      "en": "PagerDuty / Slack routes with severity labels.",
+      "ja": "重大度ラベル付きでPagerDuty／Slackへルーティング"
+    },
+    "effort_points": 1,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": ["obs_central-logging"],
+    "questionDependencies": [
+      { "questionId": "obs_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "obs_service-level-indicators",
+    "category": "observability",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "SLI library", "ja": "SLIライブラリ" },
+    "description": {
+      "en": "Composite latency / error-rate SLIs per service.",
+      "ja": "サービス毎にレイテンシ・エラーレートSLIを実装"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["obs_alertmanager-routes"],
+    "questionDependencies": [
+      { "questionId": "obs_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "obs_distributed-tracing",
+    "category": "observability",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Distributed tracing", "ja": "分散トレーシング" },
+    "description": {
+      "en": "OpenTelemetry traces stored in Tempo / Jaeger.",
+      "ja": "OpenTelemetryトレースをTempo・Jaegerに保存"
+    },
+    "effort_points": 5,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["obs_basic-metrics"],
+    "questionDependencies": [
+      { "questionId": "obs_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "obs_slo-error-budgets",
+    "category": "observability",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "SLO error budgets", "ja": "SLOエラーバジェット" },
+    "description": {
+      "en": "Burn-rate alerts when error budget depletes.",
+      "ja": "エラーバジェットが減るとバーンレートアラート"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["obs_service-level-indicators"],
+    "questionDependencies": [
+      { "questionId": "obs_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "obs_telemetry-standards",
+    "category": "observability",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Telemetry standards", "ja": "テレメトリ標準" },
+    "description": {
+      "en": "Company-wide spec for logs, metrics, traces.",
+      "ja": "ログ・メトリクス・トレースの標準仕様を策定"
+    },
+    "effort_points": 5,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["obs_distributed-tracing"],
+    "questionDependencies": [
+      { "questionId": "obs_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "obs_aisats",
+    "category": "observability",
+    "phase": "advanced",
+    "order": 2,
+    "label": { "en": "AI-assisted triage", "ja": "AI支援トリアージ" },
+    "description": {
+      "en": "LLM summarises alerts and suggests remediation.",
+      "ja": "LLMがアラートを要約し対応を提案"
+    },
+    "effort_points": 8,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["obs_slo-error-budgets"],
+    "questionDependencies": [
+      { "questionId": "obs_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "obs_google-sre-observability",
+    "category": "observability",
+    "phase": "advanced",
+    "order": 3,
+    "label": { "en": "SRE observability reviews", "ja": "SRE可観測性レビュー" },
+    "description": {
+      "en": "Quarterly review against Google SRE golden signals.",
+      "ja": "Google SREゴールデンシグナルで四半期レビュー"
+    },
+    "effort_points": 5,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["obs_telemetry-standards"],
+    "questionDependencies": [
+      { "questionId": "obs_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "finops_cost-dashboard",
+    "category": "finops_cost_management",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Cost dashboard", "ja": "コストダッシュボード" },
+    "description": {
+      "en": "Daily spend by project displayed in Grafana.",
+      "ja": "プロジェクト別日次支出をGrafanaで表示"
+    },
+    "effort_points": 2,
+    "impact_area": "IC",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "finops_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "finops_budget-alerts",
+    "category": "finops_cost_management",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Budget alerts", "ja": "予算アラート" },
+    "description": {
+      "en": "Email / Slack alert when 80 % of budget consumed.",
+      "ja": "予算の80%でメール／Slackアラート"
+    },
+    "effort_points": 2,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["finops_cost-dashboard"],
+    "questionDependencies": [
+      { "questionId": "finops_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "finops_idle-resource-scan",
+    "category": "finops_cost_management",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Idle resource scan", "ja": "アイドルリソーススキャン" },
+    "description": {
+      "en": "Weekly script finds unattached volumes & idle IPs.",
+      "ja": "未使用ボリュームやアイドルIPを毎週検出"
+    },
+    "effort_points": 1,
+    "impact_area": "IC",
+    "quick_win": true,
+    "dependencies": ["finops_budget-alerts"],
+    "questionDependencies": [
+      { "questionId": "finops_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "finops_tag-policy",
+    "category": "finops_cost_management",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Cost tag policy", "ja": "コストタグポリシー" },
+    "description": {
+      "en": "Enforce cost-centre tags on infra via policy-as-code.",
+      "ja": "Policy as Codeでコストセンタータグを強制"
+    },
+    "effort_points": 3,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["finops_idle-resource-scan"],
+    "questionDependencies": [
+      { "questionId": "finops_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "finops_scheduled-scaling",
+    "category": "finops_cost_management",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Scheduled scaling", "ja": "スケジュールスケーリング" },
+    "description": {
+      "en": "Off-hours scale-down for non-prod clusters.",
+      "ja": "非本番クラスターを営業時間外に縮小"
+    },
+    "effort_points": 3,
+    "impact_area": "IC",
+    "quick_win": true,
+    "dependencies": ["finops_tag-policy"],
+    "questionDependencies": [
+      { "questionId": "finops_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "finops_savings-plan-coverage",
+    "category": "finops_cost_management",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Savings plan coverage", "ja": "Savings Plan適用率" },
+    "description": {
+      "en": "Achieve 70 % coverage with RIs / SPs on steady workload.",
+      "ja": "安定負荷にRI／SPを70%適用"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["finops_tag-policy"],
+    "questionDependencies": [
+      { "questionId": "finops_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "finops_anomaly-detection-ml",
+    "category": "finops_cost_management",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "ML anomaly detection", "ja": "ML異常検知" },
+    "description": {
+      "en": "Detect spend anomalies via ML & open ticket.",
+      "ja": "MLでコスト異常を検知しチケット発行"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["finops_scheduled-scaling"],
+    "questionDependencies": [
+      { "questionId": "finops_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "finops_showback-chargeback",
+    "category": "finops_cost_management",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Showback / chargeback",
+      "ja": "ショーバック／チャージバック"
+    },
+    "description": {
+      "en": "Bill teams monthly based on tagged usage.",
+      "ja": "タグ付け使用量に基づき月次請求"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["finops_anomaly-detection-ml"],
+    "questionDependencies": [
+      { "questionId": "finops_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "finops_carbon-cost-optimizer",
+    "category": "finops_cost_management",
+    "phase": "advanced",
+    "order": 3,
+    "label": {
+      "en": "Carbon-aware cost optimiser",
+      "ja": "カーボンコストオプティマイザー"
+    },
+    "description": {
+      "en": "Shift workloads to lowest carbon / cheapest region.",
+      "ja": "炭素排出・コスト最小のリージョンにワークロードを移動"
+    },
+    "effort_points": 8,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["finops_showback-chargeback"],
+    "questionDependencies": [
+      { "questionId": "finops_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "op_incident-playbooks",
+    "category": "operations_resilience",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Incident playbooks", "ja": "インシデントプレイブック" },
+    "description": {
+      "en": "Docs with severity matrix and comms template.",
+      "ja": "重大度マトリクスと連絡テンプレを含むドキュメント"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "ops_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "op_multi-az-deployments",
+    "category": "operations_resilience",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Multi-AZ deployments", "ja": "マルチAZデプロイ" },
+    "description": {
+      "en": "Spread prod clusters across ≥2 AZs.",
+      "ja": "本番クラスターを2つ以上のAZに配置"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["op_incident-playbooks"],
+    "questionDependencies": [
+      { "questionId": "ops_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "op_basic-synthetic-checks",
+    "category": "operations_resilience",
+    "phase": "beginner",
+    "order": 3,
+    "label": {
+      "en": "Synthetic uptime checks",
+      "ja": "合成アップタイムチェック"
+    },
+    "description": {
+      "en": "Public endpoint ping every 30 s.",
+      "ja": "公開エンドポイントを30秒毎にPing"
+    },
+    "effort_points": 1,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": ["op_multi-az-deployments"],
+    "questionDependencies": [
+      { "questionId": "ops_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "op_chaos-monkey",
+    "category": "operations_resilience",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Chaos monkey", "ja": "カオスモンキー" },
+    "description": {
+      "en": "Random instance termination in staging.",
+      "ja": "ステージングでランダムにインスタンス終了"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["op_basic-synthetic-checks"],
+    "questionDependencies": [
+      { "questionId": "ops_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "op_auto-remediation",
+    "category": "operations_resilience",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "Auto remediation", "ja": "自動リメディエーション" },
+    "description": {
+      "en": "Runbooks encoded as scripts triggered by alerts.",
+      "ja": "アラートでスクリプト実行するRunbook自動化"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["op_chaos-monkey"],
+    "questionDependencies": [
+      { "questionId": "ops_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "op_disaster-recovery-drill",
+    "category": "operations_resilience",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Disaster recovery drill", "ja": "DRドリル" },
+    "description": {
+      "en": "Quarterly failover rehearsal to secondary region.",
+      "ja": "四半期ごとにセカンダリリージョンへフェイルオーバー訓練"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["op_multi-az-deployments"],
+    "questionDependencies": [
+      { "questionId": "ops_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "op_game-days",
+    "category": "operations_resilience",
+    "phase": "advanced",
+    "order": 1,
+    "label": { "en": "Cross-team game days", "ja": "クロスチームゲームデイ" },
+    "description": {
+      "en": "Inject real faults in prod during daylight.",
+      "ja": "営業時間中に実際の障害を本番に注入"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["op_chaos-monkey"],
+    "questionDependencies": [
+      { "questionId": "ops_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "op_proactive-capacity",
+    "category": "operations_resilience",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Proactive capacity mgmt",
+      "ja": "プロアクティブキャパシティ管理"
+    },
+    "description": {
+      "en": "Predict capacity 6 mo ahead via ML forecasting.",
+      "ja": "ML予測で6か月先の容量を予測"
+    },
+    "effort_points": 8,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["op_game-days"],
+    "questionDependencies": [
+      { "questionId": "ops_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "op_continuous-resilience-score",
+    "category": "operations_resilience",
+    "phase": "advanced",
+    "order": 3,
+    "label": { "en": "Resilience scorecard", "ja": "レジリエンススコアカード" },
+    "description": {
+      "en": "Score each service on RPO/RTO, chaos, failover tests.",
+      "ja": "RPO/RTO・カオス・フェイルオーバーテストでサービスを採点"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["op_disaster-recovery-drill"],
+    "questionDependencies": [
+      { "questionId": "ops_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "mc_identity-federation",
+    "category": "multicloud_hybrid_governance",
+    "phase": "beginner",
+    "order": 1,
+    "label": {
+      "en": "Identity federation",
+      "ja": "アイデンティティフェデレーション"
+    },
+    "description": {
+      "en": "SAML / OIDC SSO across clouds.",
+      "ja": "複数クラウドでSAML／OIDCのSSOを統合"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "mc_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mc_tag-policy-sync",
+    "category": "multicloud_hybrid_governance",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "Tag policy sync", "ja": "タグポリシー同期" },
+    "description": {
+      "en": "Common tag keys enforced in all cloud accounts.",
+      "ja": "全クラウドアカウントで共通タグキーを適用"
+    },
+    "effort_points": 3,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["mc_identity-federation"],
+    "questionDependencies": [
+      { "questionId": "mc_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mc_network-hub-spoke",
+    "category": "multicloud_hybrid_governance",
+    "phase": "beginner",
+    "order": 3,
+    "label": {
+      "en": "Hub-and-spoke network",
+      "ja": "ハブアンドスポークネットワーク"
+    },
+    "description": {
+      "en": "Transit-gateway style central network hub.",
+      "ja": "トランジットゲートウェイ型中央ネットワークハブ"
+    },
+    "effort_points": 3,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["mc_tag-policy-sync"],
+    "questionDependencies": [
+      { "questionId": "mc_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "mc_cloud-security-posture",
+    "category": "multicloud_hybrid_governance",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "CSPM baseline", "ja": "CSPMベースライン" },
+    "description": {
+      "en": "Enable Cloud Security Posture Mgmt on all tenants.",
+      "ja": "全テナントでCSPMを有効化"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["mc_network-hub-spoke"],
+    "questionDependencies": [
+      { "questionId": "mc_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mc_policy-engine-crosscloud",
+    "category": "multicloud_hybrid_governance",
+    "phase": "intermediate",
+    "order": 2,
+    "label": {
+      "en": "Cross-cloud policy engine",
+      "ja": "クロスクラウドポリシーエンジン"
+    },
+    "description": {
+      "en": "OPA / Sentinel policies redeployed to each cloud.",
+      "ja": "OPA・Sentinelポリシーを各クラウドに展開"
+    },
+    "effort_points": 5,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["mc_cloud-security-posture"],
+    "questionDependencies": [
+      { "questionId": "mc_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "mc_cost-aggregation",
+    "category": "multicloud_hybrid_governance",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Cost aggregation", "ja": "コスト集約" },
+    "description": {
+      "en": "Unify spend from AWS / Azure / GCP into single pane.",
+      "ja": "AWS・Azure・GCPの支出を単一ビューで集約"
+    },
+    "effort_points": 3,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["mc_tag-policy-sync"],
+    "questionDependencies": [
+      { "questionId": "mc_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "mc_global-control-plane",
+    "category": "multicloud_hybrid_governance",
+    "phase": "advanced",
+    "order": 1,
+    "label": {
+      "en": "Global control plane",
+      "ja": "グローバルコントロールプレーン"
+    },
+    "description": {
+      "en": "Cross-plane or Gloo F to manage resources multi-cloud.",
+      "ja": "Crossplane・GlooFでマルチクラウド資源を管理"
+    },
+    "effort_points": 8,
+    "impact_area": "OE",
+    "quick_win": false,
+    "dependencies": ["mc_policy-engine-crosscloud"],
+    "questionDependencies": [
+      { "questionId": "mc_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "mc_latency-based-routing",
+    "category": "multicloud_hybrid_governance",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Latency-based routing",
+      "ja": "レイテンシベースルーティング"
+    },
+    "description": {
+      "en": "GSLB directs traffic to lowest-latency region.",
+      "ja": "GSLBでレイテンシ最小リージョンへトラフィックを誘導"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["mc_global-control-plane"],
+    "questionDependencies": [
+      { "questionId": "mc_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "mc_unified-billing-engine",
+    "category": "multicloud_hybrid_governance",
+    "phase": "advanced",
+    "order": 3,
+    "label": { "en": "Unified billing engine", "ja": "統合課金エンジン" },
+    "description": {
+      "en": "Internal recharge + showback across all clouds.",
+      "ja": "全クラウドの内部課金とショーバックを実施"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["mc_cost-aggregation"],
+    "questionDependencies": [
+      { "questionId": "mc_9", "minValue": 80 }
+    ]
+  },
+
+  {
+    "id": "ai_ml_feature-flag-inference",
+    "category": "ai_ml_integration",
+    "phase": "beginner",
+    "order": 1,
+    "label": { "en": "Shadow inference", "ja": "シャドーインファレンス" },
+    "description": {
+      "en": "Serve ML predictions in shadow mode to collect accuracy stats.",
+      "ja": "精度統計収集のためシャドーモードでML推論を提供"
+    },
+    "effort_points": 3,
+    "impact_area": "TM",
+    "quick_win": true,
+    "dependencies": [],
+    "questionDependencies": [
+      { "questionId": "ai_ml_1", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ai_ml_ci-cd-mlops",
+    "category": "ai_ml_integration",
+    "phase": "beginner",
+    "order": 2,
+    "label": { "en": "CI/CD for models", "ja": "モデル向けCI/CD" },
+    "description": {
+      "en": "Automate training pipeline & promote models via CI/CD.",
+      "ja": "トレーニングパイプライン自動化とCI/CDでモデルを昇格"
+    },
+    "effort_points": 3,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["ai_ml_feature-flag-inference"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_2", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ai_ml_model-monitoring",
+    "category": "ai_ml_integration",
+    "phase": "beginner",
+    "order": 3,
+    "label": { "en": "Model monitoring", "ja": "モデル監視" },
+    "description": {
+      "en": "Detect drift / skew and trigger retraining jobs automatically.",
+      "ja": "ドリフト・スキューを検知し自動リトレーニングを実行"
+    },
+    "effort_points": 2,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["ai_ml_ci-cd-mlops"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_3", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "ai_ml_feature-store",
+    "category": "ai_ml_integration",
+    "phase": "intermediate",
+    "order": 1,
+    "label": { "en": "Central feature store", "ja": "中央フィーチャーストア" },
+    "description": {
+      "en": "Reusable, versioned features with online / offline parity.",
+      "ja": "オンライン・オフライン同一性を持つ再利用可能なフィーチャー"
+    },
+    "effort_points": 5,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["ai_ml_model-monitoring"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_4", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ai_ml_ab-testing",
+    "category": "ai_ml_integration",
+    "phase": "intermediate",
+    "order": 2,
+    "label": { "en": "ML A/B testing", "ja": "ML A/Bテスト" },
+    "description": {
+      "en": "Statistically sound experiment framework for model variants.",
+      "ja": "モデルバリアントの統計的に有意な実験フレームワーク"
+    },
+    "effort_points": 5,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["ai_ml_feature-store"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_5", "minValue": 66 }
+    ]
+  },
+  {
+    "id": "ai_ml_cost-aware-serving",
+    "category": "ai_ml_integration",
+    "phase": "intermediate",
+    "order": 3,
+    "label": { "en": "Cost-aware model serving", "ja": "コスト最適化推論" },
+    "description": {
+      "en": "Auto-scale GPU / CPU pools based on latency-vs-cost curves.",
+      "ja": "レイテンシとコスト曲線に基づきGPU/CPUプールを自動スケール"
+    },
+    "effort_points": 5,
+    "impact_area": "IC",
+    "quick_win": false,
+    "dependencies": ["ai_ml_ab-testing"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_6", "minValue": 66 }
+    ]
+  },
+
+  {
+    "id": "ai_ml_governance-framework",
+    "category": "ai_ml_integration",
+    "phase": "advanced",
+    "order": 1,
+    "label": {
+      "en": "AI governance framework",
+      "ja": "AIガバナンスフレームワーク"
+    },
+    "description": {
+      "en": "Bias, explainability & data-retention policies enforced in code.",
+      "ja": "バイアス・説明可能性・データ保持ポリシーをコードで強制"
+    },
+    "effort_points": 8,
+    "impact_area": "IM",
+    "quick_win": false,
+    "dependencies": ["ai_ml_cost-aware-serving"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_7", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "ai_ml_real-time-personalisation",
+    "category": "ai_ml_integration",
+    "phase": "advanced",
+    "order": 2,
+    "label": {
+      "en": "Real-time personalisation",
+      "ja": "リアルタイムパーソナライゼーション"
+    },
+    "description": {
+      "en": "Serve low-latency recommendations using streaming features.",
+      "ja": "ストリーミングフィーチャーで低レイテンシーのレコメンデーションを提供"
+    },
+    "effort_points": 8,
+    "impact_area": "TM",
+    "quick_win": false,
+    "dependencies": ["ai_ml_governance-framework"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_8", "minValue": 80 }
+    ]
+  },
+  {
+    "id": "ai_ml_autonomous-retraining",
+    "category": "ai_ml_integration",
+    "phase": "advanced",
+    "order": 3,
+    "label": { "en": "Autonomous retraining", "ja": "自律的リトレーニング" },
+    "description": {
+      "en": "Full closed-loop retraining & redeployment with zero downtime.",
+      "ja": "ゼロダウンタイムでの完全クローズドループのリトレーニングと再デプロイ"
+    },
+    "effort_points": 8,
+    "impact_area": "DP",
+    "quick_win": false,
+    "dependencies": ["ai_ml_real-time-personalisation"],
+    "questionDependencies": [
+      { "questionId": "ai_ml_9", "minValue": 80 }
+    ]
+  }
+]

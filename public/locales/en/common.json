@@ -1,0 +1,383 @@
+{
+  "app": {
+    "title": "Cloud Native Maturity Assessment",
+    "subtitle": "Evaluate your organization's cloud native adoption level",
+    "copyright": "© 2025 Aokumo Inc. All rights reserved."
+  },
+  "meta": {
+    "defaultTitle": "Cloud Native Maturity Assessment | Aokumo",
+    "defaultDescription": "Evaluate your organization's cloud native adoption and get personalized recommendations for digital transformation with our comprehensive assessment tool.",
+    "defaultKeywords": "cloud native, maturity assessment, digital transformation, cloud adoption, DevOps, microservices, Kubernetes, containers, AWS, Azure, GCP",
+    "pages": {
+      "home": {
+        "title": "Cloud Native Maturity Assessment | Aokumo",
+        "description": "Start your cloud native transformation journey with our comprehensive maturity assessment. Get personalized recommendations and roadmap."
+      },
+      "organizationInfo": {
+        "title": "Organization Information | Cloud Native Assessment",
+        "description": "Provide your organization details to personalize your cloud native maturity assessment experience."
+      },
+      "assessment": {
+        "title": "Assessment Questions | Cloud Native Maturity Assessment",
+        "description": "Answer comprehensive questions across 15 categories to evaluate your cloud native maturity level."
+      },
+      "results": {
+        "title": "Assessment Results | Cloud Native Maturity Assessment",
+        "description": "View your personalized cloud native maturity assessment results, recommendations, and implementation roadmap."
+      },
+      "mindmap": {
+        "title": "Assessment Mindmap | Cloud Native Maturity Assessment",
+        "description": "Interactive visualization of the cloud native assessment process, modules, and analysis framework."
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "assessment": "Assessment",
+    "results": "Results",
+    "settings": "Settings",
+    "resultsDashboard": "Results Dashboard",
+    "maturityAnalysis": "Maturity Analysis",
+    "trailMap": "Trail Map",
+    "implementationPlan": "Implementation Plan",
+    "assessmentMindmap": "Assessment Mindmap",
+    "assessmentHistory": "Assessment History",
+    "goToWelcome": "Go to welcome page"
+  },
+  "navigation": {
+    "backToResults": "Back to Results"
+  },
+  "language": {
+    "en": "English",
+    "ja": "Japanese"
+  },
+  "actions": {
+    "start": "Start Assessment",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "export": "Export",
+    "share": "Share",
+    "skip": "Skip",
+    "sending": "Sending...",
+    "navigate": "Navigate",
+    "explore": "Explore",
+    "interact": "Interact",
+    "controls": "Controls"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "noData": "No data available",
+    "required": "Required"
+  },
+  "analysis": {
+    "tabs": {
+      "overview": "Overview",
+      "industry": "Industry Comparison",
+      "trend": "Trend Analysis",
+      "cost": "Cost Analysis"
+    },
+    "title": "Cloud Native Maturity Assessment",
+    "loading": "Loading your assessment analysis...",
+    "noData": "No assessment data available",
+    "noAnalysisAvailable": "No Analysis Available",
+    "pleaseCompleteAssessment": "Please complete an assessment to view your maturity analysis.",
+    "categoryBreakdown": {
+      "title": "Category Breakdown",
+      "description": "This detailed analysis shows how your organization scores in sub-categories within each assessment area. Click on a category to see question-level analysis and specific recommendations.",
+      "viewDetailedBreakdown": "View detailed breakdown"
+    },
+    "maturityScoreEvolution": "Maturity Score Evolution",
+    "completeAnotherAssessment": "Complete another assessment to view trend data",
+    "progressAgainstGoals": "Progress Against Goals",
+    "shortTermGoals": "Short-term Goals (6 Months)",
+    "longTermGoals": "Long-term Goals (12 Months)",
+    "securityImprovements": "Security Improvements",
+    "storageAutomation": "Storage Automation",
+    "serviceMeshAdoption": "Service Mesh Adoption",
+    "overallMaturity": "Overall Maturity"
+  },
+  "loading": "Loading...",
+  "error": "An error occurred",
+  "success": "Success",
+  "warning": "Warning",
+  "info": "Information",
+  "noData": "No data available",
+  "required": "Required",
+  "aiKnowledge": {
+    "title": "AI Knowledge Assistant",
+    "subtitle": "AI-powered explanations and educational content",
+    "loading": "Loading knowledge content...",
+    "notAvailable": "No specific knowledge content is available for this topic.",
+    "resourcesAvailable": "We have pre-configured knowledge content to help you understand this topic.",
+    "noApiKeysRequired": "No API keys required!",
+    "resourcesHeader": "Knowledge Resources Available",
+    "continue": "Continue",
+    "contentSource": "Knowledge content sourced from our curated knowledge base",
+    "close": "Close",
+    "examples": "Examples",
+    "resources": "Resources"
+  },
+  "knowledgeResources": {
+    "modal": {
+      "title": "Cloud Native Learning Resources",
+      "description": "Educational materials to help you understand cloud native concepts and technologies"
+    },
+    "skillLevels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate", 
+      "advanced": "Advanced"
+    },
+    "timeUnit": "min",
+    "buttons": {
+      "watchVideo": "Watch Video",
+      "viewResource": "View Resource",
+      "continueAssessment": "Continue Assessment"
+    },
+    "labels": {
+      "source": "Source"
+    },
+    "categories": {
+      "foundations_culture": {
+        "title": "Cloud Native Foundations",
+        "resources": {
+          "cloudNative101": {
+            "title": "Cloud Native 101",
+            "description": "Introduction to cloud native principles, practices, and terminology"
+          },
+          "effectiveTeams": {
+            "title": "Building Effective Teams for Cloud Native",
+            "description": "How to structure engineering teams for success in cloud native environments"
+          },
+          "transformationPlaybook": {
+            "title": "Cloud Native Transformation Playbook",
+            "description": "Strategic guide to organizational cloud native transformation"
+          },
+          "devopsCulture": {
+            "title": "Introduction to DevOps Culture",
+            "description": "Understanding the cultural shift required for cloud native success"
+          }
+        }
+      },
+      "container_infrastructure": {
+        "title": "Container Infrastructure",
+        "description": "Learn about container technologies, orchestration platforms, and best practices for managing containerized workloads.",
+        "resources": {
+          "orchestrationBasics": {
+            "title": "Container Orchestration Basics",
+            "description": "Core concepts and components of container orchestration platforms"
+          },
+          "containerPatterns": {
+            "title": "Container Patterns", 
+            "description": "Common patterns for containerized application deployment"
+          },
+          "infrastructureDeepDive": {
+            "title": "Container Infrastructure Deep Dive",
+            "description": "Detailed guide to container infrastructure components"
+          },
+          "containerEssentials": {
+            "title": "Container Essentials",
+            "description": "Video course covering container infrastructure fundamentals"
+          }
+        }
+      },
+      "application_architecture": {
+        "title": "Application Architecture",
+        "resources": {
+          "twelveFactor": {
+            "title": "12-Factor App",
+            "description": "Design principles for scalable, portable web applications"
+          },
+          "microservices": {
+            "title": "Microservices Architecture", 
+            "description": "Designing and deploying microservices-based applications"
+          },
+          "serviceOriented": {
+            "title": "Service-Oriented Architecture",
+            "description": "Designing and deploying service-oriented architectures"
+          }
+        }
+      },
+      "cicd_practices": {
+        "title": "CI/CD Practices",
+        "resources": {
+          "bestPractices": {
+            "title": "CI/CD Best Practices",
+            "description": "Best practices for implementing CI/CD pipelines"
+          },
+          "devopsCulture": {
+            "title": "DevOps Culture",
+            "description": "Building a culture of collaboration and continuous improvement"
+          },
+          "continuousDelivery": {
+            "title": "Continuous Delivery",
+            "description": "Implementing continuous delivery practices"
+          }
+        }
+      },
+      "dora_metrics": {
+        "title": "DORA Metrics",
+        "resources": {
+          "fundamentals": {
+            "title": "DORA Metrics",
+            "description": "Measuring software delivery performance"
+          },
+          "transformation": {
+            "title": "DevOps Transformation",
+            "description": "Transforming organizations through DevOps"
+          },
+          "phoenixProject": {
+            "title": "The Phoenix Project",
+            "description": "A novel about IT, DevOps, and helping your business win"
+          }
+        }
+      },
+      "observability": {
+        "title": "Observability",
+        "resources": {
+          "engineering": {
+            "title": "Observability Engineering",
+            "description": "Building observability into software systems"
+          },
+          "distributedSystems": {
+            "title": "Distributed Systems",
+            "description": "Understanding distributed systems and their challenges"
+          },
+          "scalability": {
+            "title": "The Art of Scalability",
+            "description": "Scaling web-based systems"
+          }
+        }
+      },
+      "security_compliance": {
+        "title": "Security & Compliance",
+        "resources": {
+          "bestPractices": {
+            "title": "Security Best Practices",
+            "description": "Best practices for securing cloud native applications"
+          },
+          "complianceAutomation": {
+            "title": "Compliance Automation",
+            "description": "Automating compliance checks and audits"
+          },
+          "securityOperations": {
+            "title": "Security Operations",
+            "description": "Implementing security operations for cloud native environments"
+          }
+        }
+      },
+      "app_migration_modernization": {
+        "title": "App Migration & Modernization",
+        "resources": {
+          "fundamentals": {
+            "title": "Cloud Migration Fundamentals",
+            "description": "Key principles for migrating applications to the cloud"
+          },
+          "patterns": {
+            "title": "Application Modernization Patterns",
+            "description": "Common patterns for modernizing legacy applications"
+          }
+        }
+      },
+      "business_value_strategy": {
+        "title": "Business Value & Cloud Native Strategy",
+        "resources": {
+          "roiBasics": {
+            "title": "Cloud ROI Basics",
+            "description": "Understanding cloud economics and business value"
+          },
+          "strategyPlaybook": {
+            "title": "Cloud Strategy Playbook",
+            "description": "Developing a comprehensive cloud strategy"
+          }
+        }
+      },
+      "finops_cost_management": {
+        "title": "FinOps & Cost Management",
+        "resources": {
+          "fundamentals": {
+            "title": "FinOps Fundamentals",
+            "description": "Introduction to cloud financial operations"
+          },
+          "optimization": {
+            "title": "Cost Optimization Strategies",
+            "description": "Advanced techniques for managing cloud costs"
+          }
+        }
+      },
+      "infrastructure_platform": {
+        "title": "Infrastructure & Platform",
+        "resources": {
+          "infrastructureAsCode": {
+            "title": "Infrastructure as Code",
+            "description": "Managing infrastructure through code and automation"
+          },
+          "platformEngineering": {
+            "title": "Platform Engineering Principles",
+            "description": "Building developer platforms that enable self-service"
+          }
+        }
+      },
+      "data_management": {
+        "title": "Data Management",
+        "resources": {
+          "storageOptions": {
+            "title": "Cloud Data Storage Options",
+            "description": "Overview of cloud-native data storage approaches"
+          },
+          "architecturePatterns": {
+            "title": "Data Architecture Patterns",
+            "description": "Patterns for managing data in cloud environments"
+          }
+        }
+      },
+      "operations_resilience": {
+        "title": "Operations & Resilience",
+        "resources": {
+          "sre": {
+            "title": "Site Reliability Engineering",
+            "description": "Introduction to SRE principles and practices"
+          },
+          "chaosEngineering": {
+            "title": "Chaos Engineering",
+            "description": "Building resilient systems through controlled experiments"
+          }
+        }
+      },
+      "multicloud_hybrid_governance": {
+        "title": "Multicloud & Hybrid Governance",
+        "resources": {
+          "strategy": {
+            "title": "Multicloud Strategy",
+            "description": "Developing effective multicloud architectures"
+          },
+          "governance": {
+            "title": "Cloud Governance Framework",
+            "description": "Establishing governance for complex cloud environments"
+          }
+        }
+      },
+      "ai_ml_integration": {
+        "title": "AI & ML Integration", 
+        "resources": {
+          "mlops": {
+            "title": "ML Ops Fundamentals",
+            "description": "Introduction to machine learning operations"
+          },
+          "platformEngineering": {
+            "title": "AI Platform Engineering",
+            "description": "Building platforms for AI/ML workloads"
+          }
+        }
+      }
+    }
+  }
+}

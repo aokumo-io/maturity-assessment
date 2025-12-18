@@ -1,0 +1,1162 @@
+{
+  "foundations_culture": {
+    "title": "Foundations & Culture",
+    "description": "Assess the organization's team structure, engineering culture, and leadership approach to cloud native.",
+    "subcategories": {
+      "team_structure": {
+        "title": "Team Structure",
+        "description": "Organization of teams for cloud-native development and operations",
+        "details": {
+          "cross_functional": {
+            "title": "Cross-functional Teams",
+            "description": "Teams with diverse skills working on complete features"
+          },
+          "devops_culture": {
+            "title": "DevOps Culture",
+            "description": "Breaking down silos between development and operations"
+          },
+          "platform_teams": {
+            "title": "Platform Teams",
+            "description": "Teams that build and maintain shared platforms"
+          },
+          "sre_model": {
+            "title": "SRE Model",
+            "description": "Site Reliability Engineering practices"
+          }
+        }
+      },
+      "engineering_culture": {
+        "title": "Engineering Culture",
+        "description": "Cultural practices and mindset for cloud-native engineering",
+        "details": {
+          "continuous_learning": {
+            "title": "Continuous Learning",
+            "description": "Culture of experimentation and learning from failures"
+          },
+          "automation_first": {
+            "title": "Automation First",
+            "description": "Prioritizing automation over manual processes"
+          },
+          "collaboration": {
+            "title": "Collaboration",
+            "description": "Cross-team collaboration and knowledge sharing"
+          },
+          "innovation": {
+            "title": "Innovation",
+            "description": "Encouraging innovation and creative problem solving"
+          }
+        }
+      },
+      "leadership": {
+        "title": "Leadership",
+        "description": "Leadership support and commitment to cloud-native transformation",
+        "details": {
+          "executive_support": {
+            "title": "Executive Support",
+            "description": "Leadership commitment to cloud native transformation"
+          },
+          "change_management": {
+            "title": "Change Management",
+            "description": "Managing organizational change effectively"
+          },
+          "investment_strategy": {
+            "title": "Investment Strategy",
+            "description": "Strategic investment in people and technology"
+          },
+          "vision_alignment": {
+            "title": "Vision Alignment",
+            "description": "Aligning teams with cloud native vision"
+          }
+        }
+      }
+    }
+  },
+  "business_value_strategy": {
+    "title": "Business Value and Cloud Native Strategy",
+    "description": "Evaluate alignment between cloud native initiatives and business goals, ROI measurement, and strategic planning.",
+    "subcategories": {
+      "business_alignment": {
+        "title": "Business Alignment",
+        "description": "Aligning cloud native initiatives with business objectives",
+        "details": {
+          "business_goals": {
+            "title": "Business Goals",
+            "description": "Aligning cloud native initiatives with business objectives"
+          },
+          "stakeholder_buy_in": {
+            "title": "Stakeholder Buy-in",
+            "description": "Getting support from key business stakeholders"
+          },
+          "value_streams": {
+            "title": "Value Streams",
+            "description": "Mapping and optimizing business value streams"
+          },
+          "success_metrics": {
+            "title": "Success Metrics",
+            "description": "Defining measurable success criteria"
+          }
+        }
+      },
+      "roi_measurement": {
+        "title": "ROI Measurement",
+        "description": "Measuring return on investment for cloud native initiatives",
+        "details": {
+          "cost_savings": {
+            "title": "Cost Savings",
+            "description": "Measuring infrastructure and operational cost reductions"
+          },
+          "productivity_gains": {
+            "title": "Productivity Gains",
+            "description": "Quantifying developer and operational productivity improvements"
+          },
+          "time_to_market": {
+            "title": "Time to Market",
+            "description": "Measuring faster delivery and deployment cycles"
+          },
+          "business_impact": {
+            "title": "Business Impact",
+            "description": "Tracking business outcomes and revenue impact"
+          }
+        }
+      },
+      "strategic_planning": {
+        "title": "Strategic Planning",
+        "description": "Long-term planning for cloud native adoption",
+        "details": {
+          "roadmap_planning": {
+            "title": "Roadmap Planning",
+            "description": "Creating strategic cloud native adoption roadmaps"
+          },
+          "risk_assessment": {
+            "title": "Risk Assessment",
+            "description": "Identifying and mitigating transformation risks"
+          },
+          "resource_allocation": {
+            "title": "Resource Allocation",
+            "description": "Planning resource needs and budget allocation"
+          },
+          "milestone_tracking": {
+            "title": "Milestone Tracking",
+            "description": "Setting and tracking key transformation milestones"
+          }
+        }
+      }
+    }
+  },
+  "application_architecture": {
+    "title": "Application Architecture",
+    "description": "Evaluate adherence to Twelve-Factor App principles, architectural patterns, and database practices.",
+    "subcategories": {
+      "twelve_factor": {
+        "title": "Twelve-Factor App",
+        "description": "Adherence to the twelve-factor methodology for building cloud-native applications",
+        "details": {
+          "codebase": {
+            "title": "1. Codebase",
+            "description": "One codebase tracked in revision control, many deploys"
+          },
+          "dependencies": {
+            "title": "2. Dependencies",
+            "description": "Explicitly declare and isolate dependencies"
+          },
+          "config": {
+            "title": "3. Config",
+            "description": "Store config in the environment"
+          },
+          "backing_services": {
+            "title": "4. Backing Services",
+            "description": "Treat backing services as attached resources"
+          },
+          "build_release_run": {
+            "title": "5. Build, Release, Run",
+            "description": "Strictly separate build and run stages"
+          },
+          "processes": {
+            "title": "6. Processes",
+            "description": "Execute the app as one or more stateless processes"
+          },
+          "port_binding": {
+            "title": "7. Port Binding",
+            "description": "Export services via port binding"
+          },
+          "concurrency": {
+            "title": "8. Concurrency",
+            "description": "Scale out via the process model"
+          },
+          "disposability": {
+            "title": "9. Disposability",
+            "description": "Maximize robustness with fast startup and graceful shutdown"
+          },
+          "dev_prod_parity": {
+            "title": "10. Dev/Prod Parity",
+            "description": "Keep development, staging, and production as similar as possible"
+          },
+          "logs": {
+            "title": "11. Logs",
+            "description": "Treat logs as event streams"
+          },
+          "admin_processes": {
+            "title": "12. Admin Processes",
+            "description": "Run admin/management tasks as one-off processes"
+          }
+        }
+      },
+      "microservices": {
+        "title": "Microservices Patterns",
+        "description": "Implementation of microservices architectural patterns",
+        "details": {
+          "service_decomposition": {
+            "title": "Service Decomposition",
+            "description": "Breaking monoliths into smaller, focused services"
+          },
+          "api_gateway": {
+            "title": "API Gateway",
+            "description": "Single entry point for client requests"
+          },
+          "service_discovery": {
+            "title": "Service Discovery",
+            "description": "Automatic detection and registration of services"
+          },
+          "circuit_breaker": {
+            "title": "Circuit Breaker",
+            "description": "Prevent cascading failures in distributed systems"
+          },
+          "event_driven": {
+            "title": "Event-Driven Architecture",
+            "description": "Asynchronous communication through events"
+          }
+        }
+      },
+      "database_practices": {
+        "title": "Database Practices",
+        "description": "Modern database patterns for cloud-native applications",
+        "details": {
+          "database_per_service": {
+            "title": "Database per Service",
+            "description": "Each microservice owns its data"
+          },
+          "cqrs": {
+            "title": "CQRS",
+            "description": "Command Query Responsibility Segregation pattern"
+          },
+          "event_sourcing": {
+            "title": "Event Sourcing",
+            "description": "Storing state changes as events"
+          },
+          "polyglot_persistence": {
+            "title": "Polyglot Persistence",
+            "description": "Using different databases for different needs"
+          }
+        }
+      }
+    }
+  },
+  "app_migration_modernization": {
+    "title": "App Migration & Modernization",
+    "description": "Assess strategies for migrating and modernizing legacy applications to cloud native architectures.",
+    "subcategories": {
+      "migration_strategy": {
+        "title": "Migration Strategy",
+        "description": "Approaches for migrating applications to cloud-native platforms",
+        "details": {
+          "strangler_fig": {
+            "title": "Strangler Fig Pattern",
+            "description": "Gradually replacing legacy systems"
+          },
+          "lift_and_shift": {
+            "title": "Lift and Shift",
+            "description": "Moving applications to cloud with minimal changes"
+          },
+          "refactor": {
+            "title": "Refactor",
+            "description": "Restructuring code for cloud native patterns"
+          },
+          "rebuild": {
+            "title": "Rebuild",
+            "description": "Complete rewrite using cloud native technologies"
+          }
+        }
+      },
+      "legacy_modernization": {
+        "title": "Legacy Modernization",
+        "description": "Modernizing existing applications for cloud-native environments",
+        "details": {
+          "monolith_decomposition": {
+            "title": "Monolith Decomposition",
+            "description": "Breaking down monolithic applications"
+          },
+          "api_first": {
+            "title": "API-First Design",
+            "description": "Designing APIs before implementation"
+          },
+          "data_migration": {
+            "title": "Data Migration",
+            "description": "Strategies for migrating legacy data"
+          },
+          "gradual_rollout": {
+            "title": "Gradual Rollout",
+            "description": "Phased migration approach"
+          }
+        }
+      },
+      "refactoring_patterns": {
+        "title": "Refactoring Patterns",
+        "description": "Patterns for refactoring applications to cloud-native architectures",
+        "details": {
+          "extract_service": {
+            "title": "Extract Service",
+            "description": "Extracting functionality into separate services"
+          },
+          "database_refactoring": {
+            "title": "Database Refactoring",
+            "description": "Modernizing data access patterns"
+          },
+          "ui_modernization": {
+            "title": "UI Modernization",
+            "description": "Updating user interfaces for cloud native"
+          },
+          "integration_patterns": {
+            "title": "Integration Patterns",
+            "description": "Modern integration approaches"
+          }
+        }
+      }
+    }
+  },
+  "container_infrastructure": {
+    "title": "Container Infrastructure",
+    "description": "Evaluate container adoption, registry management, container orchestration, and platform capabilities.",
+    "subcategories": {
+      "container_adoption": {
+        "title": "Container Adoption",
+        "description": "Level of containerization across applications and services",
+        "details": {
+          "docker_basics": {
+            "title": "Docker Basics",
+            "description": "Containerizing applications with Docker"
+          },
+          "image_optimization": {
+            "title": "Image Optimization",
+            "description": "Building efficient, secure container images"
+          },
+          "multi_stage_builds": {
+            "title": "Multi-stage Builds",
+            "description": "Optimizing build processes and image sizes"
+          },
+          "security_scanning": {
+            "title": "Security Scanning",
+            "description": "Scanning images for vulnerabilities"
+          }
+        }
+      },
+      "registry_management": {
+        "title": "Registry Management",
+        "description": "Management of container registries and artifacts",
+        "details": {
+          "image_registry": {
+            "title": "Image Registry",
+            "description": "Centralized storage for container images"
+          },
+          "image_tagging": {
+            "title": "Image Tagging",
+            "description": "Versioning and organizing container images"
+          },
+          "registry_security": {
+            "title": "Registry Security",
+            "description": "Securing access to container registries"
+          },
+          "artifact_management": {
+            "title": "Artifact Management",
+            "description": "Managing build artifacts and dependencies"
+          }
+        }
+      },
+      "orchestration": {
+        "title": "Orchestration",
+        "description": "Container orchestration and management capabilities",
+        "details": {
+          "kubernetes_basics": {
+            "title": "Kubernetes Basics",
+            "description": "Container orchestration fundamentals"
+          },
+          "pod_management": {
+            "title": "Pod Management",
+            "description": "Managing application pods and containers"
+          },
+          "service_mesh": {
+            "title": "Service Mesh",
+            "description": "Managing service-to-service communication"
+          },
+          "auto_scaling": {
+            "title": "Auto Scaling",
+            "description": "Automatic scaling based on demand"
+          }
+        }
+      }
+    }
+  },
+  "cicd_practices": {
+    "title": "CI/CD Practices",
+    "description": "Evaluate continuous integration, delivery, deployment automation, and GitOps adoption.",
+    "subcategories": {
+      "continuous_integration": {
+        "title": "Continuous Integration",
+        "description": "Automated build and testing practices",
+        "details": {
+          "automated_builds": {
+            "title": "Automated Builds",
+            "description": "Automatic code compilation and packaging"
+          },
+          "automated_testing": {
+            "title": "Automated Testing",
+            "description": "Unit, integration, and end-to-end testing"
+          },
+          "code_quality": {
+            "title": "Code Quality",
+            "description": "Static analysis and code quality gates"
+          },
+          "fast_feedback": {
+            "title": "Fast Feedback",
+            "description": "Quick feedback loops for developers"
+          }
+        }
+      },
+      "continuous_deployment": {
+        "title": "Continuous Deployment",
+        "description": "Automated deployment and release practices",
+        "details": {
+          "deployment_automation": {
+            "title": "Deployment Automation",
+            "description": "Automated deployment to all environments"
+          },
+          "blue_green": {
+            "title": "Blue-Green Deployment",
+            "description": "Zero-downtime deployment strategy"
+          },
+          "canary_releases": {
+            "title": "Canary Releases",
+            "description": "Gradual rollout to subset of users"
+          },
+          "rollback_strategy": {
+            "title": "Rollback Strategy",
+            "description": "Quick rollback mechanisms for failures"
+          }
+        }
+      },
+      "gitops": {
+        "title": "GitOps",
+        "description": "Git-based operations and deployment practices",
+        "details": {
+          "git_as_source": {
+            "title": "Git as Source of Truth",
+            "description": "All configuration stored in Git"
+          },
+          "declarative_config": {
+            "title": "Declarative Configuration",
+            "description": "Infrastructure and apps as code"
+          },
+          "automated_sync": {
+            "title": "Automated Sync",
+            "description": "Automatic synchronization with Git state"
+          },
+          "pull_based": {
+            "title": "Pull-based Deployment",
+            "description": "Agents pull changes from Git"
+          }
+        }
+      }
+    }
+  },
+  "dora_metrics": {
+    "title": "DORA Metrics",
+    "description": "Assess key performance indicators like deployment frequency, lead time, recovery time, and failure rate.",
+    "subcategories": {
+      "deployment_frequency": {
+        "title": "Deployment Frequency",
+        "description": "How often deployments occur to production",
+        "details": {
+          "elite_daily": {
+            "title": "Elite: Multiple/Day",
+            "description": "Elite performers deploy multiple times per day"
+          },
+          "high_weekly": {
+            "title": "High: Weekly to Monthly",
+            "description": "High performers deploy once per week to once per month"
+          },
+          "medium_monthly": {
+            "title": "Medium: Monthly to 6M",
+            "description": "Medium performers deploy once per month to once every 6 months"
+          },
+          "low_yearly": {
+            "title": "Low: 6M to Yearly",
+            "description": "Low performers deploy once every 6 months to once per year"
+          }
+        }
+      },
+      "lead_time": {
+        "title": "Lead Time for Changes",
+        "description": "Time from code commit to production deployment",
+        "details": {
+          "elite_hour": {
+            "title": "Elite: < 1 Hour",
+            "description": "Elite performers: Less than one hour"
+          },
+          "high_day": {
+            "title": "High: < 1 Day",
+            "description": "High performers: Less than one day"
+          },
+          "medium_week": {
+            "title": "Medium: 1 Day to 1 Week",
+            "description": "Medium performers: Between one day and one week"
+          },
+          "low_month": {
+            "title": "Low: 1 Week to 1 Month",
+            "description": "Low performers: Between one week and one month"
+          }
+        }
+      },
+      "mttr": {
+        "title": "Mean Time to Recovery",
+        "description": "Time to recover from production failures",
+        "details": {
+          "elite_hour_mttr": {
+            "title": "Elite: < 1 Hour",
+            "description": "Elite performers recover in less than one hour"
+          },
+          "high_day_mttr": {
+            "title": "High: < 1 Day",
+            "description": "High performers recover in less than one day"
+          },
+          "medium_week_mttr": {
+            "title": "Medium: < 1 Week",
+            "description": "Medium performers recover in less than one week"
+          },
+          "low_month_mttr": {
+            "title": "Low: > 1 Week",
+            "description": "Low performers take more than one week to recover"
+          }
+        }
+      },
+      "change_failure_rate": {
+        "title": "Change Failure Rate",
+        "description": "Percentage of deployments that cause production failures",
+        "details": {
+          "elite_0_15": {
+            "title": "Elite: 0-15%",
+            "description": "Elite performers have 0-15% change failure rate"
+          },
+          "high_16_30": {
+            "title": "High: 16-30%",
+            "description": "High performers have 16-30% change failure rate"
+          },
+          "medium_31_45": {
+            "title": "Medium: 31-45%",
+            "description": "Medium performers have 31-45% change failure rate"
+          },
+          "low_46_60": {
+            "title": "Low: 46-60%",
+            "description": "Low performers have 46-60% change failure rate"
+          }
+        }
+      }
+    }
+  },
+  "security_compliance": {
+    "title": "Security & Compliance",
+    "description": "Evaluate security practices, compliance management, and network security approaches.",
+    "subcategories": {
+      "security_practices": {
+        "title": "Security Practices",
+        "description": "Implementation of security best practices",
+        "details": {
+          "shift_left": {
+            "title": "Shift Left Security",
+            "description": "Integrating security early in development"
+          },
+          "zero_trust": {
+            "title": "Zero Trust Architecture",
+            "description": "Never trust, always verify approach"
+          },
+          "secrets_management": {
+            "title": "Secrets Management",
+            "description": "Secure handling of credentials and keys"
+          },
+          "vulnerability_scanning": {
+            "title": "Vulnerability Scanning",
+            "description": "Automated security vulnerability detection"
+          }
+        }
+      },
+      "compliance_management": {
+        "title": "Compliance Management",
+        "description": "Managing regulatory and compliance requirements",
+        "details": {
+          "policy_as_code": {
+            "title": "Policy as Code",
+            "description": "Compliance policies defined as code"
+          },
+          "audit_trails": {
+            "title": "Audit Trails",
+            "description": "Comprehensive logging for compliance"
+          },
+          "regulatory_frameworks": {
+            "title": "Regulatory Frameworks",
+            "description": "SOC2, GDPR, HIPAA compliance"
+          },
+          "continuous_compliance": {
+            "title": "Continuous Compliance",
+            "description": "Automated compliance monitoring"
+          }
+        }
+      },
+      "network_security": {
+        "title": "Network Security",
+        "description": "Network-level security controls and practices",
+        "details": {
+          "network_policies": {
+            "title": "Network Policies",
+            "description": "Kubernetes network security policies"
+          },
+          "service_mesh_security": {
+            "title": "Service Mesh Security",
+            "description": "mTLS and service-to-service security"
+          },
+          "ingress_security": {
+            "title": "Ingress Security",
+            "description": "Securing external traffic entry points"
+          },
+          "network_segmentation": {
+            "title": "Network Segmentation",
+            "description": "Isolating network traffic by security zones"
+          }
+        }
+      }
+    }
+  },
+  "infrastructure_platform": {
+    "title": "Infrastructure & Platform",
+    "description": "Assess infrastructure as code, platform engineering practices, and cloud strategy.",
+    "subcategories": {
+      "infrastructure_as_code": {
+        "title": "Infrastructure as Code",
+        "description": "Managing infrastructure through code and automation",
+        "details": {
+          "terraform": {
+            "title": "Terraform",
+            "description": "Infrastructure provisioning with Terraform"
+          },
+          "cloudformation": {
+            "title": "CloudFormation",
+            "description": "AWS infrastructure as code"
+          },
+          "pulumi": {
+            "title": "Pulumi",
+            "description": "Modern infrastructure as code with programming languages"
+          },
+          "version_control": {
+            "title": "Version Control",
+            "description": "Infrastructure code in version control"
+          }
+        }
+      },
+      "platform_engineering": {
+        "title": "Platform Engineering",
+        "description": "Building internal developer platforms and tools",
+        "details": {
+          "developer_experience": {
+            "title": "Developer Experience",
+            "description": "Improving developer productivity and experience"
+          },
+          "self_service": {
+            "title": "Self-Service Platforms",
+            "description": "Enabling teams to provision resources independently"
+          },
+          "golden_paths": {
+            "title": "Golden Paths",
+            "description": "Standardized, well-supported development paths"
+          },
+          "platform_apis": {
+            "title": "Platform APIs",
+            "description": "APIs for platform capabilities and services"
+          }
+        }
+      },
+      "cloud_strategy": {
+        "title": "Cloud Strategy",
+        "description": "Strategic approach to cloud adoption and management",
+        "details": {
+          "multi_cloud": {
+            "title": "Multi-Cloud Strategy",
+            "description": "Using multiple cloud providers strategically"
+          },
+          "hybrid_cloud": {
+            "title": "Hybrid Cloud",
+            "description": "Combining on-premises and cloud resources"
+          },
+          "cloud_native_services": {
+            "title": "Cloud Native Services",
+            "description": "Leveraging managed cloud services"
+          },
+          "vendor_lock_in": {
+            "title": "Vendor Lock-in Mitigation",
+            "description": "Strategies to avoid vendor dependency"
+          }
+        }
+      }
+    }
+  },
+  "data_management": {
+    "title": "Data Management",
+    "description": "Evaluate storage solutions, data services, and disaster recovery approaches.",
+    "subcategories": {
+      "storage_solutions": {
+        "title": "Storage Solutions",
+        "description": "Data storage strategies and technologies",
+        "details": {
+          "persistent_volumes": {
+            "title": "Persistent Volumes",
+            "description": "Kubernetes persistent storage management"
+          },
+          "object_storage": {
+            "title": "Object Storage",
+            "description": "S3-compatible object storage solutions"
+          },
+          "database_services": {
+            "title": "Database Services",
+            "description": "Managed database services and operators"
+          },
+          "backup_strategies": {
+            "title": "Backup Strategies",
+            "description": "Data backup and recovery planning"
+          }
+        }
+      },
+      "data_services": {
+        "title": "Data Services",
+        "description": "Data processing and analytics services",
+        "details": {
+          "data_pipelines": {
+            "title": "Data Pipelines",
+            "description": "ETL/ELT data processing pipelines"
+          },
+          "streaming_data": {
+            "title": "Streaming Data",
+            "description": "Real-time data processing with Kafka, Pulsar"
+          },
+          "data_lakes": {
+            "title": "Data Lakes",
+            "description": "Large-scale data storage and analytics"
+          },
+          "data_governance": {
+            "title": "Data Governance",
+            "description": "Data quality, lineage, and compliance"
+          }
+        }
+      },
+      "disaster_recovery": {
+        "title": "Disaster Recovery",
+        "description": "Data protection and recovery strategies",
+        "details": {
+          "backup_automation": {
+            "title": "Backup Automation",
+            "description": "Automated backup processes and scheduling"
+          },
+          "cross_region": {
+            "title": "Cross-Region Replication",
+            "description": "Data replication across geographic regions"
+          },
+          "rpo_rto": {
+            "title": "RPO/RTO Planning",
+            "description": "Recovery Point and Time Objective planning"
+          },
+          "disaster_testing": {
+            "title": "Disaster Testing",
+            "description": "Regular testing of disaster recovery procedures"
+          }
+        }
+      }
+    }
+  },
+  "observability": {
+    "title": "Observability",
+    "description": "Assess monitoring, logging, tracing, and SLO/SLI implementation capabilities.",
+    "subcategories": {
+      "monitoring": {
+        "title": "Monitoring",
+        "description": "System and application monitoring capabilities",
+        "details": {
+          "metrics_collection": {
+            "title": "Metrics Collection",
+            "description": "Gathering system and application metrics"
+          },
+          "alerting": {
+            "title": "Alerting",
+            "description": "Setting up intelligent alerts and notifications"
+          },
+          "dashboards": {
+            "title": "Dashboards",
+            "description": "Creating effective monitoring dashboards"
+          },
+          "prometheus": {
+            "title": "Prometheus",
+            "description": "Time-series monitoring and alerting"
+          }
+        }
+      },
+      "logging": {
+        "title": "Logging",
+        "description": "Log collection, aggregation, and analysis",
+        "details": {
+          "centralized_logging": {
+            "title": "Centralized Logging",
+            "description": "Aggregating logs from all services"
+          },
+          "log_aggregation": {
+            "title": "Log Aggregation",
+            "description": "ELK/EFK stack for log processing"
+          },
+          "structured_logging": {
+            "title": "Structured Logging",
+            "description": "JSON and structured log formats"
+          },
+          "log_retention": {
+            "title": "Log Retention",
+            "description": "Log storage and lifecycle policies"
+          }
+        }
+      },
+      "tracing": {
+        "title": "Distributed Tracing",
+        "description": "Request tracing across distributed systems",
+        "details": {
+          "distributed_tracing": {
+            "title": "Distributed Tracing",
+            "description": "Tracing requests across microservices"
+          },
+          "jaeger": {
+            "title": "Jaeger",
+            "description": "Open source distributed tracing platform"
+          },
+          "opentelemetry": {
+            "title": "OpenTelemetry",
+            "description": "Observability framework and standards"
+          },
+          "trace_analysis": {
+            "title": "Trace Analysis",
+            "description": "Analyzing performance bottlenecks"
+          }
+        }
+      },
+      "slo_sli": {
+        "title": "SLO/SLI",
+        "description": "Service level objectives and indicators",
+        "details": {
+          "service_level_objectives": {
+            "title": "Service Level Objectives",
+            "description": "Defining reliability targets"
+          },
+          "service_level_indicators": {
+            "title": "Service Level Indicators",
+            "description": "Metrics that measure SLOs"
+          },
+          "error_budgets": {
+            "title": "Error Budgets",
+            "description": "Balancing reliability and feature velocity"
+          },
+          "sla_management": {
+            "title": "SLA Management",
+            "description": "Service Level Agreement management"
+          }
+        }
+      }
+    }
+  },
+  "finops_cost_management": {
+    "title": "FinOps & Cost Management",
+    "description": "Evaluate cloud cost optimization, financial governance, and cost-aware engineering practices.",
+    "subcategories": {
+      "cost_optimization": {
+        "title": "Cost Optimization",
+        "description": "Strategies for optimizing cloud costs",
+        "details": {
+          "resource_rightsizing": {
+            "title": "Resource Rightsizing",
+            "description": "Optimizing resource allocation and sizing"
+          },
+          "spot_instances": {
+            "title": "Spot Instances",
+            "description": "Using spot/preemptible instances for cost savings"
+          },
+          "reserved_capacity": {
+            "title": "Reserved Capacity",
+            "description": "Long-term commitments for cost reduction"
+          },
+          "auto_scaling": {
+            "title": "Auto Scaling",
+            "description": "Scaling resources based on demand"
+          }
+        }
+      },
+      "financial_governance": {
+        "title": "Financial Governance",
+        "description": "Governance and accountability for cloud spending",
+        "details": {
+          "cost_allocation": {
+            "title": "Cost Allocation",
+            "description": "Attributing costs to teams and projects"
+          },
+          "budgets_alerts": {
+            "title": "Budgets & Alerts",
+            "description": "Setting spending limits and notifications"
+          },
+          "chargeback": {
+            "title": "Chargeback Models",
+            "description": "Internal billing and cost accountability"
+          },
+          "cost_reporting": {
+            "title": "Cost Reporting",
+            "description": "Regular cost analysis and reporting"
+          }
+        }
+      },
+      "cost_aware_engineering": {
+        "title": "Cost-Aware Engineering",
+        "description": "Building cost consciousness into engineering practices",
+        "details": {
+          "cost_metrics": {
+            "title": "Cost Metrics",
+            "description": "Including cost in engineering metrics"
+          },
+          "efficient_architectures": {
+            "title": "Efficient Architectures",
+            "description": "Designing for cost efficiency"
+          },
+          "cost_monitoring": {
+            "title": "Cost Monitoring",
+            "description": "Real-time cost tracking and alerts"
+          },
+          "optimization_culture": {
+            "title": "Optimization Culture",
+            "description": "Building cost-conscious engineering culture"
+          }
+        }
+      }
+    }
+  },
+  "operations_resilience": {
+    "title": "Operations & Resilience",
+    "description": "Assess business continuity planning, recovery strategies, disaster response, and sustainable operations.",
+    "subcategories": {
+      "business_continuity": {
+        "title": "Business Continuity",
+        "description": "Planning for business continuity and disaster scenarios",
+        "details": {
+          "continuity_planning": {
+            "title": "Continuity Planning",
+            "description": "Planning for business continuity scenarios"
+          },
+          "risk_assessment": {
+            "title": "Risk Assessment",
+            "description": "Identifying and assessing operational risks"
+          },
+          "incident_response": {
+            "title": "Incident Response",
+            "description": "Structured incident response procedures"
+          },
+          "communication_plans": {
+            "title": "Communication Plans",
+            "description": "Crisis communication strategies"
+          }
+        }
+      },
+      "recovery_strategies": {
+        "title": "Recovery Strategies",
+        "description": "Strategies for recovering from failures and disasters",
+        "details": {
+          "backup_recovery": {
+            "title": "Backup & Recovery",
+            "description": "Data backup and recovery procedures"
+          },
+          "failover_mechanisms": {
+            "title": "Failover Mechanisms",
+            "description": "Automatic failover to backup systems"
+          },
+          "chaos_engineering": {
+            "title": "Chaos Engineering",
+            "description": "Testing system resilience through controlled failures"
+          },
+          "redundancy_planning": {
+            "title": "Redundancy Planning",
+            "description": "Building redundancy into critical systems"
+          }
+        }
+      },
+      "sustainable_operations": {
+        "title": "Sustainable Operations",
+        "description": "Environmentally sustainable operational practices",
+        "details": {
+          "green_computing": {
+            "title": "Green Computing",
+            "description": "Environmentally sustainable computing practices"
+          },
+          "energy_efficiency": {
+            "title": "Energy Efficiency",
+            "description": "Optimizing energy consumption"
+          },
+          "carbon_footprint": {
+            "title": "Carbon Footprint",
+            "description": "Measuring and reducing carbon emissions"
+          },
+          "sustainable_architecture": {
+            "title": "Sustainable Architecture",
+            "description": "Designing for environmental sustainability"
+          }
+        }
+      }
+    }
+  },
+  "multicloud_hybrid_governance": {
+    "title": "Multi-cloud & Hybrid Governance",
+    "description": "Evaluate strategies for managing multiple cloud providers and hybrid cloud environments.",
+    "subcategories": {
+      "multicloud_strategy": {
+        "title": "Multi-cloud Strategy",
+        "description": "Strategic approach to using multiple cloud providers",
+        "details": {
+          "vendor_diversification": {
+            "title": "Vendor Diversification",
+            "description": "Reducing dependency on single cloud provider"
+          },
+          "best_of_breed": {
+            "title": "Best of Breed",
+            "description": "Using best services from each cloud provider"
+          },
+          "geographic_distribution": {
+            "title": "Geographic Distribution",
+            "description": "Distributing workloads across regions"
+          },
+          "cost_optimization": {
+            "title": "Cost Optimization",
+            "description": "Optimizing costs across multiple clouds"
+          }
+        }
+      },
+      "hybrid_management": {
+        "title": "Hybrid Management",
+        "description": "Managing hybrid cloud and on-premises environments",
+        "details": {
+          "hybrid_connectivity": {
+            "title": "Hybrid Connectivity",
+            "description": "Connecting on-premises and cloud resources"
+          },
+          "data_synchronization": {
+            "title": "Data Synchronization",
+            "description": "Keeping data consistent across environments"
+          },
+          "workload_portability": {
+            "title": "Workload Portability",
+            "description": "Moving workloads between environments"
+          },
+          "unified_management": {
+            "title": "Unified Management",
+            "description": "Single pane of glass for hybrid resources"
+          }
+        }
+      },
+      "governance_policies": {
+        "title": "Governance Policies",
+        "description": "Policies and controls for multi-cloud environments",
+        "details": {
+          "policy_enforcement": {
+            "title": "Policy Enforcement",
+            "description": "Consistent policy enforcement across clouds"
+          },
+          "compliance_management": {
+            "title": "Compliance Management",
+            "description": "Managing compliance across multiple environments"
+          },
+          "security_governance": {
+            "title": "Security Governance",
+            "description": "Unified security policies and controls"
+          },
+          "cost_governance": {
+            "title": "Cost Governance",
+            "description": "Cost management across multiple clouds"
+          }
+        }
+      }
+    }
+  },
+  "ai_ml_integration": {
+    "title": "AI/ML and Cloud Native Integration",
+    "description": "Assess adoption of AI/ML services, integration with cloud native platforms, and MLOps practices.",
+    "subcategories": {
+      "ai_ml_services": {
+        "title": "AI/ML Services",
+        "description": "Adoption and integration of AI/ML services",
+        "details": {
+          "managed_ml": {
+            "title": "Managed ML Services",
+            "description": "Using cloud-managed machine learning services"
+          },
+          "ml_apis": {
+            "title": "ML APIs",
+            "description": "Integrating pre-built ML APIs and services"
+          },
+          "custom_models": {
+            "title": "Custom Models",
+            "description": "Developing and deploying custom ML models"
+          },
+          "model_serving": {
+            "title": "Model Serving",
+            "description": "Serving ML models at scale"
+          }
+        }
+      },
+      "mlops_practices": {
+        "title": "MLOps Practices",
+        "description": "Machine learning operations and lifecycle management",
+        "details": {
+          "ml_pipelines": {
+            "title": "ML Pipelines",
+            "description": "Automated ML training and deployment pipelines"
+          },
+          "model_versioning": {
+            "title": "Model Versioning",
+            "description": "Version control for ML models and data"
+          },
+          "experiment_tracking": {
+            "title": "Experiment Tracking",
+            "description": "Tracking ML experiments and results"
+          },
+          "model_monitoring": {
+            "title": "Model Monitoring",
+            "description": "Monitoring model performance in production"
+          }
+        }
+      },
+      "data_pipelines": {
+        "title": "Data Pipelines",
+        "description": "Data processing pipelines for ML workloads",
+        "details": {
+          "feature_engineering": {
+            "title": "Feature Engineering",
+            "description": "Automated feature extraction and engineering"
+          },
+          "data_preprocessing": {
+            "title": "Data Preprocessing",
+            "description": "Cleaning and preparing data for ML"
+          },
+          "real_time_inference": {
+            "title": "Real-time Inference",
+            "description": "Real-time ML model inference"
+          },
+          "batch_processing": {
+            "title": "Batch Processing",
+            "description": "Large-scale batch ML processing"
+          }
+        }
+      }
+    }
+  }
+}

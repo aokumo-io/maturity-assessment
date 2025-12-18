@@ -1,0 +1,87 @@
+{
+  "title": "Cloud Native Maturity Assessment",
+  "subtitle": "Interactive visualization of the assessment process, modules, and analysis",
+  "pageTitle": "Cloud Native Assessment Mindmap",
+  "pageSubtitle": "Interactive visualization of the assessment process, modules, and analysis",
+  "overview": {
+    "title": "Assessment Process Overview",
+    "description": "The Cloud Native Maturity Assessment follows a comprehensive process designed to provide organizations with actionable insights for their cloud native journey. The interactive diagrams below illustrate the assessment flow, modules, and analysis components."
+  },
+  "instructions": {
+    "title": "How to Use the Interactive Mindmap",
+    "navigate": "Use mouse wheel to zoom in/out, drag to pan around the diagram",
+    "explore": "Click on tabs to view different aspects of the assessment",
+    "interact": "Click on category nodes to expand subcategories and educational details",
+    "controls": "Use the controls in the bottom-right to fit view, zoom, or reset"
+  },
+  "tabs": {
+    "assessmentFlow": "Assessment Flow",
+    "assessmentModules": "Assessment Modules",
+    "maturityAnalysis": "Maturity Analysis"
+  },
+  "tabDescriptions": {
+    "assessmentFlow": "This diagram shows the entire assessment process flow from start to finish.",
+    "assessmentModules": "Click on any category to see its subcategories. All 15 assessment categories are shown.",
+    "maturityAnalysis": "This diagram shows the maturity analysis framework and key insights provided."
+  },
+  "personalization": {
+    "title": "Personalized Assessment Process",
+    "description": "The assessment adapts to your organization's specific needs and context, providing relevant questions and insights based on your cloud native maturity level, industry, and priorities.",
+    "customization": {
+      "title": "Assessment Customization",
+      "description": "The assessment is tailored based on:",
+      "items": {
+        "organizationSize": "Organization size and industry",
+        "maturityLevel": "Current cloud native maturity level",
+        "businessPriorities": "Business priorities and goals",
+        "assessmentDepth": "Preferred assessment depth and focus"
+      }
+    },
+    "results": {
+      "title": "Comprehensive Results",
+      "description": "The assessment provides:",
+      "items": {
+        "maturityAnalysis": "Detailed maturity analysis across 15 key categories",
+        "businessImpact": "Business impact and ROI analysis",
+        "roadmap": "Customized implementation roadmap",
+        "benchmarking": "Industry benchmarking and peer comparison"
+      }
+    }
+  },
+  "nodes": {
+    "close": "Close",
+    "educationalDetails": "Educational details about {{label}}. Click to explore the concepts and principles.",
+    "learnMore": "Learn more about {{label}}"
+  },
+  "flowNodes": {
+    "startAssessment": "Start Assessment",
+    "welcomeScreen": "Welcome Screen",
+    "screeningQuestions": "Screening Questions",
+    "organizationProfile": "Organization Profile",
+    "cloudNativeProfile": "Cloud Native Profile",
+    "assessmentPreferences": "Assessment Preferences",
+    "quickAssessmentPath": "Quick Assessment Path",
+    "standardAssessmentPath": "Standard Assessment Path",
+    "comprehensiveAssessmentPath": "Comprehensive Assessment Path",
+    "resultsDashboard": "Results Dashboard",
+    "cloudNativeMaturityAnalysis": "Cloud Native Maturity Analysis",
+    "businessImpactAnalysis": "Business Impact Analysis",
+    "enhancedTrailMap": "Enhanced Trail Map",
+    "prioritizedImplementationRoadmap": "Prioritized Implementation Roadmap"
+  },
+  "maturityNodes": {
+    "maturityAnalysis": "Maturity Analysis",
+    "technicalMaturity": "Technical Maturity",
+    "categoryScores": "Category Scores",
+    "overallMaturityLevel": "Overall Maturity Level",
+    "businessValueRealization": "Business Value Realization",
+    "valueMetrics": "Value Metrics",
+    "roiAnalysis": "ROI Analysis",
+    "industryComparison": "Industry Comparison",
+    "industryBenchmarks": "Industry Benchmarks",
+    "peerComparison": "Peer Comparison",
+    "improvementRoadmap": "Improvement Roadmap",
+    "priorityRecommendations": "Priority Recommendations",
+    "implementationPhases": "Implementation Phases"
+  }
+} 

@@ -1,0 +1,103 @@
+{
+  "page": {
+    "title": "組織情報",
+    "subtitle": "あなたの組織に関する詳細情報を入力してください"
+  },
+  "sections": {
+    "organizationInfo": "組織情報",
+    "organizationInfo.description": "組織情報を入力してください。これは評価結果とレコメンデーションのカスタマイズに使用されます。",
+    "technologyEnvironment": "技術環境",
+    "businessObjectives": "ビジネス目標"
+  },
+  "progress": {
+    "stepCount": "ステップ {{current}} / {{total}}"
+  },
+  "fields": {
+    "industry": {
+      "label": "業種",
+      "placeholder": "業種を選択してください"
+    },
+    "companySize": {
+      "label": "会社規模",
+      "placeholder": "会社規模を選択してください",
+      "options": {
+        "1-10": "1〜10人",
+        "11-50": "11〜50人",
+        "51-100": "51〜100人",
+        "101-250": "101〜250人",
+        "251-500": "251〜500人",
+        "501-2000": "501〜2000人",
+        "2001-5000": "2001〜5000人",
+        "5001+": "5001人以上"
+      }
+    },
+    "region": {
+      "label": "主要地域",
+      "placeholder": "地域を選択してください",
+      "options": {
+        "japan": "日本",
+        "asia_pacific": "アジア太平洋",
+        "north_america": "北米",
+        "europe": "ヨーロッパ",
+        "south_america": "南米",
+        "africa": "アフリカ",
+        "middle_east": "中東",
+        "global": "グローバル（複数地域）"
+      }
+    },
+    "userRole": {
+      "label": "あなたの役割",
+      "placeholder": "役割を選択してください",
+      "options": {
+        "executive": "経営層（CTO、CIO、VP）",
+        "manager": "マネージャー（チームリーダー、プロジェクトマネージャー）",
+        "architect": "アーキテクト（ソリューションアーキテクト、テクニカルリード）",
+        "developer": "開発者（ソフトウェアエンジニア、DevOps）",
+        "operations": "運用担当（SRE、システム管理者）",
+        "security": "セキュリティ担当（セキュリティエンジニア、コンプライアンス）",
+        "business": "ビジネス（プロダクトオーナー、ビジネスアナリスト）"
+      }
+    },
+    "cloudProviders": {
+      "label": "利用中のクラウドプロバイダー",
+      "tooltip": "アプリケーションのデプロイに使用している全てのクラウドプロバイダーを選択してください。",
+      "description": "組織が使用しているすべてのクラウドプロバイダーを選択してください"
+    },
+    "deploymentModel": {
+      "label": "デプロイメントモデル",
+      "placeholder": "デプロイメントモデルを選択してください",
+      "detectedModel": "検出されたモデル：{{model}}",
+      "basedOnProviders": "— 選択されたプロバイダーに基づく",
+      "tooltip": {
+        "public_cloud": "パブリッククラウド：AWS、Azure、GCPなどのクラウドサービスを利用",
+        "private_cloud": "プライベートクラウド：専用のシングルテナントクラウド環境",
+        "hybrid_cloud": "ハイブリッドクラウド：パブリッククラウドとオンプレミスインフラの混合",
+        "multi_cloud": "マルチクラウド：複数のパブリッククラウドプロバイダーを利用",
+        "traditional_on_premise": "従来型オンプレミス：すべてのインフラがオンプレミス"
+      },
+      "options": {
+        "public_cloud": "パブリッククラウド",
+        "private_cloud": "プライベートクラウド",
+        "hybrid_cloud": "ハイブリッドクラウド",
+        "multi_cloud": "マルチクラウド",
+        "traditional_on_premise": "従来型オンプレミス",
+        "other": "その他 / カスタム"
+      }
+    },
+    "businessObjectives": {
+      "label": "主要なビジネス目標",
+      "description": "組織に当てはまるものを最大3つまで選択してください",
+      "maxSelected": "目標を3つ選択済みです"
+    },
+    "additionalObjectives": {
+      "label": "追加の目標や背景（任意）",
+      "placeholder": "その他のビジネス目標や追加の背景情報",
+      "description": "目標やビジネス背景に関する具体的な詳細を共有してください"
+    }
+  },
+  "actions": {
+    "back": "戻る",
+    "next": "次へ",
+    "saving": "保存中..."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "options": {
+    "finance": "Finance & Banking",
+    "healthcare": "Healthcare & Life Sciences",
+    "retail": "Retail & E-commerce",
+    "manufacturing": "Manufacturing",
+    "technology": "Technology & Software",
+    "telecom": "Telecommunications",
+    "media": "Media & Entertainment",
+    "education": "Education",
+    "government": "Government & Public Sector",
+    "energy": "Energy & Utilities",
+    "transportation": "Transportation & Logistics",
+    "professional_services": "Professional Services",
+    "hospitality": "Hospitality & Tourism",
+    "nonprofit": "Nonprofit & NGO",
+    "other": "Other"
+  }
+}

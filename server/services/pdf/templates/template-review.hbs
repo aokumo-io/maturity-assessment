@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{#if (eq language 'ja')}}クラウドネイティブ成熟度評価レポート{{else}}Cloud Maturity Assessment Report{{/if}}</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans CJK JP', 'Noto Sans JP', 'Inter', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: white;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .question-header {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .question-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .question-answer {
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 5px;
+      color: #374151;
+    }
+
+    @media print {
+      .question {
+        page-break-after: auto;
+        page-break-before: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div style="font-family: sans-serif; padding: 1em; background: #f0f4f8; border-radius: 8px;">
+      <div>
+        <strong>
+          {{#if (eq language 'ja')}}評価タイプ:{{else}}Assessment Type:{{/if}}
+        </strong>
+        {{assessmentResponse.assessmentTypeName}}
+      </div>
+      <div>
+        <strong>
+          {{#if (eq language 'ja')}}総質問数:{{else}}Total Questions:{{/if}}
+        </strong>
+        {{assessmentResponse.totalQuestions}}
+      </div>
+      <div>
+        <strong>
+          {{#if (eq language 'ja')}}回答済み質問:{{else}}Answered:{{/if}}
+        </strong>
+        {{assessmentResponse.answeredQuestions}}
+      </div>
+    </div>
+
+    {{#each assessmentResponse.categories}}
+      <div
+        style="margin:1em auto;padding:1em;background:#f8fafc;border-radius: 8px;">
+        <div class="question-header">{{categoryName}}</div>
+        {{#each questions}}
+          <div class="question"
+            style="margin-bottom:1em;padding-bottom:0.5em;{{#unless @last}}border-bottom:1px solid #eee;{{/unless}} page-break-inside: avoid;">
+            <div class="question-title">
+              {{#if (eq ../../language 'ja')}}
+                質問:
+              {{else}}
+                Questions:
+              {{/if}}
+              {{#if (isObject text)}}
+                {{lookup text ../../language}}
+              {{else}}
+                {{text}}
+              {{/if}}
+            </div>
+            {{#if description}}
+              <div class="question-answer">{{description}}</div>
+            {{/if}}
+            <div class="question-answer">
+              {{#if (eq ../../language 'ja')}}
+                回答:
+              {{else}}
+                Answered:
+              {{/if}}
+                {{#if response}}
+                {{#if response.dontKnow}}
+                {{#if (eq ../../language 'ja')}}
+                <span style="color:#c00;">わかりません</span>
+              {{else}}
+                <span style="color:#c00;">Don't know</span>
+              {{/if}}
+                {{else}}
+                {{#each options}}
+                  {{#if (eq value ../response.score)}}{{label}}{{/if}}
+                {{/each}}
+              {{/if}}
+                {{else}}
+                {{#if (eq ../../language 'ja')}}
+                  <span style="color:#c00;">未回答</span>
+                {{else}}
+                  <span style="color:#c00;">Not answered</span>
+                {{/if}}
+              {{/if}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+</body>
+
+</html>

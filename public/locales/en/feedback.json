@@ -1,0 +1,42 @@
+{
+  "title": "Quick Feedback",
+  "subtitle": "Help us improve (30 seconds)",
+  "fields": {
+    "rating": {
+      "label": "How was your experience?"
+    },
+    "workingWell": {
+      "label": "What's working well?",
+      "placeholder": "What did you find most helpful?"
+    },
+    "needsImprovement": {
+      "label": "What needs improvement?",
+      "placeholder": "What was confusing or frustrating?"
+    },
+    "featureRequests": {
+      "label": "Feature ideas?",
+      "placeholder": "What features would you like to see?"
+    },
+    "email": {
+      "label": "Email (optional)",
+      "placeholder": "your@email.com (for follow-up)"
+    }
+  },
+  "actions": {
+    "submit": "Send Feedback",
+    "skip": "Skip"
+  },
+  "validation": {
+    "ratingRequired": "Please rate your experience to submit feedback"
+  },
+  "success": {
+    "title": "Thank you!",
+    "message": "Your feedback helps us improve the assessment experience."
+  },
+  "error": {
+    "submitFailed": "Failed to submit feedback. Please try again.",
+    "networkError": "Network error. Please check your connection and try again.",
+    "securityError": "Security validation failed. Please refresh the page and try again.",
+    "sessionExpired": "Your session has expired. Please refresh the page."
+  }
+} 

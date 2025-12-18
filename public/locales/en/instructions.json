@@ -1,0 +1,32 @@
+{
+  "page": {
+    "title": "Assessment Instructions",
+    "subtitle": "Please review these guidelines before proceeding with your assessment"
+  },
+  "sections": {
+    "beforeYouBegin": {
+      "title": "Before You Begin",
+      "content": "This assessment will evaluate your organization's cloud native maturity across 8 categories. The questions are designed to gather information about your current practices, tools, and processes."
+    },
+    "whoShouldComplete": {
+      "title": "Who Should Complete This",
+      "content": "For best results, this assessment should be completed by someone with broad knowledge of your organization's cloud native infrastructure, practices, and operations - typically a CTO, VP of Engineering, or Cloud Platform Lead."
+    },
+    "timeCommitment": {
+      "title": "Time Commitment",
+      "content": "The assessment contains approximately 40 questions across 8 categories and takes about 15-20 minutes to complete. You can save your progress and return later if needed."
+    },
+    "confidentiality": {
+      "title": "Confidentiality",
+      "content": "Your responses are confidential and will only be used to generate your personalized maturity analysis and recommendations. We do not share your specific answers with any third parties."
+    },
+    "answerGuidelines": {
+      "title": "Answer Guidelines",
+      "content": "Be honest and objective in your responses. The assessment is not a test - it's designed to provide accurate insights about your current state and opportunities for improvement."
+    }
+  },
+  "actions": {
+    "back": "Back",
+    "continue": "Continue"
+  }
+}

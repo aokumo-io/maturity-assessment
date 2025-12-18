@@ -1,0 +1,11 @@
+{
+  "options": {
+    "aws": "AWS (Amazon Web Services)",
+    "azure": "Microsoft Azure",
+    "gcp": "Google Cloud",
+    "alibaba": "Alibaba Cloud",
+    "on_prem": "オンプレミス / 自社管理インフラ",
+    "private": "プライベートクラウド（専用インフラ）",
+    "other": "その他 / 指定"
+  }
+}

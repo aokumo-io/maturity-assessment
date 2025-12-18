@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://assessment.aokumo.io/sitemap.xml
+
+# Block access to admin routes
+Disallow: /admin/
+Disallow: /api/internal/
+
+# Allow access to assets
+Allow: /public/
+Allow: /assets/
+Allow: /favicon/
+Allow: /images/ 

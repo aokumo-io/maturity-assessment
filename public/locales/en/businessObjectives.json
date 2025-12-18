@@ -1,0 +1,12 @@
+{
+  "options": {
+    "cost_reduction": "Cost reduction",
+    "faster_time_to_market": "Faster time to market",
+    "scalability": "Scalability",
+    "reliability": "Reliability",
+    "security": "Security improvements",
+    "developer_productivity": "Developer productivity",
+    "innovation": "Innovation",
+    "technical_debt": "Technical debt reduction"
+  }
+}

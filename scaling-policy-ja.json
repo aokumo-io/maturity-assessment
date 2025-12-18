@@ -1,0 +1,13 @@
+{
+  "_comment": "このファイルはAWS ECSサービスの自動スケーリングポリシーを定義します",
+  "TargetValue": 70.0,
+  "_comment_TargetValue": "CPU使用率が70%を超えるとスケールアウトし、70%を下回るとスケールインします",
+  "PredefinedMetricSpecification": {
+    "_comment": "使用するメトリクスの種類を指定します",
+    "PredefinedMetricType": "ECSServiceAverageCPUUtilization"
+  },
+  "ScaleOutCooldown": 60,
+  "_comment_ScaleOutCooldown": "スケールアウト後、次のスケールアウトアクションまでの待機時間（秒）",
+  "ScaleInCooldown": 60,
+  "_comment_ScaleInCooldown": "スケールイン後、次のスケールインアクションまでの待機時間（秒）"
+} 

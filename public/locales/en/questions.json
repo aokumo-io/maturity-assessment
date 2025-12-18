@@ -1,0 +1,8 @@
+{
+  "loading": "Loading questions...",
+  "error": "Error loading questions",
+  "notFound": "Questions not found",
+  "category": {
+    "all": "All Categories"
+  }
+} 

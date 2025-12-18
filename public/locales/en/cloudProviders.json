@@ -1,0 +1,11 @@
+{
+  "options": {
+    "aws": "AWS (Amazon Web Services)",
+    "azure": "Microsoft Azure",
+    "gcp": "Google Cloud",
+    "alibaba": "Alibaba Cloud",
+    "on_prem": "On-Prem / Self-Hosted Infrastructure",
+    "private": "Private Cloud (Dedicated infrastructure)",
+    "other": "Other / Specify"
+  }
+}

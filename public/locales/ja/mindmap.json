@@ -1,0 +1,87 @@
+{
+  "title": "クラウドネイティブ成熟度評価",
+  "subtitle": "評価プロセス、モジュール、分析のインタラクティブな可視化",
+  "pageTitle": "クラウドネイティブ評価マインドマップ",
+  "pageSubtitle": "評価プロセス、モジュール、分析のインタラクティブな可視化",
+  "overview": {
+    "title": "評価プロセス概要",
+    "description": "クラウドネイティブ成熟度評価は、組織のクラウドネイティブジャーニーに対する実用的な洞察を提供するよう設計された包括的なプロセスに従います。以下のインタラクティブな図は、評価フロー、モジュール、分析コンポーネントを示しています。"
+  },
+  "instructions": {
+    "title": "インタラクティブマインドマップの使用方法",
+    "navigate": "マウスホイールでズームイン/アウト、ドラッグで図を移動",
+    "explore": "タブをクリックして評価の異なる側面を表示",
+    "interact": "カテゴリノードをクリックしてサブカテゴリと教育的詳細を展開",
+    "controls": "右下のコントロールを使用してビューの調整、ズーム、リセット"
+  },
+  "tabs": {
+    "assessmentFlow": "評価フロー",
+    "assessmentModules": "評価モジュール",
+    "maturityAnalysis": "成熟度分析"
+  },
+  "tabDescriptions": {
+    "assessmentFlow": "この図は、開始から終了までの評価プロセス全体のフローを示しています。",
+    "assessmentModules": "任意のカテゴリをクリックしてサブカテゴリを表示。15の評価カテゴリすべてが表示されています。",
+    "maturityAnalysis": "この図は、提供される成熟度分析フレームワークと主要な洞察を示しています。"
+  },
+  "personalization": {
+    "title": "パーソナライズされた評価プロセス",
+    "description": "評価は組織の特定のニーズとコンテキストに適応し、クラウドネイティブ成熟度レベル、業界、優先事項に基づいて関連する質問と洞察を提供します。",
+    "customization": {
+      "title": "評価のカスタマイズ",
+      "description": "評価は以下に基づいて調整されます：",
+      "items": {
+        "organizationSize": "組織規模と業界",
+        "maturityLevel": "現在のクラウドネイティブ成熟度レベル",
+        "businessPriorities": "ビジネス優先事項と目標",
+        "assessmentDepth": "希望する評価の深さと焦点"
+      }
+    },
+    "results": {
+      "title": "包括的な結果",
+      "description": "評価は以下を提供します：",
+      "items": {
+        "maturityAnalysis": "15の主要カテゴリにわたる詳細な成熟度分析",
+        "businessImpact": "ビジネスインパクトとROI分析",
+        "roadmap": "カスタマイズされた実装ロードマップ",
+        "benchmarking": "業界ベンチマークとピア比較"
+      }
+    }
+  },
+  "nodes": {
+    "close": "閉じる",
+    "educationalDetails": "{{label}}に関する教育的詳細。概念と原則を探索するためにクリックしてください。",
+    "learnMore": "{{label}}について詳しく学ぶ"
+  },
+  "flowNodes": {
+    "startAssessment": "評価開始",
+    "welcomeScreen": "ウェルカム画面",
+    "screeningQuestions": "スクリーニング質問",
+    "organizationProfile": "組織プロファイル",
+    "cloudNativeProfile": "クラウドネイティブプロファイル",
+    "assessmentPreferences": "評価設定",
+    "quickAssessmentPath": "クイック評価パス",
+    "standardAssessmentPath": "標準評価パス",
+    "comprehensiveAssessmentPath": "包括的評価パス",
+    "resultsDashboard": "結果ダッシュボード",
+    "cloudNativeMaturityAnalysis": "クラウドネイティブ成熟度分析",
+    "businessImpactAnalysis": "ビジネスインパクト分析",
+    "enhancedTrailMap": "拡張トレイルマップ",
+    "prioritizedImplementationRoadmap": "優先順位付き実装ロードマップ"
+  },
+  "maturityNodes": {
+    "maturityAnalysis": "成熟度分析",
+    "technicalMaturity": "技術的成熟度",
+    "categoryScores": "カテゴリスコア",
+    "overallMaturityLevel": "全体的成熟度レベル",
+    "businessValueRealization": "ビジネス価値実現",
+    "valueMetrics": "価値指標",
+    "roiAnalysis": "ROI分析",
+    "industryComparison": "業界比較",
+    "industryBenchmarks": "業界ベンチマーク",
+    "peerComparison": "ピア比較",
+    "improvementRoadmap": "改善ロードマップ",
+    "priorityRecommendations": "優先推奨事項",
+    "implementationPhases": "実装フェーズ"
+  }
+} 

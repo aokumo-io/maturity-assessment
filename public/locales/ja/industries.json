@@ -1,0 +1,19 @@
+{
+  "options": {
+    "finance": "金融・銀行",
+    "healthcare": "医療・ライフサイエンス",
+    "retail": "小売・Eコマース",
+    "manufacturing": "製造業",
+    "technology": "テクノロジー・ソフトウェア",
+    "telecom": "通信",
+    "media": "メディア・エンターテイメント",
+    "education": "教育",
+    "government": "政府・公共部門",
+    "energy": "エネルギー・公共事業",
+    "transportation": "輸送・物流",
+    "professional_services": "専門サービス",
+    "hospitality": "ホスピタリティ・観光",
+    "nonprofit": "非営利・NGO",
+    "other": "その他"
+  }
+}

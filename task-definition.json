@@ -1,0 +1,67 @@
+{
+  "_comment": "This file describes the task definition for AWS ECS. Replace AWS_ACCOUNT_ID with your actual AWS account ID.",
+  "family": "ak-assessment-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::<AWS_ACCOUNT_ID>:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "_comment": "Container definition - configures the application runtime environment",
+      "name": "ak-assessment-container",
+      "image": "<AWS_ACCOUNT_ID>.dkr.ecr.ap-northeast-1.amazonaws.com/ak-prd-assessment-tools:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "_comment": "Maps container port 5001 to host port 5001",
+          "containerPort": 5001,
+          "hostPort": 5001,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "_comment": "Sets the NODE_ENV environment variable",
+          "name": "NODE_ENV",
+          "value": "production"
+        }
+      ],
+      "secrets": [
+        {
+          "_comment": "Retrieves database connection info from Parameter Store",
+          "name": "DATABASE_URL",
+          "valueFrom": "arn:aws:ssm:ap-northeast-1:<AWS_ACCOUNT_ID>:parameter/ak-assessment/database-url"
+        },
+        {
+          "_comment": "Retrieves OpenAI API key from Parameter Store",
+          "name": "OPENAI_API_KEY",
+          "valueFrom": "arn:aws:ssm:ap-northeast-1:<AWS_ACCOUNT_ID>:parameter/ak-assessment/openai-api-key"
+        },
+        {
+          "_comment": "Retrieves Anthropic API key from Parameter Store",
+          "name": "ANTHROPIC_API_KEY",
+          "valueFrom": "arn:aws:ssm:ap-northeast-1:<AWS_ACCOUNT_ID>:parameter/ak-assessment/anthropic-api-key"
+        }
+      ],
+      "logConfiguration": {
+        "_comment": "CloudWatch logging configuration",
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/ak-assessment-task",
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "healthCheck": {
+        "_comment": "Container health check configuration - sends a request to health check endpoint every 30 seconds",
+        "command": ["CMD-SHELL", "wget --quiet --tries=1 --spider http://localhost:5001/api/health || exit 1"],
+        "interval": 30,
+        "timeout": 5,
+        "retries": 3,
+        "startPeriod": 30
+      }
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048",
+  "_comment": "This configuration allocates 1024 CPU units (1 vCPU) and 2048MB of memory with the Fargate launch type"
+} 

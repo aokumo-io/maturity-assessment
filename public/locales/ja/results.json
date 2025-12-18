@@ -1,0 +1,791 @@
+{
+  "dashboard": {
+    "title": "結果ダッシュボード",
+    "subtitle": "クラウドネイティブ成熟度評価の概要",
+    "exportPDF": "PDFをエクスポート",
+    "share": "共有",
+    "feedback": "フィードバック",
+    "reviewAnswers": "回答を確認",
+    "assessmentScore": "評価スコア",
+    "sections": {
+      "overview": "概要",
+      "maturity": "成熟度評価",
+      "costAnalysis": "コスト分析",
+      "recommendations": "推奨事項"
+    }
+  },
+  "metrics": {
+    "totalScore": "総合成熟度スコア",
+    "riskRating": "リスク評価",
+    "costSavings": "コスト削減",
+    "timeToNextLevel": "次のレベルまでの時間",
+    "industryPosition": "業界ポジション"
+  },
+  "sections": {
+    "executiveSummary": "エグゼクティブサマリー",
+    "topRecommendations": "主要な推奨事項",
+    "categoryScores": "カテゴリースコア",
+    "radarChart": "成熟度レーダー",
+    "strengths": "強み",
+    "weaknesses": "弱み",
+    "focusAreas": "注力領域",
+    "industryComparison": "業界比較",
+    "maturityTimeline": "成熟度タイムライン",
+    "criticalIssues": "重要な課題"
+  },
+  "riskLevels": {
+    "HIGH": "高リスク",
+    "MEDIUM": "中リスク",
+    "LOW": "低リスク",
+    "NONE": "リスクデータなし"
+  },
+  "executiveSummary": {
+    "generateButton": "サマリーを生成",
+    "generating": "パーソナライズされたエグゼクティブサマリーを生成中...",
+    "copyToClipboard": "クリップボードにコピー",
+    "regenerate": "再生成",
+    "tailoredFor": "{{role}}向けにカスタマイズ",
+    "overallMaturity": "全体的な成熟度",
+    "keyFindings": "主要な発見事項",
+    "detailedAnalysis": "詳細分析",
+    "strengths": "強み",
+    "areasForImprovement": "改善領域",
+    "recommendations": "戦略的推奨事項",
+    "businessImpact": "ビジネスへの影響",
+    "implementationGuidance": "実装ガイダンス",
+    "aiValidation": "AI検証インサイト",
+    "additionalInsights": "追加インサイト",
+    "costAnalysisValidation": "コスト分析検証",
+    "ruleBasedAgreement": "ルールベース合意",
+    "aiConfidence": "AI信頼度",
+    "noSummary": "エグゼクティブサマリーがありません。あなたの役割に合わせたインサイトを生成してください。",
+    "generate": "サマリーを生成",
+    "viewAll": "全てのサマリーを表示",
+    "showLess": "表示を減らす",
+    "copy": "クリップボードにコピー",
+    "estimatedTime": "通常10-15秒かかります",
+    "regenerating": "サマリーを再生成中...",
+    "regenerationNote": "新しいAI分析を生成します。残り{{remaining}}回の再生成が可能です。",
+    "regenerationComplete": "サマリーが再生成されました",
+    "regenerationSuccess": "エグゼクティブサマリーが新しいAIインサイトで更新されました。",
+    "regenerationsLeft": "回の再生成が残っています",
+    "regenerateTooltip": "新しいAI分析を生成（残り{{remaining}}回）",
+    "regenerateLimitTooltip": "このセッションでの最大再生成回数に達しました",
+    "rateLimitTitle": "生成制限に達しました",
+    "rateLimitMessage": "このセッションでの最大再生成回数（3回）に達しました。新しい評価を開始してサマリーを生成してください。",
+    "loadingSteps": {
+      "step1": "評価結果を分析中...",
+      "step2": "コスト削減効果を計算中...",
+      "step3": "AIインサイトを生成中...",
+      "step4": "推奨事項を最終化中..."
+    },
+    "loadingProgress": {
+      "stepIndicator": "ステップ {{current}} / {{total}}",
+      "timeElapsed": "{{seconds}}秒経過",
+      "timeRemaining": "残り約{{seconds}}秒",
+      "poweredByAI": "通常10-15秒かかります • AI生成"
+    }
+  },
+  "loading": "実装プランを読み込んでいます...",
+  "noAssessment": "評価結果がありません",
+  "noResultsTitle": "評価結果がありません",
+  "noResultsMessage": "まだ評価を完了していません。",
+  "startAssessment": "評価を開始する",
+  "gap": "ギャップ",
+  "completed": "完了日",
+  "unknownRisk": "不明",
+  "needAssessmentData": "評価データが必要です",
+  "riskRequiresData": "リスク評価にはデータが必要です",
+  "criticalIssuesFound": "{{count}}件の重要な課題が特定されました",
+  "basedOnAssessment": "{{type}}評価に基づく",
+  "needToCompleteAssessment": "評価を完了する必要があります",
+  "toReachLevel": "で{{level}}に到達",
+  "maturityLevels": {
+    "beginner": "初級",
+    "intermediate": "中級",
+    "advanced": "上級",
+    "expert": "エキスパート",
+    "knowledge_gap": "知識ギャップ",
+    "not_started": "未開始"
+  },
+  "navigation": {
+    "maturityAnalysis": "詳細な成熟度分析",
+    "trailMap": "クラウドネイティブトレイルマップ",
+    "implementationPlan": "実装ロードマップ",
+    "backToResults": "結果に戻る"
+  },
+  "processing": {
+    "title": "評価の処理中",
+    "subtitle": "回答を分析している間お待ちください",
+    "analyzing": "回答を分析しています",
+    "pleaseWait": "評価を処理し、パーソナライズされた結果を準備している間お待ちください。",
+    "progress": "進捗状況",
+    "takeMoments": "数分で完了します。",
+    "steps": {
+      "collectingData": "評価データを収集中",
+      "calculatingScores": "カテゴリスコアを計算中",
+      "analyzingLevels": "成熟度レベルを分析中",
+      "comparingBenchmarks": "業界ベンチマークと比較中",
+      "generatingRecommendations": "推奨事項を生成中",
+      "preparingRoadmap": "実装ロードマップを準備中",
+      "finalizing": "評価結果を最終化中"
+    }
+  },
+  "costAnalysis": {
+    "title": "コスト分析",
+    "description": "この分析では、クラウドネイティブの成熟度を向上させることによる潜在的な年間削減額を定量化しています。",
+    "totalSavings": "潜在的な年間総削減額",
+    "savingsDescription": "全カテゴリーの成熟度ギャップを埋めることによる削減",
+    "impactAreas": "影響領域",
+    "quickWins": "クイックウィンの機会",
+    "noDataTitle": "コスト影響を計算できません",
+    "noDataDescription": "コスト削減の可能性を計算するには評価データが必要です。具体的な回答で評価を完了してください。",
+    "potentialSavings": "削減可能額",
+    "potentialImpact": "潜在的な効果",
+    "currentScore": "現在のスコア",
+    "complexity": "複雑さ",
+    "complexityLow": "低",
+    "complexityMedium": "中",
+    "complexityHigh": "高",
+    "roi": "投資対効果",
+    "primaryImpactArea": "主な影響領域",
+    "quickWinsDescription": "即時のビジネスインパクトを持つ最高ROIの改善機会",
+    "disclaimer": "この分析は業界データとあなたの評価に基づく見積もりを提供します。実際の結果は異なる場合があります。",
+    "costAreas": {
+      "IC": "インフラコスト",
+      "OE": "運用効率",
+      "DP": "開発生産性",
+      "IM": "インシデント管理",
+      "TM": "市場投入時間",
+      "development": "開発生産性",
+      "infrastructure": "インフラコスト",
+      "operations": "運用効率",
+      "timeToMarket": "市場投入時間"
+    },
+    "costAreaDescriptions": {
+      "IC": "コンピューティング、ストレージ、ネットワーク、ソフトウェアライセンスを含むクラウドおよびインフラストラクチャコスト。",
+      "OE": "運用チーム、手動プロセス、および運用オーバーヘッドに関連するコスト。",
+      "DP": "開発時間、ツール、および非効率性を含む開発者生産性コスト。",
+      "IM": "ダウンタイム、対応時間、復旧、および評判の損害を含むインシデント関連コスト。",
+      "TM": "製品や機能の市場投入の遅れによる機会損失コスト。"
+    },
+    "savingsBreakdown": "削減内訳",
+    "topSavingsAreas": "主要削減領域",
+    "ofTotalBaseline": "のベースライン",
+    "estimatedSavings": "推定削減額",
+    "primaryImpact": "主な影響領域",
+    "total": "総削減可能額",
+    "savingsDisclaimer": "これらは業界平均と組織プロファイルに基づく推定値です。"
+  },
+  "implementationRoadmap": {
+    "title": "実装ロードマップ",
+    "subtitle": "クラウドネイティブ成熟度を向上させるためのフェーズドアプローチ",
+    "phase1": "フェーズ1: 短期",
+    "phase2": "フェーズ2: 中期",
+    "phase3": "フェーズ3: 長期",
+    "timeframe": {
+      "short": "0-3ヶ月",
+      "medium": "3-6ヶ月",
+      "long": "6ヶ月以上"
+    },
+    "viewPhaseDetails": "フェーズ詳細を表示",
+    "otherRecommendations": "その他の推奨事項（評価対象外）",
+    "noRecommendations": "このフェーズの推奨事項はありません",
+    "impact": "影響度",
+    "effort": "工数",
+    "roi": "ROI",
+    "quickWin": "クイックウィン！",
+    "implementationApproach": "実装アプローチ",
+    "approachDescription": "このロードマップは、クラウドネイティブ機能を段階的に構築するための論理的な順序で構成されています。フェーズ1の推奨事項から始めて基盤を確立し、その後、後のフェーズでより高度な取り組みに進んでください。",
+    "categoriesNote": "注：青色でハイライトされているカテゴリは、あなたの評価では対象外でした。"
+  },
+  "phases": {
+    "title": "実装フェーズ",
+    "details": "フェーズ詳細",
+    "recommendations": "フェーズの推奨事項",
+    "implementation": "実装ステップ",
+    "short_term": {
+      "title": "フェーズ1：短期",
+      "description": "基盤を確立するクイックウィンと即時改善",
+      "detailedDescription": "これらの推奨事項は、クラウドネイティブの旅の基盤を確立するクイックウィンと即時改善に焦点を当てています。"
+    },
+    "medium_term": {
+      "title": "フェーズ2：中期",
+      "description": "短期的改善を基盤にし、クラウドネイティブ採用を拡大",
+      "detailedDescription": "これらの推奨事項は、短期的な改善を基盤とし、組織全体でクラウドネイティブ採用の拡大に焦点を当てています。"
+    },
+    "long_term": {
+      "title": "フェーズ3：長期",
+      "description": "クラウドネイティブの成熟度を上級レベルに引き上げる変革的な変更",
+      "detailedDescription": "これらの推奨事項は、組織を高度なクラウドネイティブ成熟度まで押し上げる変革的な変更を表しています。"
+    },
+    "no_phase_selected": {
+      "title": "フェーズが選択されていません",
+      "description": "詳細な推奨事項を表示するには、ロードマップからフェーズを選択してください"
+    },
+    "no_recommendations": "このフェーズの推奨事項はありません",
+    "needs_more_input": "優先順位付けにはさらに入力が必要です",
+    "note": "注：青色でハイライトされているカテゴリは、あなたの評価では対象外でした"
+  },
+  "recommendations": {
+    "details": "推奨事項の詳細",
+    "implementation": "実装の詳細",
+    "prerequisites": "前提条件",
+    "successCriteria": "成功基準",
+    "additionalConsiderations": "追加の考慮事項",
+    "resources": "リソース",
+    "loadingDetails": "実装詳細を読み込み中...",
+    "errorLoading": "実装詳細の読み込みに失敗しました",
+    "no_recommendation_selected": {
+      "title": "推奨事項が選択されていません",
+      "description": "詳細情報を表示するには、推奨事項を選択してください。"
+    },
+    "fallbackSteps": {
+      "research": "適切なツールとアプローチを調査・評価する",
+      "plan": "ステークホルダーと詳細な実装計画を作成する",
+      "implement": "制御された環境でソリューションを実装する",
+      "test": "機能性とパフォーマンスをテスト・検証する",
+      "rollout": "適切なトレーニングと共に組織全体に展開する",
+      "document": "プロセスを文書化し、運用手順を作成する"
+    },
+    "fallbackCriteria": {
+      "timeline": "指定されたタイムライン内で実装が完了している",
+      "adoption": "ソリューションが関連チームとステークホルダーによって採用されている",
+      "metrics": "主要指標が対象領域での改善を示している",
+      "documentation": "文書化と運用手順が整備されている",
+      "scores": "関連する評価スコアが少なくとも15ポイント改善されている"
+    }
+  },
+  "topRecommendations": {
+    "title": "優先度の高い推奨事項",
+    "description": "これらの推奨事項は、クラウドネイティブの旅において最も即時的な価値を提供します"
+  },
+  "noRecommendations": "利用可能な推奨事項がありません",
+  "noImplementationPlan": "利用可能な実装プランがありません",
+  "completeAssessment": "実装ロードマップを表示するには、評価を完了してください",
+  "categoryScores": {
+    "title": "カテゴリースコア",
+    "noData": "評価データなし"
+  },
+  "costSavings": {
+    "title": "年間のコスト削減の見込み",
+    "noEstimate": "評価データなしでコスト削減を見積もることができません。",
+    "completeAssessment": "コスト削減の見積もりを得るには、具体的な回答で評価を完了してください。",
+    "infrastructureOptimization": "インフラストラクチャの最適化",
+    "operationalEfficiency": "運用効率",
+    "reducedDowntime": "ダウンタイムの削減",
+    "totalAnnualSavings": "年間総削減額"
+  },
+  "focusAreas": {
+    "title": "注力領域",
+    "noData": "評価データなし",
+    "description": "効果的な改善のために優先すべき主要なカテゴリ",
+    "timeEstimate": "実施時間の見積もり:",
+    "impact": "ビジネスへの影響:",
+    "difficultyLevel": "実施の難易度:"
+  },
+  "strengths": {
+    "title": "トップ3の強み",
+    "noData": "強みを特定するためのデータが不足しています"
+  },
+  "weaknesses": {
+    "title": "弱み",
+    "noData": "評価データなし",
+    "description": "改善が必要な領域"
+  },
+  "improvementOpportunities": {
+    "title": "改善機会トップ",
+    "noData": "利用可能な評価データがありません",
+    "description": "改善の可能性が最も高い主要領域",
+    "category": "カテゴリ",
+    "yourScore": "あなたのスコア",
+    "leader": "リーダースコア",
+    "gap": "ギャップ",
+    "referenceModel": "参照モデル"
+  },
+  "timeEstimates": {
+    "quick": "短期 (1-3ヶ月)",
+    "medium": "中期 (3-6ヶ月)",
+    "long": "長期 (6-12ヶ月)"
+  },
+  "impactLevels": {
+    "high": "高",
+    "medium": "中",
+    "low": "低"
+  },
+  "effortLevels": {
+    "high": "高",
+    "medium": "中",
+    "low": "低"
+  },
+  "timeUnits": {
+    "weeks": "週間",
+    "months": "ヶ月",
+    "lessThanMonth": "1ヶ月未満"
+  },
+  "criticalIssues": {
+    "title": "重要な課題",
+    "issuesFound": "{{count}}件の重要な課題が特定されました",
+    "noIssues": "重要な課題は検出されませんでした",
+    "description": "これらの課題は、優先すべきクラウドネイティブ成熟度の最も重要なギャップを表しています。",
+    "riskLevel": "リスクレベル：",
+    "more": "件のその他の重要な課題"
+  },
+  "industryComparison": {
+    "title": "業界比較",
+    "noData": "比較データなし",
+    "yourScore": "あなたのスコア",
+    "industryAverage": "業界平均"
+  },
+  "comparisonTab": {
+    "title": "業界比較",
+    "subtitle": "あなたの組織が業界リーダーやベンチマークとどのように比較されるかを見る",
+    "mainChart": "業界比較",
+    "gapAnalysis": "成熟度ギャップ分析",
+    "leaderReference": "リーダー参照モデル",
+    "japanGlobalComparison": "リーダー比較",
+    "viewAllCategories": "すべてのカテゴリを表示",
+    "dataSources": "データソース: Google Cloud DevOpsの状態、Hackett Group、CNCF、Gartner、Red Hat、McKinsey",
+    "maturityLabel": "成熟度",
+    "columns": {
+      "category": "カテゴリ",
+      "yourScore": "あなたのスコア",
+      "industryMedian": "業界中央値",
+      "japanLeader": "日本リーダー例",
+      "globalLeader": "グローバルリーダー例",
+      "implementation": "実装例"
+    },
+    "tooltip": {
+      "yourScore": "あなたのスコア",
+      "industryMedian": "業界中央値",
+      "industryLeader": "業界リーダー",
+      "gapToLeader": "リーダーとのギャップ",
+      "japanLeader": "日本リーダー",
+      "globalLeader": "グローバルリーダー",
+      "points": "ポイント",
+      "pointsAboveLeader": "ポイント上回る",
+      "gapPercentage": "%"
+    },
+    "legend": {
+      "yourOrg": "あなたの組織",
+      "industryAvg": "業界平均",
+      "industryLeaders": "業界リーダー",
+      "gapToLeader": "リーダーとのギャップ",
+      "exceedsLeader": "リーダーを上回る"
+    },
+    "gapAnalysisDescription": "このチャートは、あなたの組織と業界リーダーの間で最も大きな絶対的なポイントギャップを持つカテゴリを示しており、最大の改善機会を表しています。"
+  },
+  "maturityTimeline": {
+    "title": "成熟度タイムライン",
+    "noData": "タイムラインデータなし",
+    "current": "現在",
+    "months3": "3ヶ月",
+    "months6": "6ヶ月",
+    "months12": "12ヶ月",
+    "projectedScore": "予想スコア: {{score}}"
+  },
+  "trailMap": {
+    "title": "クラウドネイティブ・トレイルマップ",
+    "subtitle": "クラウドネイティブへの旅の可視化",
+    "loading": "トレイルマップを読み込み中...",
+    "noData": "評価データがありません",
+    "noTrailMap": "トレイルマップがありません",
+    "completeAssessment": "クラウドネイティブ・トレイルマップを表示するには、評価を完了してください。",
+    "overview": "トレイルマップ概要",
+    "details": "パスの詳細",
+    "aiInsights": "AI生成の洞察",
+    "insightsDescription": "組織の評価結果とコンテキストに基づいて、以下の順序で以下の領域に焦点を当てることをお勧めします：",
+    "waitingInsights": "評価が処理された後、パーソナライズされた洞察がここに表示されます。",
+    "journeyTitle": "あなたのクラウドネイティブの旅",
+    "journeyDescription": "このトレイルマップは、クラウドネイティブの旅における組織の進捗状況を可視化し、各カテゴリで完了したマイルストーンと次のステップを強調表示します。",
+    "legendTitle": "トレイルマップの凡例",
+    "legendCompleted": "完了したマイルストーン",
+    "legendInProgress": "進行中",
+    "legendNextSteps": "次のステップ",
+    "legendFuture": "将来のマイルストーン",
+    "legendFocusArea": "推奨される注力領域",
+    "legendPriority": "AIによる優先順位付け領域",
+    "legendImmediate": "3ヶ月以内のタイムフレーム",
+    "legendNearTerm": "3〜6ヶ月のタイムフレーム",
+    "legendQuickWin": "少ない労力で高い効果",
+    "pathSuffix": "パス",
+    "milestones": "主要なマイルストーン",
+    "beginnerMilestones": "初級マイルストーン",
+    "intermediateMilestones": "中級マイルストーン",
+    "advancedMilestones": "上級マイルストーン",
+    "generatingRecommendations": "AI推奨事項を生成中...",
+    "implementationTip": "ヒント",
+    "complete": "完了",
+    "completed": "完了済み",
+    "focusArea": "注力領域",
+    "priority": "優先度 {{priority}}",
+    "quickWin": "クイックウィン",
+    "immediate": "即時",
+    "nearTerm": "近い将来",
+    "noPathSelected": "パスが選択されていません",
+    "selectCategoryPrompt": "詳細情報を表示するにはトレイルマップからカテゴリを選択してください。",
+    "goToTrailMap": "トレイルマップに移動",
+    "quickWinTip": "{{min}}-{{max}}{{unit}}",
+    "timeEstimateTip": "実施時間の見積もり: {{min}}-{{max}}{{unit}}",
+    "impactEffort": {
+      "High": "高",
+      "Medium": "中",
+      "Low": "低",
+      "impact": "影響度",
+      "effort": "工数"
+    },
+    "timeframes": {
+      "immediate": "即時",
+      "near-term": "近い将来",
+      "long-term": "長期"
+    },
+    "milestoneCategories": {
+      "foundations_culture": {
+        "title": "基盤と文化",
+        "beginner": {
+          "milestone1": {
+            "label": "クロスファンクショナルチーム",
+            "description": "チーム間のサイロを解消"
+          },
+          "milestone2": {
+            "label": "DevOpsプラクティス",
+            "description": "アプリケーションに対する共有責任"
+          },
+          "milestone3": {
+            "label": "学習する組織",
+            "description": "継続的な知識共有文化"
+          }
+        }
+      },
+      "application_architecture": {
+        "title": "アプリケーションアーキテクチャ",
+        "beginner": {
+          "milestone1": {
+            "label": "マイクロサービス基盤",
+            "description": "モノリスの分解を開始"
+          },
+          "milestone2": {
+            "label": "12ファクターの準拠",
+            "description": "クラウドネイティブのベストプラクティスに従う"
+          },
+          "milestone3": {
+            "label": "イベント駆動型アーキテクチャ",
+            "description": "完全に分離され、スケーラブルなシステム"
+          }
+        }
+      },
+      "container_infrastructure": {
+        "title": "コンテナインフラストラクチャ",
+        "beginner": {
+          "milestone1": {
+            "label": "基本的なコンテナ化",
+            "description": "アプリケーションにコンテナを使用"
+          },
+          "milestone2": {
+            "label": "コンテナ標準",
+            "description": "標準化されたビルドとセキュリティプロセス"
+          },
+          "milestone3": {
+            "label": "最適化されたコンテナ",
+            "description": "最小化され安全なコンテナイメージ"
+          }
+        }
+      },
+      "cicd_practices": {
+        "title": "CI/CDプラクティス",
+        "beginner": {
+          "milestone1": {
+            "label": "基本的なパイプライン",
+            "description": "自動ビルドとデプロイメント"
+          },
+          "milestone2": {
+            "label": "包括的なテスト",
+            "description": "検証のための自動テストスイート"
+          },
+          "milestone3": {
+            "label": "高度なデプロイメント",
+            "description": "ダウンタイムなしと段階的デプロイメント"
+          }
+        }
+      },
+      "dora_metrics": {
+        "title": "DORAメトリクス",
+        "beginner": {
+          "milestone1": {
+            "label": "デプロイ頻度",
+            "description": "デプロイの頻度を追跡"
+          },
+          "milestone2": {
+            "label": "リードタイムと復旧",
+            "description": "速度と安定性の測定"
+          },
+          "milestone3": {
+            "label": "データ駆動型の改善",
+            "description": "メトリクスを使用した意思決定"
+          }
+        }
+      },
+      "observability": {
+        "title": "可観測性",
+        "beginner": {
+          "milestone1": {
+            "label": "基本的なモニタリング",
+            "description": "インフラストラクチャとアプリケーションのメトリクス"
+          },
+          "milestone2": {
+            "label": "ログとトレース",
+            "description": "集中型ログと分散トレーシング"
+          },
+          "milestone3": {
+            "label": "SLOとアラート",
+            "description": "目標ベースのモニタリングと事前アラート"
+          }
+        }
+      },
+      "security_compliance": {
+        "title": "セキュリティとコンプライアンス",
+        "beginner": {
+          "milestone1": {
+            "label": "基本的なスキャン",
+            "description": "パイプラインでの脆弱性検出"
+          },
+          "milestone2": {
+            "label": "シフトレフトセキュリティ",
+            "description": "SDLC全体に統合されたセキュリティ"
+          },
+          "milestone3": {
+            "label": "ゼロトラストモデル",
+            "description": "包括的なセキュリティ態勢"
+          }
+        }
+      },
+      "infrastructure_platform": {
+        "title": "インフラストラクチャとプラットフォーム",
+        "beginner": {
+          "milestone1": {
+            "label": "Infrastructure as Code",
+            "description": "自動リソースプロビジョニング"
+          },
+          "milestone2": {
+            "label": "プラットフォームサービス",
+            "description": "セルフサービス開発者プラットフォーム"
+          },
+          "milestone3": {
+            "label": "マルチクラウド戦略",
+            "description": "クラウドに依存しない機能"
+          }
+        }
+      },
+      "data_management": {
+        "title": "データ管理",
+        "beginner": {
+          "milestone1": {
+            "label": "永続的ストレージ",
+            "description": "コンテナの基本的なデータ管理"
+          },
+          "milestone2": {
+            "label": "自動化された操作",
+            "description": "バックアップ、スケーリング、回復力"
+          },
+          "milestone3": {
+            "label": "高度なデータサービス",
+            "description": "クラウドネイティブデータアーキテクチャ"
+          }
+        }
+      },
+      "business_value_strategy": {
+        "title": "ビジネス価値と戦略",
+        "beginner": {
+          "milestone1": {
+            "label": "クラウド戦略の整合性",
+            "description": "クラウドイニシアチブとビジネス目標の整合"
+          },
+          "milestone2": {
+            "label": "価値測定",
+            "description": "ビジネス成果の追跡と測定"
+          },
+          "milestone3": {
+            "label": "戦略的イノベーション",
+            "description": "新しいビジネス機能のためのクラウド活用"
+          }
+        }
+      },
+      "operations_resilience": {
+        "title": "運用と回復力",
+        "beginner": {
+          "milestone1": {
+            "label": "基本的な回復力",
+            "description": "基本的な回復力パターンの実装"
+          },
+          "milestone2": {
+            "label": "復旧テスト",
+            "description": "定期的な災害復旧テスト"
+          },
+          "milestone3": {
+            "label": "カオスエンジニアリング",
+            "description": "カオステストによる積極的な回復力"
+          }
+        }
+      },
+      "finops_cost_management": {
+        "title": "FinOpsとコスト管理",
+        "beginner": {
+          "milestone1": {
+            "label": "コスト可視性",
+            "description": "クラウドコスト監視の確立"
+          },
+          "milestone2": {
+            "label": "リソース最適化",
+            "description": "コスト削減施策の実施"
+          },
+          "milestone3": {
+            "label": "FinOps文化",
+            "description": "組織全体のコスト説明責任"
+          }
+        }
+      },
+      "app_migration_modernization": {
+        "title": "アプリの移行とモダナイゼーション",
+        "beginner": {
+          "milestone1": {
+            "label": "評価と計画",
+            "description": "クラウド対応性のためのアプリケーション評価"
+          },
+          "milestone2": {
+            "label": "段階的モダナイゼーション",
+            "description": "モダナイゼーションのためのストラングラーパターンの適用"
+          },
+          "milestone3": {
+            "label": "クラウドネイティブ変革",
+            "description": "クラウドネイティブアーキテクチャへの完全な変換"
+          }
+        }
+      },
+      "multicloud_hybrid_governance": {
+        "title": "マルチクラウドとハイブリッドガバナンス",
+        "beginner": {
+          "milestone1": {
+            "label": "マルチクラウド戦略",
+            "description": "複数のクラウドプロバイダーへのアプローチの定義"
+          },
+          "milestone2": {
+            "label": "統合管理",
+            "description": "クラウド間での一貫したガバナンスの実装"
+          },
+          "milestone3": {
+            "label": "抽象化レイヤー",
+            "description": "プロバイダーに依存しないプラットフォームと移植性"
+          }
+        }
+      },
+      "ai_ml_integration": {
+        "title": "AI/ML統合",
+        "beginner": {
+          "milestone1": {
+            "label": "ML機能",
+            "description": "AI/MLサービスの基本的な統合"
+          },
+          "milestone2": {
+            "label": "MLOpsプラクティス",
+            "description": "MLライフサイクル管理の実装"
+          },
+          "milestone3": {
+            "label": "AIネイティブアーキテクチャ",
+            "description": "クラウドネイティブシステムへの完全統合されたAI/ML"
+          }
+        }
+      }
+    }
+  },
+  "categories": {
+    "foundations_culture": "基盤と文化",
+    "business_value_strategy": "ビジネス価値とクラウドネイティブ戦略",
+    "application_architecture": "アプリケーションアーキテクチャ",
+    "app_migration_modernization": "アプリの移行とモダナイゼーション",
+    "container_infrastructure": "コンテナインフラストラクチャ",
+    "cicd_practices": "CI/CDプラクティス",
+    "dora_metrics": "DORAメトリクス",
+    "security_compliance": "セキュリティとコンプライアンス",
+    "infrastructure_platform": "インフラストラクチャとプラットフォーム",
+    "data_management": "データ管理",
+    "observability": "可観測性",
+    "finops_cost_management": "FinOpsとコスト管理",
+    "operations_resilience": "運用と回復力",
+    "multicloud_hybrid_governance": "マルチクラウドとハイブリッドガバナンス",
+    "ai_ml_integration": "AI/ML統合",
+    "overall": "全体"
+  },
+  "benchmarkDescriptions": {
+    "foundations_culture": {
+      "description": "DevOps文化と800以上のマイクロサービスを運用するマイクロチーム",
+      "keyInsight": "2024年DevOpsレポート：ハイパフォーマー企業は文化指標で0.8を獲得、中央値は0.6を下回る"
+    },
+    "business_value_strategy": {
+      "description": "エッジAIサービスのためのクラウド価値ロードマッピング",
+      "keyInsight": "Hackett Groupによると：42%の企業のみが価値ロードマップを持ち、上位25%はリリースサイクルが25%速い"
+    },
+    "application_architecture": {
+      "description": "マイクロサービスとgRPCを使用した大規模モバイルスーパーアプリ",
+      "keyInsight": "約50%の組織はまだモノリシックアーキテクチャ；リーダー企業はマイクロサービス/サービスメッシュの採用率が75-80%に達している"
+    },
+    "app_migration_modernization": {
+      "description": "700以上のサービスをKubernetesとサーバーレスに移行（リフト＆シフト方式より）",
+      "keyInsight": "2024年までにワークロードの45%未満がモダナイズされている；クラウドリーダー企業は70%を超える"
+    },
+    "container_infrastructure": {
+      "description": "ステートフルなエッジクラスタを含む10,000以上のK8sノードを運用",
+      "keyInsight": "現在60%が本番環境でK8sを使用；トップ層は完全にコンテナ化されている"
+    },
+    "cicd_practices": {
+      "description": "GitOps CDツールをOSS化；社内統一パイプライン",
+      "keyInsight": "57%がパイプラインの半分以上を自動化；エリート企業は約80%を自動化"
+    },
+    "dora_metrics": {
+      "description": "リードタイム/MTTRをエンジニアリングブログで公開（「ゴールデンパス」）",
+      "keyInsight": "エリートパフォーマー（26%）は85以上の総合スコアを達成、中央値は「中程度」（約60）"
+    },
+    "security_compliance": {
+      "description": "Zscalerを使用したグローバルな従業員向けのゼロトラスト導入",
+      "keyInsight": "AI駆動型/シフトレフト型の組織はリスクを大幅に削減；大多数はまだ対応型（約50）"
+    },
+    "infrastructure_platform": {
+      "description": "GKE + Spannerを使用した内部開発者プラットフォーム",
+      "keyInsight": "IaC採用率は約55%；プラットフォームエンジニアリングのリーダー企業は75%以上のIaCカバレッジを報告"
+    },
+    "data_management": {
+      "description": "Spanner + データメッシュによる決済システム",
+      "keyInsight": "データ分類成熟度の中央値は約0.54"
+    },
+    "observability": {
+      "description": "集中型Grafana + OpenTelemetry",
+      "keyInsight": "76%が集中型可観測性を持つ；25%のみが「先進的」（0.75以上）と評価"
+    },
+    "finops_cost_management": {
+      "description": "オープンソースKubecostフォークによるK8sコスト洞察",
+      "keyInsight": "58%が異常検出を自動化；ハイパフォーマーはFinOps成熟度指標で約0.8を獲得"
+    },
+    "operations_resilience": {
+      "description": "GameDayカオスドリル；MTTR平均5分未満",
+      "keyInsight": "インシデント自動化はまだ60%未満；カオスエンジニアリングを行うリーダー企業は約0.78のスコア"
+    },
+    "multicloud_hybrid_governance": {
+      "description": "トヨタ・ウーブン・プラネット向けの統合ハイブリッドガバナンス",
+      "keyInsight": "48%のみが統一ポリシー制御を持つ；成熟した組織は70台中盤に到達"
+    },
+    "ai_ml_integration": {
+      "description": "小売店のエッジカメラ向けクラスタ内推論",
+      "keyInsight": "55%が3以下の機能でAIを試験的に使用；「AIハイパフォーマー」（12%）は採用+ROIで0.75以上のスコアを獲得"
+    }
+  },
+  "overview": {
+    "title": "概要",
+    "score": "総合スコア",
+    "level": "成熟度レベル",
+    "yourScore": "あなたのスコア",
+    "industryMedian": "業界中央値",
+    "leaderScore": "リーダースコア",
+    "aheadOf": "の組織より先行"
+  },
+  "generating": "生成中...",
+  "pdfExportError": "PDFのエクスポート中にエラーが発生しました。もう一度お試しください。"
+}

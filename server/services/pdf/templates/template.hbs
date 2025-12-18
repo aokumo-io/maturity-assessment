@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{#if (eq language 'ja')}}クラウドネイティブ成熟度評価レポート{{else}}Cloud Maturity Assessment Report{{/if}}</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans CJK JP', 'Noto Sans JP', 'Inter', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            background: #ffffff;
+            color: #1f2937;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            page-break-after: always;
+            padding: 5mm 5mm 5mm 5mm;
+            position: relative;
+            box-sizing: border-box;
+        }
+        
+        .page:last-child {
+            page-break-after: auto;
+        }
+        
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+        
+        .report-date {
+            font-size: 12px;
+            color: #6b7280;
+            text-align: right;
+            line-height: 1.3;
+        }
+        
+        /* Title Section */
+        .title-section {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .main-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #6b7280;
+            font-weight: 400;
+        }
+        
+        /* Organization Summary - Compact 4-card layout */
+        .org-summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 20px;
+            color: white;
+        }
+        
+        .summary-card {
+            text-align: center;
+            padding: 15px 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .card-value {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            line-height: 1;
+        }
+        
+        .card-label {
+            font-size: 11px;
+            opacity: 0.9;
+            line-height: 1.2;
+        }
+        
+        .card-sublabel {
+            font-size: 10px;
+            opacity: 0.7;
+            margin-top: 2px;
+        }
+        
+        /* Executive Summary */
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 3px;
+            height: 16px;
+            background: #3b82f6;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+        
+        .summary-text {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+            color: #374151;
+        }
+        
+        .strengths-improvements {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .list-section h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+        
+        .strengths h4 {
+            color: #059669;
+        }
+        
+        .improvements h4 {
+            color: #dc2626;
+        }
+        
+        .list-section ul {
+            list-style: none;
+        }
+        
+        .list-section li {
+            font-size: 12px;
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+            line-height: 1.3;
+        }
+        
+        .strengths li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #059669;
+            font-weight: bold;
+        }
+        
+        .improvements li::before {
+            content: '⚠';
+            position: absolute;
+            left: 0;
+            color: #dc2626;
+        }
+        
+        .recommendations {
+            background: #f8fafc;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .recommendations h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+        
+        .recommendations ol {
+            padding-left: 16px;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #374151;
+        }
+        
+        .recommendations li {
+            margin-bottom: 4px;
+        }
+        
+        /* Business Impact Box */
+        .impact-box {
+            background: #f0f9ff;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .impact-box h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+        
+        .impact-box p {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #374151;
+            margin: 0;
+        }
+        
+        /* Time to Next Level & Position Analysis - Compact */
+        .position-section {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .position-bar {
+            background: #f3f4f6;
+            height: 14px;
+            border-radius: 12px;
+            position: relative;
+            margin: 8px 0;
+            overflow: hidden;
+        }
+        
+        .position-fill {
+            background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+            height: 100%;
+            border-radius: 12px;
+        }
+        
+        .position-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #6b7280;
+        }
+        
+        .position-score {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        
+        .your-score { color: #3b82f6; }
+        .industry-median { color: #6b7280; }
+        .leader-score { color: #059669; }
+        
+        /* Gap Analysis - Diverging Bar Chart */
+        .gap-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 12px;
+        }
+        
+        .gap-label {
+            width: 140px;
+            font-weight: 500;
+            color: #374151;
+            flex-shrink: 0;
+        }
+        
+        .gap-bar-container {
+            flex: 1;
+            height: 16px;
+            margin: 0 12px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .gap-bar-left {
+            height: 100%;
+            background: #f3f4f6;
+            border-radius: 8px 0 0 8px;
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .gap-bar-right {
+            height: 100%;
+            background: #f3f4f6;
+            border-radius: 0 8px 8px 0;
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .gap-fill-left {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+            border-radius: 8px 0 0 8px;
+            max-width: 100%;
+        }
+        
+        .gap-fill-right {
+            height: 100%;
+            background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+            border-radius: 0 8px 8px 0;
+            max-width: 100%;
+        }
+        
+        .gap-center-line {
+            width: 2px;
+            height: 20px;
+            background: #6b7280;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        
+        .gap-value {
+            font-size: 11px;
+            font-weight: 600;
+            color: #374151;
+            width: 50px;
+            text-align: right;
+            flex-shrink: 0;
+        }
+        
+        .gap-value-positive {
+            color: #059669;
+        }
+        
+        .gap-value-negative {
+            color: #dc2626;
+        }
+        
+        /* Cost Savings - Horizontal compact layout */
+        .savings-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .savings-item {
+            padding: 12px 8px;
+            background: #f9fafb;
+            border-radius: 6px;
+        }
+        
+        .savings-amount {
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 3px;
+        }
+        
+        .savings-label {
+            font-size: 10px;
+            color: #6b7280;
+            line-height: 1.2;
+        }
+        
+        .total-savings {
+            background: #ecfdf5 !important;
+        }
+        
+        .total-savings .savings-amount {
+            color: #059669;
+            font-size: 16px;
+        }
+        
+        /* Critical Issues Table */
+        .issues-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin: 15px 0;
+        }
+        
+        .issues-table th {
+            background: #f9fafb;
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+            color: #374151;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .issues-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #f3f4f6;
+            vertical-align: top;
+        }
+        
+        .issues-table tbody tr:first-child td {
+            border-top: 1px solid #333;
+        }
+
+        /* For PDF rendering engines */
+        .issues-table thead {
+            display: table-header-group;
+        }
+        
+        .issue-icon {
+            color: #ef4444;
+            margin-right: 6px;
+        }
+        
+        .category-badge {
+            font-size: 10px;
+            color: #6b7280;
+        }
+        
+        /* Roadmap Timeline */
+        .roadmap-timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 18px 0;
+        }
+        
+        .timeline-phase {
+            text-align: center;
+            padding: 15px 10px;
+            border-radius: 8px;
+            font-size: 11px;
+        }
+        
+        .phase-short {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        }
+        
+        .phase-medium {
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+        }
+        
+        .phase-long {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+        
+        .phase-title {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+        
+        .phase-items {
+            list-style: none;
+            line-height: 1.3;
+            color: #374151;
+        }
+        
+        .phase-items li {
+            margin-bottom: 3px;
+        }
+        
+        /* Progress Bar */
+        .progress-bar {
+            height: 16px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 12px 0;
+        }
+        
+        .progress-segments {
+            display: flex;
+            height: 100%;
+        }
+        
+        .segment {
+            height: 100%;
+        }
+        
+        .segment-current {
+            background: #3b82f6;
+            width: 30%;
+        }
+        
+        .segment-target {
+            background: #10b981;
+            width: 20%;
+        }
+        
+        .segment-future {
+            background: #f59e0b;
+            width: 20%;
+        }
+        
+        .progress-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: #6b7280;
+        }
+        
+        /* Strategic recommendations grid */
+        .recommendations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #374151;
+        }
+        
+        .recommendations-grid div {
+            margin-bottom: 10px;
+        }
+        
+        @media print {
+            body { background: white; }
+            .page { box-shadow: none; margin: 0; }
+        }
+        
+        /* Page break controls - only affect PDF generation, no visual impact */
+        .no-page-break {
+            page-break-inside: avoid;
+            break-inside: avoid; /* Modern browsers */
+        }
+        
+        .page-break-before {
+            page-break-before: always;
+            break-before: page; /* Modern browsers */
+        }
+        @media print {
+            .page-break-auto {
+                page-break-after: auto;
+                page-break-before: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: Executive Overview -->
+    <div class="page">
+        
+        <div class="title-section">
+            <h1 class="main-title">{{#if (eq language 'ja')}}クラウドネイティブ成熟度評価{{else}}Cloud-Native Maturity Assessment{{/if}}</h1>
+            <p class="subtitle">{{#if (eq language 'ja')}}戦略分析と実装ロードマップ{{else}}Strategic Analysis & Implementation Roadmap{{/if}}</p>
+        </div>
+        
+        <!-- Compact Organization Summary -->
+        <div class="org-summary">
+            <div class="summary-card">
+                <div class="card-value">{{score}}%</div>
+                <div class="card-label">{{maturityLevel}}</div>
+                <div class="card-sublabel">{{#if (eq language 'ja')}}成熟度{{else}}Maturity{{/if}}</div>
+            </div>
+            <div class="summary-card">
+                <div class="card-value">{{#if (eq language 'ja')}}{{#if (eq riskLevel 'High Risk')}}高{{/if}}{{#if (eq riskLevel 'Medium Risk')}}中{{/if}}{{#if (eq riskLevel 'Low Risk')}}低{{/if}}{{else}}{{#if (eq riskLevel 'High Risk')}}High{{/if}}{{#if (eq riskLevel 'Medium Risk')}}Med{{/if}}{{#if (eq riskLevel 'Low Risk')}}Low{{/if}}{{/if}}</div>
+                <div class="card-label">{{#if (eq language 'ja')}}リスク{{else}}Risk{{/if}}</div>
+                <div class="card-sublabel">{{criticalIssuesCount}} {{#if (eq language 'ja')}}課題{{else}}issues{{/if}}</div>
+            </div>
+            <div class="summary-card">
+                <div class="card-value">{{costAnalysis.formattedTotal}}</div>
+                <div class="card-label">{{#if (eq language 'ja')}}年間削減{{else}}Annual Savings{{/if}}</div>
+                <div class="card-sublabel">{{costAnalysis.savingsPercentage}} {{#if (eq language 'ja')}}削減{{else}}reduction{{/if}}</div>
+            </div>
+            <div class="summary-card">
+                <div class="card-value">{{timeToNextLevel}}</div>
+                <div class="card-label">{{#if (eq language 'ja')}}次のレベルまでの時間{{else}}Time to Next Level{{/if}}</div>
+                <div class="card-sublabel">{{#if (eq language 'ja')}}推定実装期間{{else}}Estimated implementation{{/if}}</div>
+            </div>
+        </div>
+        
+        <!-- Executive Summary -->
+        <div>
+            <h2 class="section-title">{{#if (eq language 'ja')}}エグゼクティブサマリー{{else}}Executive Summary{{/if}}</h2>
+            
+            <p class="summary-text">
+                {{executiveSummaryText}}
+            </p>
+            
+            <div class="strengths-improvements">
+                <div class="list-section strengths" style="background: #f0fdf4;padding: 16px;border-radius: 8px;">
+                    <h4>{{#if (eq language 'ja')}}主な強み{{else}}Key Strengths{{/if}}</h4>
+                    <ul>
+                        {{#if aiGeneratedSections.strengths}}
+                            {{#each aiGeneratedSections.strengths}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        {{else}}
+                            <li><strong>{{#if (eq language 'ja')}}文化的認識と準備性{{else}}Cultural Awareness & Readiness{{/if}}:</strong> {{#if (eq language 'ja')}}既存のサイロにもかかわらず協力の重要性への強い組織的認識{{else}}Strong organizational awareness of collaboration importance despite existing silos{{/if}}</li>
+                            <li><strong>{{#if (eq language 'ja')}}ビジネス-IT整合の基盤{{else}}Business-IT Alignment Foundation{{/if}}:</strong> {{#if (eq language 'ja')}}技術投資とビジネス成果間の確立された接続{{else}}Established connections between technology investments and business outcomes{{/if}}</li>
+                            <li><strong>{{#if (eq language 'ja')}}規制とコンプライアンスの準備性{{else}}Regulatory & Compliance Readiness{{/if}}:</strong> {{#if (eq language 'ja')}}セキュリティとコンプライアンス要件への実証された認識{{else}}Demonstrated awareness of security and compliance requirements{{/if}}</li>
+                        {{/if}}
+                    </ul>
+                </div>
+                
+                <div class="list-section improvements" style="background: #fef2f2;padding: 16px;border-radius: 8px;">
+                    <h4>{{#if (eq language 'ja')}}改善優先事項{{else}}Improvement Priorities{{/if}}</h4>
+                    <ul>
+                        {{#if aiGeneratedSections.areasForImprovement}}
+                            {{#each aiGeneratedSections.areasForImprovement}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        {{else}}
+                            <li><strong>{{#if (eq language 'ja')}}協力とコミュニケーション{{else}}Collaboration & Communication{{/if}}:</strong> {{#if (eq language 'ja')}}持続的な組織サイロが効果的なチーム間協力を阻害{{else}}Persistent organizational silos hampering effective cross-team collaboration{{/if}}</li>
+                            <li><strong>{{#if (eq language 'ja')}}アプリケーションアーキテクチャ{{else}}Application Architecture{{/if}}:</strong> {{#if (eq language 'ja')}}未定義のサービスとAPI境界がシステム間の密結合を招く{{else}}Undefined service and API boundaries leading to tight coupling between systems{{/if}}</li>
+                            <li><strong>{{#if (eq language 'ja')}}CI/CDと開発自動化{{else}}CI/CD & Development Automation{{/if}}:</strong> {{#if (eq language 'ja')}}限定的な自動化テストカバレッジとセキュリティ実践{{else}}Limited automated testing coverage and security practices{{/if}}</li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="recommendations">
+                <h4>{{#if (eq language 'ja')}}戦略的推奨事項{{else}}Strategic Recommendations{{/if}}</h4>
+                <ol>
+                    {{#if aiGeneratedSections.strategicRecommendations}}
+                        {{#each aiGeneratedSections.strategicRecommendations}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    {{else}}
+                        <li><strong>{{#if (eq language 'ja')}}協力フレームワークの強化{{else}}Enhance Collaboration Frameworks{{/if}}:</strong> {{#if (eq language 'ja')}}チーム間で定義された協力パターンとコミュニケーションプロトコルを確立{{else}}Establish defined collaboration patterns and communication protocols across teams{{/if}}</li>
+                        <li><strong>{{#if (eq language 'ja')}}サービスとAPI境界の定義{{else}}Define Service & API Boundaries{{/if}}:</strong> {{#if (eq language 'ja')}}サービスとAPI境界を明確に描写し、疎結合を促進し、モジュラーアーキテクチャ設計を可能にする。{{else}}Clearly delineate service and API boundaries to promote loose coupling and enable modular architecture design.{{/if}}</li>
+                        <li><strong>{{#if (eq language 'ja')}}テスト自動化の実装{{else}}Implement Testing Automation{{/if}}:</strong> {{#if (eq language 'ja')}}CI/CDパイプライン内で自動化テストフレームワークを導入し、ソフトウェア品質を向上させ、デプロイメントリスクを減らす。{{else}}Introduce automated testing frameworks within CI/CD pipelines to enhance software quality and reduce deployment risks.{{/if}}</li>
+                    {{/if}}
+                </ol>
+            </div>
+            
+            <div class="impact-box">
+                <h4>{{#if (eq language 'ja')}}期待されるビジネスインパクト{{else}}Expected Business Impact{{/if}}</h4>
+                <p>
+                    {{#if aiGeneratedSections.businessImpact}}
+                        {{aiGeneratedSections.businessImpact}}
+                    {{else}}
+                        {{#if (eq language 'ja')}}
+                        これらの推奨事項の実装により<strong>最大20%のコスト削減</strong>と市場投入時間の大幅改善が期待されます。組織は運用の俊敏性向上、技術的負債削減、セキュリティ態勢改善を実現できます。
+                        {{else}}
+                        Implementation of these recommendations is projected to yield <strong>up to 20% cost savings</strong> and significant time-to-market improvements. The organization can expect enhanced operational agility, reduced technical debt, and improved security posture.
+                        {{/if}}
+                    {{/if}}
+                </p>
+            </div>
+        </div>
+        {{!-- <div class="page-footer">
+            <div>{{#if (eq language 'ja')}}この評価はAokumo AIによって生成されました • 質問やサポートについては、アカウントマネージャーにお問い合わせください{{else}}This assessment was generated by Aokumo AI • For questions or support, contact your account manager{{/if}}</div>
+        </div> --}}
+    </div>
+    
+    <!-- Page 2: Detailed Analysis -->
+    <div class="page">
+        
+        <!-- Overall Maturity Position -->
+        <div class="position-section">
+            <h2 class="section-title">{{#if (eq language 'ja')}}全体的な成熟度位置{{else}}Overall Maturity Position{{/if}}</h2>
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: center;">
+                <div>
+                    <div class="position-bar">
+                        <div class="position-fill" style="width: {{industryPosition}}%;"></div>
+                    </div>
+                    <div class="position-labels">
+                        <div style="text-align: center;">
+                            <div class="position-score your-score">{{score}}</div>
+                            <div>{{#if (eq language 'ja')}}あなたのスコア{{else}}Your Score{{/if}}</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="position-score industry-median">{{industryBenchmarks.median}}</div>
+                            <div>{{#if (eq language 'ja')}}業界中央値{{else}}Industry Median{{/if}}</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="position-score leader-score">{{industryBenchmarks.leader}}</div>
+                            <div>{{#if (eq language 'ja')}}リーダースコア{{else}}Leader Score{{/if}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    {{#if isAboveMedian}}
+                        <div style="font-size: 20px; font-weight: 700; color: #3b82f6; margin-bottom: 4px;">{{#if (eq language 'ja')}}上位{{topPercentage}}%{{else}}Top {{topPercentage}}%{{/if}}</div>
+                        <div style="font-size: 12px; color: #6b7280;">{{#if (eq language 'ja')}}業界内パフォーマー{{else}}Performer in Industry{{/if}}</div>
+                    {{else}}
+                        <div style="font-size: 20px; font-weight: 700; color: #dc2626; margin-bottom: 4px;">{{#if (eq language 'ja')}}中央値以下{{else}}Below Median{{/if}}</div>
+                        <div style="font-size: 12px; color: #6b7280;">{{#if (eq language 'ja')}}業界内位置{{else}}Industry Position{{/if}}</div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gap Analysis -->
+        <div class="position-section">
+            <h2 class="section-title">{{#if (eq language 'ja')}}成熟度ギャップ分析{{else}}Maturity Gap Analysis{{/if}}</h2>
+            
+            <!-- Legend for diverging chart -->
+            <div style="display: flex; justify-content: center; margin-bottom: 15px; font-size: 11px;">
+                <div style="display: flex; align-items: center; margin-right: 20px;">
+                    <div style="width: 12px; height: 12px; background: #10b981; border-radius: 2px; margin-right: 6px;"></div>
+                    <span>{{#if (eq language 'ja')}}リーダーを上回る{{else}}Exceeds Leader{{/if}}</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 12px; height: 12px; background: #ef4444; border-radius: 2px; margin-right: 6px;"></div>
+                    <span>{{#if (eq language 'ja')}}リーダーとのギャップ{{else}}Gap to Leader{{/if}}</span>
+                </div>
+            </div>
+            
+            {{#each gapAnalysis}}
+            <div class="gap-item">
+                <div class="gap-label">
+                    {{#if (lt this.gap 0)}}⭐ {{/if}}{{this.categoryName}}
+                </div>
+                <div class="gap-bar-container">
+                    <div class="gap-center-line"></div>
+                    <div class="gap-bar-left">
+                        {{#if (lt this.gap 0)}}
+                        <div class="gap-fill-left" style="width: {{multiply (abs this.gap) 2}}%;"></div>
+                        {{/if}}
+                    </div>
+                    <div class="gap-bar-right">
+                        {{#if (gt this.gap 0)}}
+                        <div class="gap-fill-right" style="width: {{multiply this.gap 2}}%;"></div>
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="gap-value{{#if (lt this.gap 0)}} gap-value-positive{{else}} gap-value-negative{{/if}}">
+                    {{#if (lt this.gap 0)}}⭐ +{{abs this.gap}}{{else}}{{this.gap}}{{/if}} pts
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        
+        <!-- Cost Savings Breakdown -->
+        <div class="position-section">
+            <h2 class="section-title">{{#if (eq language 'ja')}}年間コスト削減内訳{{else}}Annual Cost Savings Breakdown{{/if}}</h2>
+            <div class="savings-grid">
+                {{#if costAnalysis.formattedCostSavings.formatted_DP}}
+                <div class="savings-item">
+                    <div class="savings-amount">{{costAnalysis.formattedCostSavings.formatted_DP}}</div>
+                    <div class="savings-label">{{#if (eq language 'ja')}}開発生産性{{else}}Development Productivity{{/if}}</div>
+                </div>
+                {{/if}}
+                {{#if costAnalysis.formattedCostSavings.formatted_TM}}
+                <div class="savings-item">
+                    <div class="savings-amount">{{costAnalysis.formattedCostSavings.formatted_TM}}</div>
+                    <div class="savings-label">{{#if (eq language 'ja')}}市場投入時間{{else}}Time-to-Market{{/if}}</div>
+                </div>
+                {{/if}}
+                {{#if costAnalysis.formattedCostSavings.formatted_OE}}
+                <div class="savings-item">
+                    <div class="savings-amount">{{costAnalysis.formattedCostSavings.formatted_OE}}</div>
+                    <div class="savings-label">{{#if (eq language 'ja')}}運用効率{{else}}Operational Efficiency{{/if}}</div>
+                </div>
+                {{/if}}
+                {{#if costAnalysis.formattedCostSavings.formatted_IM}}
+                <div class="savings-item">
+                    <div class="savings-amount">{{costAnalysis.formattedCostSavings.formatted_IM}}</div>
+                    <div class="savings-label">{{#if (eq language 'ja')}}インシデント管理{{else}}Incident Management{{/if}}</div>
+                </div>
+                {{/if}}
+                {{#if costAnalysis.formattedCostSavings.formatted_IC}}
+                <div class="savings-item">
+                    <div class="savings-amount">{{costAnalysis.formattedCostSavings.formatted_IC}}</div>
+                    <div class="savings-label">{{#if (eq language 'ja')}}インフラ{{else}}Infrastructure{{/if}}</div>
+                </div>
+                {{/if}}
+                <div class="savings-item total-savings">
+                    <div class="savings-amount">{{costAnalysis.formattedTotal}}</div>
+                    <div class="savings-label">{{#if (eq language 'ja')}}年間総削減額{{else}}Total Annual{{/if}}</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Critical Issues -->
+        <div class="position-section">
+            <h2 class="section-title">{{#if (eq language 'ja')}}重要な課題 ({{criticalIssuesCount}}){{else}}Critical Issues ({{criticalIssuesCount}}){{/if}}</h2>
+            <table class="issues-table">
+                <thead>
+                    <tr>
+                        <th>{{#if (eq language 'ja')}}課題の説明{{else}}Issue Description{{/if}}</th>
+                        <th>{{#if (eq language 'ja')}}カテゴリ{{else}}Category{{/if}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each categoryScores}}
+                        {{#if this.criticalIssues}}
+                            {{#each this.criticalIssues}}
+                            <tr class="page-break-auto">
+                                <td>
+                                    <span class="issue-icon">⚠</span>
+                                    {{#if this.text}}{{#if (eq ../../language 'ja')}}{{this.text.ja}}{{else}}{{this.text.en}}{{/if}}{{else}}{{this}}{{/if}}
+                                </td>
+                                <td class="category-badge">{{../categoryName}}</td>
+                            </tr>
+                            {{/each}}
+                        {{/if}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        
+        {{!-- <div class="page-footer">
+            <div>{{#if (eq language 'ja')}}レポート生成日: {{#if assessment.completedAt}}{{assessment.completedAt}}{{else}}{{currentDate}}{{/if}} • 機密および専有{{else}}Report generated on {{#if assessment.completedAt}}{{assessment.completedAt}}{{else}}{{currentDate}}{{/if}} • Confidential and Proprietary{{/if}}</div>
+        </div> --}}
+        
+        <div class="no-page-break">
+            <h2 class="section-title">{{#if (eq language 'ja')}}戦略的実装ロードマップ{{else}}Strategic Implementation Roadmap{{/if}}</h2>
+            
+            <!-- DEBUG: implementationRoadmap status: {{#if implementationRoadmap}}PRESENT{{else}}MISSING{{/if}} -->
+            {{#if implementationRoadmap}}
+            
+            {{#if implementationRoadmap.journeyInsights}}
+            <!-- Journey Insights Section -->
+            <div class="no-page-break" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 20px; border-radius: 12px; margin-bottom: 25px;">
+                <h3 style="font-size: 16px; font-weight: 600; color: #0c4a6e; margin-bottom: 12px; display: flex; align-items: center;">
+                    <span style="margin-right: 8px;">🎯</span>
+                    {{#if (eq language 'ja')}}ジャーニーインサイト{{else}}Journey Insights{{/if}}
+                </h3>
+                <p style="font-size: 12px; color: #0c4a6e; margin-bottom: 16px; line-height: 1.4;">
+                    {{#if (eq language 'ja')}}
+                    あなたの評価結果に基づいて、最も影響の大きい改善領域を特定しました。これらの優先領域に焦点を当てることで、クラウドネイティブの成熟度を効率的に向上させることができます。
+                    {{else}}
+                    Based on your assessment results, we've identified the most impactful areas for improvement. Focusing on these priority areas will help you efficiently advance your cloud native maturity.
+                    {{/if}}
+                </p>
+                
+                {{#each implementationRoadmap.journeyInsights}}
+                <div style="background: rgba(255, 255, 255, 0.7); padding: 14px; border-radius: 8px; margin-bottom: 12px;">
+                    <div style="display: flex; align-items: start; gap: 12px;">
+                        <div style="background: #0ea5e9; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0;">
+                            {{this.priority}}
+                        </div>
+                        <div style="flex: 1;">
+                            <div style="font-weight: 600; color: #0c4a6e; margin-bottom: 4px;">{{this.categoryName}}</div>
+                            <div style="font-size: 11px; color: #0369a1; margin-bottom: 6px;">{{this.reason}}</div>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span style="background: #bfdbfe; color: #1e40af; padding: 2px 6px; border-radius: 4px; font-size: 10px;">
+                                    {{#if (eq ../language 'ja')}}
+                                        {{#if (eq this.timeframe 'immediate')}}即座{{else if (eq this.timeframe 'near-term')}}短期{{else}}長期{{/if}}
+                                    {{else}}
+                                        {{this.timeframe}}
+                                    {{/if}}
+                                </span>
+                                {{#if this.quickWin}}
+                                <span style="background: #bbf7d0; color: #166534; padding: 2px 6px; border-radius: 4px; font-size: 10px;">
+                                    {{#if (eq ../language 'ja')}}クイックウィン{{else}}Quick Win{{/if}}
+                                </span>
+                                {{/if}}
+                                <span style="background: #fef3c7; color: #92400e; padding: 2px 6px; border-radius: 4px; font-size: 10px;">
+                                    {{#if (eq ../language 'ja')}}影響度 {{#if (eq this.impactLevel 'High')}}高{{else if (eq this.impactLevel 'Medium')}}中{{else if (eq this.impactLevel 'Low')}}低{{else}}{{this.impactLevel}}{{/if}}{{else}}{{this.impactLevel}} Impact{{/if}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+        </div>
+        
+        <!-- Roadmap Overview Statistics -->
+        <div class="no-page-break" style="background: #f8fafc; padding: 18px; border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="font-size: 14px; font-weight: 600; color: #111827; margin-bottom: 12px;">
+                {{#if (eq language 'ja')}}実装ロードマップ概要{{else}}Implementation Roadmap Overview{{/if}}
+            </h3>
+            
+            <!-- Total Items with Phase Breakdown -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+                <div style="text-align: center; padding: 12px; background: white; border-radius: 6px;">
+                    <div style="font-size: 18px; font-weight: 700; color: #3b82f6;">{{implementationRoadmap.totalRecommendations}}</div>
+                    <div style="font-size: 11px; color: #6b7280; font-weight: 600;">{{#if (eq language 'ja')}}総項目{{else}}Total Items{{/if}}</div>
+                </div>
+                <div style="text-align: center; padding: 12px; background: white; border-radius: 6px;">
+                    <div style="font-size: 18px; font-weight: 700; color: #7c3aed;">{{implementationRoadmap.shortTermCount}}</div>
+                    <div style="font-size: 11px; color: #6b7280;">{{#if (eq language 'ja')}}短期{{else}}Short-term{{/if}}</div>
+                </div>
+                <div style="text-align: center; padding: 12px; background: white; border-radius: 6px;">
+                    <div style="font-size: 18px; font-weight: 700; color: #f59e0b;">{{implementationRoadmap.mediumTermCount}}</div>
+                    <div style="font-size: 11px; color: #6b7280;">{{#if (eq language 'ja')}}中期{{else}}Medium-term{{/if}}</div>
+                </div>
+                <div style="text-align: center; padding: 12px; background: white; border-radius: 6px;">
+                    <div style="font-size: 18px; font-weight: 700; color: #dc2626;">{{implementationRoadmap.longTermCount}}</div>
+                    <div style="font-size: 11px; color: #6b7280;">{{#if (eq language 'ja')}}長期{{else}}Long-term{{/if}}</div>
+                </div>
+            </div>
+            
+            <!-- Quick Wins Summary -->
+            <div style="background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 16px; font-weight: 700; color: #166534;">⚡ {{implementationRoadmap.totalQuickWins}} {{#if (eq language 'ja')}}クイックウィン{{else}}Quick Wins{{/if}}</div>
+                    <div style="font-size: 10px; color: #166534; margin-top: 2px;">
+                        {{#if (eq language 'ja')}}全フェーズに分散{{else}}Distributed across all phases{{/if}}
+                    </div>
+                </div>
+            </div>
+            
+            <div style="font-size: 11px; color: #6b7280; line-height: 1.4;">
+                {{#if (eq language 'ja')}}
+                このロードマップは、クラウドネイティブ機能を段階的に構築するための論理的な順序で配置されています。基盤を確立するためにフェーズ1の推奨事項から始め、その後より高度な取り組みに進んでください。
+                {{else}}
+                This roadmap is arranged in a logical sequence to build cloud native capabilities incrementally. Start with Phase 1 recommendations to establish a foundation, then progress to more advanced initiatives.
+                {{/if}}
+            </div>
+        </div>
+        
+        <!-- Dynamic Roadmap Timeline -->
+        <div class="roadmap-timeline no-page-break">
+            <div class="timeline-phase phase-short">
+                <div class="phase-title">
+                    {{#if (eq language 'ja')}}短期 (0-3ヶ月){{else}}Short-term (0-3 months){{/if}}
+                    {{#if implementationRoadmap.phaseStats.short.total}}
+                    <span style="font-size: 11px; color: #6b7280; font-weight: normal;">
+                        ({{implementationRoadmap.phaseStats.short.total}} {{#if (eq language 'ja')}}項目{{else}}items{{/if}}{{#if implementationRoadmap.phaseStats.short.quickWins}}, {{implementationRoadmap.phaseStats.short.quickWins}} {{#if (eq language 'ja')}}クイックウィン{{else}}quick wins{{/if}}{{/if}})
+                    </span>
+                    {{/if}}
+                </div>
+                <ul class="phase-items">
+                    {{#if implementationRoadmap.phases.[0].recommendations}}
+                        {{#each implementationRoadmap.phases.[0].recommendations}}
+                        {{#if @first}}
+                        <li><strong>{{this.title}}</strong>{{#if this.quickWin}} <span style="color: #059669; font-size: 10px;">⚡ {{#if (eq ../language 'ja')}}クイックウィン{{else}}Quick Win{{/if}}</span>{{/if}}</li>
+                        {{/if}}
+                        {{#if (and (not @first) (lt @index 3))}}
+                        <li>{{this.title}}{{#if this.quickWin}} <span style="color: #059669; font-size: 10px;">⚡</span>{{/if}}</li>
+                        {{/if}}
+                        {{/each}}
+                        {{#if (gt implementationRoadmap.phases.[0].recommendations.length 3)}}
+                        <li style="font-style: italic; color: #6b7280;">{{#if (eq language 'ja')}}他 {{subtract implementationRoadmap.phases.[0].recommendations.length 3}} 項目{{else}}+{{subtract implementationRoadmap.phases.[0].recommendations.length 3}} more items{{/if}}</li>
+                        {{/if}}
+                    {{else}}
+                        <li>{{#if (eq language 'ja')}}推奨事項なし{{else}}No recommendations{{/if}}</li>
+                    {{/if}}
+                </ul>
+            </div>
+            
+            <div class="timeline-phase phase-medium">
+                <div class="phase-title">
+                    {{#if (eq language 'ja')}}中期 (3-6ヶ月){{else}}Medium-term (3-6 months){{/if}}
+                    {{#if implementationRoadmap.phaseStats.medium.total}}
+                    <span style="font-size: 11px; color: #6b7280; font-weight: normal;">
+                        ({{implementationRoadmap.phaseStats.medium.total}} {{#if (eq language 'ja')}}項目{{else}}items{{/if}}{{#if implementationRoadmap.phaseStats.medium.quickWins}}, {{implementationRoadmap.phaseStats.medium.quickWins}} {{#if (eq language 'ja')}}クイックウィン{{else}}quick wins{{/if}}{{/if}})
+                    </span>
+                    {{/if}}
+                </div>
+                <ul class="phase-items">
+                    {{#if implementationRoadmap.phases.[1].recommendations}}
+                        {{#each implementationRoadmap.phases.[1].recommendations}}
+                        {{#if @first}}
+                        <li><strong>{{this.title}}</strong>{{#if this.quickWin}} <span style="color: #059669; font-size: 10px;">⚡ {{#if (eq ../language 'ja')}}クイックウィン{{else}}Quick Win{{/if}}</span>{{/if}}</li>
+                        {{/if}}
+                        {{#if (and (not @first) (lt @index 3))}}
+                        <li>{{this.title}}{{#if this.quickWin}} <span style="color: #059669; font-size: 10px;">⚡</span>{{/if}}</li>
+                        {{/if}}
+                        {{/each}}
+                        {{#if (gt implementationRoadmap.phases.[1].recommendations.length 3)}}
+                        <li style="font-style: italic; color: #6b7280;">{{#if (eq language 'ja')}}他 {{subtract implementationRoadmap.phases.[1].recommendations.length 3}} 項目{{else}}+{{subtract implementationRoadmap.phases.[1].recommendations.length 3}} more items{{/if}}</li>
+                        {{/if}}
+                    {{else}}
+                        <li>{{#if (eq language 'ja')}}推奨事項なし{{else}}No recommendations{{/if}}</li>
+                    {{/if}}
+                </ul>
+            </div>
+            
+            <div class="timeline-phase phase-long">
+                <div class="phase-title">
+                    {{#if (eq language 'ja')}}長期 (6ヶ月以上){{else}}Long-term (6+ months){{/if}}
+                    {{#if implementationRoadmap.phaseStats.long.total}}
+                    <span style="font-size: 11px; color: #6b7280; font-weight: normal;">
+                        ({{implementationRoadmap.phaseStats.long.total}} {{#if (eq language 'ja')}}項目{{else}}items{{/if}}{{#if implementationRoadmap.phaseStats.long.quickWins}}, {{implementationRoadmap.phaseStats.long.quickWins}} {{#if (eq language 'ja')}}クイックウィン{{else}}quick wins{{/if}}{{/if}})
+                    </span>
+                    {{/if}}
+                </div>
+                <ul class="phase-items">
+                    {{#if implementationRoadmap.phases.[2].recommendations}}
+                        {{#each implementationRoadmap.phases.[2].recommendations}}
+                        {{#if @first}}
+                        <li><strong>{{this.title}}</strong>{{#if this.quickWin}} <span style="color: #059669; font-size: 10px;">⚡ {{#if (eq ../language 'ja')}}クイックウィン{{else}}Quick Win{{/if}}</span>{{/if}}</li>
+                        {{/if}}
+                        {{#if (and (not @first) (lt @index 3))}}
+                        <li>{{this.title}}{{#if this.quickWin}} <span style="color: #059669; font-size: 10px;">⚡</span>{{/if}}</li>
+                        {{/if}}
+                        {{/each}}
+                        {{#if (gt implementationRoadmap.phases.[2].recommendations.length 3)}}
+                        <li style="font-style: italic; color: #6b7280;">{{#if (eq language 'ja')}}他 {{subtract implementationRoadmap.phases.[2].recommendations.length 3}} 項目{{else}}+{{subtract implementationRoadmap.phases.[2].recommendations.length 3}} more items{{/if}}</li>
+                        {{/if}}
+                    {{else}}
+                        <li>{{#if (eq language 'ja')}}推奨事項なし{{else}}No recommendations{{/if}}</li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Top Priority Recommendations -->
+        {{#if implementationRoadmap.phases.[0].recommendations}}
+        <div class="no-page-break" style="background: #f8fafc; padding: 18px; border-radius: 8px; margin-top: 20px;">
+            <h3 class="section-title">{{#if (eq language 'ja')}}優先推奨事項{{else}}Priority Recommendations{{/if}}</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; font-size: 12px; line-height: 1.4; color: #374151;">
+                <div>
+                    {{#each implementationRoadmap.phases.[0].recommendations}}
+                    {{#if (lt @index 3)}}
+                    <div style="margin-bottom: 10px;">
+                        <div><strong>{{add @index 1}}. {{this.title}}</strong></div>
+                        <div style="font-size: 11px; color: #6b7280; margin-top: 2px;">
+                            {{this.categoryName}} | {{this.timelineText}} | {{#if (eq ../language 'ja')}}影響度 {{#if (eq this.impactLevel 'High')}}高{{else if (eq this.impactLevel 'Medium')}}中{{else if (eq this.impactLevel 'Low')}}低{{else}}{{this.impactLevel}}{{/if}}{{else}}{{this.impactLevel}} Impact{{/if}}
+                            {{#if this.quickWin}} | <span style="color: #059669; font-weight: 600;">{{#if (eq ../language 'ja')}}クイックウィン{{else}}Quick Win{{/if}}</span>{{/if}}
+                        </div>
+                        <div style="font-size: 11px; margin-top: 3px;">{{this.descriptionText}}</div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                <div>
+                    {{#each implementationRoadmap.phases.[0].recommendations}}
+                    {{#if (and (gte @index 3) (lt @index 6))}}
+                    <div style="margin-bottom: 10px;">
+                        <div><strong>{{add @index 1}}. {{this.title}}</strong></div>
+                        <div style="font-size: 11px; color: #6b7280; margin-top: 2px;">
+                            {{this.categoryName}} | {{this.timelineText}} | {{#if (eq ../language 'ja')}}影響度 {{#if (eq this.impactLevel 'High')}}高{{else if (eq this.impactLevel 'Medium')}}中{{else if (eq this.impactLevel 'Low')}}低{{else}}{{this.impactLevel}}{{/if}}{{else}}{{this.impactLevel}} Impact{{/if}}
+                            {{#if this.quickWin}} | <span style="color: #059669; font-weight: 600;">{{#if (eq ../language 'ja')}}クイックウィン{{else}}Quick Win{{/if}}</span>{{/if}}
+                        </div>
+                        <div style="font-size: 11px; margin-top: 3px;">{{this.descriptionText}}</div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/if}}
+        
+        {{else}}
+        <!-- No fallback content - only show dynamic roadmap -->
+        {{/if}}
+        
+    </div>
+</body>
+</html> 
+

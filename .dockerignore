@@ -1,0 +1,38 @@
+# Git files
+.git
+.gitignore
+
+# Node.js related
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build outputs
+dist
+build
+.cache
+
+# Development environment files
+.env
+.env.*
+.env-*
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Docker related
+.dockerignore
+Dockerfile
+
+# Project specific files
+attached_assets
+**/*.log 

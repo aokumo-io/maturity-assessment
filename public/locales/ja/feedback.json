@@ -1,0 +1,42 @@
+{
+  "title": "簡単フィードバック",
+  "subtitle": "改善にご協力ください（30秒）",
+  "fields": {
+    "rating": {
+      "label": "評価をお聞かせください"
+    },
+    "workingWell": {
+      "label": "良かった点",
+      "placeholder": "最も役に立った機能は何ですか？"
+    },
+    "needsImprovement": {
+      "label": "改善が必要な点",
+      "placeholder": "分かりにくかった点や困った点はありますか？"
+    },
+    "featureRequests": {
+      "label": "機能のご要望",
+      "placeholder": "どのような機能があれば良いですか？"
+    },
+    "email": {
+      "label": "メールアドレス（任意）",
+      "placeholder": "your@email.com（フォローアップ用）"
+    }
+  },
+  "actions": {
+    "submit": "フィードバックを送信",
+    "skip": "スキップ"
+  },
+  "validation": {
+    "ratingRequired": "フィードバックを送信するには評価が必要です"
+  },
+  "success": {
+    "title": "ありがとうございました！",
+    "message": "お客様のフィードバックは、評価体験の改善に役立ちます。"
+  },
+  "error": {
+    "submitFailed": "フィードバックの送信に失敗しました。もう一度お試しください。",
+    "networkError": "ネットワークエラーが発生しました。接続を確認してもう一度お試しください。",
+    "securityError": "セキュリティ検証に失敗しました。ページを更新してもう一度お試しください。",
+    "sessionExpired": "セッションが期限切れです。ページを更新してください。"
+  }
+} 

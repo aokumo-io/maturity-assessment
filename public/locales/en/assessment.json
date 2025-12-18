@@ -1,0 +1,173 @@
+{
+  "title": "Cloud Native Maturity Assessment",
+  "assessment": "Assessment",
+  "subtitle": "Please answer the following questions about your practices",
+  "types": {
+    "quick": "Quick Assessment",
+    "standard": "Standard Assessment",
+    "comprehensive": "Comprehensive Assessment",
+    "default": "Assessment Types"
+  },
+  "welcome": {
+    "whatYoullDiscover": "What you'll discover",
+    "benefits": [
+      "Your current cloud native maturity level",
+      "Strengths and improvement areas across key categories",
+      "Tailored recommendations for your organization",
+      "Industry comparison and benchmarking",
+      "Personalized implementation roadmap"
+    ],
+    "timeTaken": {
+      "quick": "15-20 minutes to complete. Covers 5 core categories.",
+      "standard": "25-30 minutes to complete. Covers 10 key categories.",
+      "comprehensive": "35-45 minutes to complete. Covers all 15 categories in depth."
+    }
+  },
+  "steps": {
+    "welcome": "Welcome",
+    "instructions": "Instructions",
+    "organization": "Organization Info",
+    "assessment": "Assessment Questions",
+    "processing": "Processing Results",
+    "results": "View Results"
+  },
+  "categories": {
+    "foundations_culture": "Foundations & Culture",
+    "application_architecture": "Application Architecture",
+    "container_infrastructure": "Container Infrastructure",
+    "cicd_practices": "CI/CD Practices",
+    "observability": "Observability",
+    "security_compliance": "Security & Compliance",
+    "data_management": "Data Management",
+    "dora_metrics": "DORA Metrics",
+    "infrastructure_platform": "Infrastructure & Platform",
+    "business_value_strategy": "Business Value and Cloud Native Strategy",
+    "operations_resilience": "Operations & Resilience",
+    "finops_cost_management": "FinOps & Cost Management",
+    "app_migration_modernization": "App Migration & Modernization",
+    "multicloud_hybrid_governance": "Multi-cloud & Hybrid Governance",
+    "ai_ml_integration": "AI/ML and Cloud Native Integration",
+    "disaster_recovery": "Disaster Recovery",
+    "sustainability": "Sustainability and Environmental Considerations"
+  },
+  "categoryDescriptions": {
+    "foundations_culture": "Assess the organization's team structure, engineering culture, and leadership approach to cloud native.",
+    "application_architecture": "Evaluate adherence to Twelve-Factor App principles, architectural patterns, and database practices.",
+    "container_infrastructure": "Evaluate container adoption, registry management, and container standards.",
+    "cicd_practices": "Evaluate continuous integration, delivery, deployment automation, and GitOps adoption.",
+    "observability": "Assess monitoring, logging, tracing, and SLO/SLI implementation capabilities.",
+    "security_compliance": "Evaluate security practices, compliance management, and network security approaches.",
+    "data_management": "Evaluate storage solutions, data services, and disaster recovery approaches.",
+    "dora_metrics": "Assess key performance indicators like deployment frequency, lead time, recovery time, and failure rate.",
+    "infrastructure_platform": "Assess infrastructure as code, platform engineering practices, and cloud strategy.",
+    "business_value_strategy": "Evaluate alignment between cloud native initiatives and business goals, ROI measurement, and strategic planning.",
+    "operations_resilience": "Assess business continuity planning, recovery strategies, disaster response, and sustainable operations.",
+    "finops_cost_management": "Evaluate cloud cost optimization, financial governance, and cost-aware engineering practices.",
+    "app_migration_modernization": "Assess strategies for migrating and modernizing legacy applications to cloud native architectures.",
+    "multicloud_hybrid_governance": "Evaluate strategies for managing multiple cloud providers and hybrid cloud environments.",
+    "ai_ml_integration": "Assess adoption of AI/ML services, integration with cloud native platforms, and MLOps practices.",
+    "disaster_recovery": "Assess business continuity planning, recovery strategies, and disaster response capabilities.",
+    "sustainability": "Evaluate energy efficiency practices, carbon footprint reduction strategies, and sustainable cloud usage."
+  },
+  "responses": {
+    "dontKnow": "I don't know",
+    "knowMorePrompt": "Would you like to learn more about this topic?",
+    "submitWarning": "Please answer all questions before proceeding",
+    "resourcesAvailable": "Resources available",
+    "dontKnowExplanation": "Select this if you're not familiar with this concept or don't have this information.",
+    "viewResources": "View Resources"
+  },
+  "knowledgeResources": {
+    "title": "Knowledge Resource",
+    "officialDocumentation": "Official Documentation",
+    "tutorialVideo": "Tutorial Video",
+    "learnMoreTopic": "Learn more about this topic",
+    "showMoreResources": "Show more learning resources",
+    "showLess": "Show less",
+    "linkError": "Unable to open this resource",
+    "linkErrorHelp": "Please check your popup blocker settings or try the link manually"
+  },
+  "maturityLevels": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "expert": "Expert",
+    "knowledge_gap": "Knowledge Gap"
+  },
+  "progress": {
+    "title": "Your Progress",
+    "description": "Track your assessment completion",
+    "completed": "Completed",
+    "questionCount": "{{answered}} of {{total}} questions",
+    "questions": "Questions",
+    "questionNumber": "Question {{number}}",
+    "helpText": "Answer all questions to continue to the next section",
+    "stepCount": "Step {{current}} of {{total}}",
+    "organizationSection": "Organization Info"
+  },
+  "knowledge": {
+    "frequentDontKnow": "We notice you're selecting \"I don't know\" frequently",
+    "explanation": "This might indicate you're not familiar with cloud native concepts, or you might not be the right person to complete this specific section of the assessment.",
+    "suggestion": "Would you like to:",
+    "continue": "Continue the assessment",
+    "viewResources": "View educational resources"
+  },
+  "errors": {
+    "failedToSave": "Failed to save responses: {{message}}",
+    "noQuestions": {
+      "title": "No questions found",
+      "message": "There are no questions available for this category. Please try a different category or contact support."
+    },
+    "incompleteResponses": "Please answer all questions before continuing.",
+    "incompleteData": "Incomplete assessment data: {{message}}",
+    "validationFailed": "Could not validate assessment data",
+    "processingFailed": "There was a problem processing your assessment. Redirecting to results anyway."
+  },
+  "invalidCategory": {
+    "title": "Invalid Assessment Category",
+    "subtitle": "The requested assessment category does not exist.",
+    "message": "The assessment category you requested does not exist. Please go back and try again."
+  },
+  "navigation": {
+    "previous": "Previous",
+    "next": "Next",
+    "completeAssessment": "Send",
+    "saving": "Saving...",
+    "navigating": "Navigating to the next relevant category...",
+    "viewAllRecommendations": "View all recommendations"
+  },
+  "instructions": {
+    "allQuestionsRequired": "All questions must be answered to proceed. If you don't know an answer, select \"I don't know\" option.",
+    "pleaseAnswerAll": "Please answer all questions to enable the Next button."
+  },
+  "executiveSummary": {
+    "showLess": "Show less",
+    "viewAll": "View all",
+    "copyToClipboard": "Copy to clipboard"
+  },
+  "criticalIssues": {
+    "showLess": "Show less",
+    "viewAll": "View all"
+  },
+  "overview": {
+    "maturityPosition": "Your maturity position",
+    "comparisonNote": "This comparison is based on industry benchmarks."
+  },
+  "viewAllIssues": "View all issues",
+  "viewDetailedComparison": "View detailed comparison",
+  "review": {
+    "title": "Review Your Responses",
+    "subtitle": "Review all your assessment answers and scores",
+    "loading": "Loading your assessment responses...",
+    "error": "Error loading responses",
+    "errorTitle": "Unable to Load Responses",
+    "errorMessage": "There was an error loading your assessment responses. Please try again.",
+    "assessmentType": "Assessment Type",
+    "answeredQuestions": "Answered Questions",
+    "totalQuestions": "Total Questions",
+    "completionRate": "Completion Rate",
+    "yourAnswer": "Your Answer",
+    "score": "Score",
+    "notAnswered": "Not answered"
+  }
+}
