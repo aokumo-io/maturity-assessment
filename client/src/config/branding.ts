@@ -104,7 +104,7 @@ export const brandingConfig: BrandingConfig = {
   
   copyright: "© {year} Aokumo Inc. All rights reserved.",
   
-  supportEmail: "opensource@aokumo.io",
+  supportEmail: "enquiry@aokumo.io",
   
   website: "https://aokumo.io",
   

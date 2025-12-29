@@ -32,6 +32,9 @@ out/
 .env.test.local
 .env.production.local
 
+# Git
+.git*
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
@@ -76,6 +79,7 @@ coverage/
 # Temporary files
 tmp/
 temp/
+debug/
 
 # Database files
 *.sqlite
